@@ -1,0 +1,79 @@
+#app-section {
+  background-color: white;
+  background-image: url("/assets/images/app-bg.svg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 400px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app__content-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 80px;
+  max-height: 100%;
+}
+
+.app-details__container {
+  flex: 0;
+  padding-bottom: 30px;
+  padding-inline-start: 30px;
+}
+
+.app-mockup__container {
+  flex: 1;
+  width: 100%;
+  max-width: 720px;
+}
+
+.app__app-mockup {
+  height: 570px;
+}
+
+.app__coming-soon {
+  color: #f5aa28;
+  font-size: 20px;
+}
+
+.app__title {
+  color: white;
+  font-weight: 900;
+  margin: 0;
+  font-size: 36px;
+}
+
+.app__subtitle {
+  color: white;
+  font-size: 18px;
+  text-align: end;
+  width: 381px;
+}
+
+.app__cta-link:active,
+.app__cta-link {
+  color: #f5aa28;
+  text-decoration: none;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.app__cta-link-icon {
+  border-radius: 100%;
+  border: 2px solid #f5aa28;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+
+  margin-inline-start: 7px;
+}

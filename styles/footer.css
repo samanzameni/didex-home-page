@@ -1,0 +1,60 @@
+.mdl-mega-footer {
+  background-color: white;
+  background-image: url("/assets/images/footer-bg.svg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  padding: 40px 80px;
+}
+
+.mdl-mega-footer__subscription-section {
+  flex: 0;
+  min-width: 415px;
+}
+
+.footer__subscription-message {
+  color: white;
+  text-align: center;
+}
+
+.footer__subscription-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__subscription-form .mdl-textfield {
+  padding: 5px;
+  border-radius: 2px;
+  background: white;
+}
+
+.footer__subscription-form .mdl-textfield__input {
+  border: none;
+}
+
+.footer__link-list {
+  list-style: none;
+  padding: 0;
+  width: 300px;
+  margin: 15px 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.mdl-mega-footer__middle-section {
+  flex: 1;
+  margin-inline-start: 50px;
+}
+
+.mdl-mega-footer__heading {
+  font-weight: bold;
+  color: white;
+}
+
+.mdl-mega-footer__link-list {
+  color: white;
+}

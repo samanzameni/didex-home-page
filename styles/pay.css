@@ -1,0 +1,79 @@
+#pay-section {
+  background-color: white;
+  background-image: url("/assets/images/pay-bg.svg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 400px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pay__content-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 80px;
+  max-height: 100%;
+}
+
+.pay-details__container {
+  flex: 0;
+  padding-bottom: 30px;
+  padding-inline-start: 30px;
+}
+
+.pay-mockup__container {
+  flex: 1;
+  width: 100%;
+  max-width: 720px;
+}
+
+.pay__pay-mockup {
+  height: 500px;
+}
+
+.pay__coming-soon {
+  color: #f5aa28;
+  font-size: 20px;
+}
+
+.pay__title {
+  color: white;
+  font-weight: 900;
+  margin: 0;
+  font-size: 36px;
+}
+
+.pay__subtitle {
+  color: white;
+  font-size: 18px;
+  text-align: end;
+  width: 365px;
+}
+
+.pay__cta-link:active,
+.pay__cta-link {
+  color: #f5aa28;
+  text-decoration: none;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.pay__cta-link-icon {
+  border-radius: 100%;
+  border: 2px solid #f5aa28;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+
+  margin-inline-start: 7px;
+}

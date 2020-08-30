@@ -1,0 +1,76 @@
+#invest-section {
+  background-color: #f7f7f7;
+  background-image: url("/assets/images/invest-bg.svg");
+  background-size: calc(100vw - 160px);
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 700px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-bottom: 100px;
+}
+
+.invest__content-container {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  margin: 0 80px;
+}
+
+.invest-content__container {
+  flex: 0;
+  padding-bottom: 30px;
+  padding-inline-start: 30px;
+}
+
+.invest-mockup__container {
+  flex: 3;
+  max-width: 720px;
+}
+
+.invest__title {
+  color: #04193b;
+  font-weight: 900;
+  margin: 0;
+  font-size: 36px;
+}
+
+.invest__subtitle {
+  color: #04193b;
+  font-size: 18px;
+  text-align: end;
+  width: 353px;
+}
+
+.invest__cta-link:active,
+.invest__cta-link {
+  color: #f5aa28;
+  text-decoration: none;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.invest__cta-link-icon {
+  border-radius: 100%;
+  border: 2px solid #f5aa28;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+
+  margin-inline-start: 7px;
+}
+
+.invest__invest-mockup {
+  max-height: 65vh;
+  width: 100%;
+  object-fit: contain;
+}

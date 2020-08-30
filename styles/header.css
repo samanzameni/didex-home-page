@@ -1,0 +1,129 @@
+.header__container {
+  background-color: #0e2d5f;
+  background-image: url("/assets/images/bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.ddx-logo__container {
+  display: flex;
+  align-items: center;
+}
+
+.ddx-logo__symbol {
+  height: 46px;
+  object-fit: contain;
+}
+
+.ddx-logo__text {
+  margin-inline-start: 4px;
+  width: 80px;
+  object-fit: contain;
+}
+
+.header__content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: calc(100vh - 64px);
+  margin: 0 80px;
+}
+
+.header__content-item {
+  flex: 1;
+}
+
+.header__title {
+  color: #f5aa28;
+  font-weight: 900;
+  margin: 0;
+}
+
+.header__subtitle {
+  color: white;
+  font-size: 36px;
+}
+
+.header__cta-link:active,
+.header__cta-link {
+  color: #f5aa28;
+  text-decoration: none;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.header__cta-link-icon {
+  border-radius: 100%;
+  border: 2px solid #f5aa28;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+
+  margin-inline-start: 7px;
+}
+
+.header__trade-mockup {
+  max-height: 65vh;
+  width: 100%;
+  object-fit: contain;
+}
+
+.ddx-navigation > * {
+  margin-inline-start: 5px;
+}
+
+.ddx-navigation__signin-button {
+  border: 1px solid white;
+  box-sizing: border-box;
+}
+
+.ddx-navigation__signup-button {
+  box-sizing: border-box;
+}
+
+.ddx-navigation__apps-menu-container {
+  position: relative;
+}
+
+.ddx-navigation__apps-toggle-button {
+  margin-inline-start: 15px;
+}
+
+.ddx-navigation__apps-toggle-button > img {
+  transform: translateY(-3px);
+}
+
+.ddx-navigation__apps-item {
+  display: flex;
+  align-items: center;
+  color: #0e2d5f;
+  text-decoration: none;
+}
+
+.ddx-navigation__apps-item > img {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin-inline-end: 4px;
+}
+
+.main__sticky-navbar {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 2;
+  border-bottom: 1px solid #aaa4;
+  box-shadow: 0 3px 15px #aaa4;
+}
+
+.ddx-navigation-secondary .mdl-navigation__link {
+  color: #0e2d5f;
+}

@@ -1,0 +1,291 @@
+#charts-section {
+  width: 100%;
+  display: grid;
+  background-color: #f7f7f7;
+  grid-template-columns: 4fr 3fr;
+  grid-template-rows: repeat(2, fit-content);
+  grid-template-areas:
+    "volumes volumes"
+    "world live";
+
+  padding-bottom: 50px;
+}
+
+.charts__volume-container {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #7d88b3;
+  grid-area: volumes;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+
+.charts__volume-item {
+  border-inline-end: 1px solid #7d88b3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.charts__volume-item:last-child {
+  border-color: transparent;
+}
+
+.charts__volume-icon {
+  flex: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+#volume-7d-icon {
+  width: 80px;
+  margin-inline-end: 15px;
+}
+
+.charts__volume-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.charts__volume-title {
+  font-size: 16px;
+  color: #7d88b3;
+}
+
+.charts__volume-value {
+  font-size: 22px;
+  color: #0e2d5f;
+}
+
+.charts__title {
+  color: #0e2d5f;
+  font-weight: bold;
+}
+
+#charts__world-price-container {
+  grid-area: world;
+  margin-inline-start: 80px;
+}
+
+#charts__live-price-container {
+  grid-area: live;
+  margin-inline-end: 80px;
+}
+
+/* //////////////////////// */
+
+.charts__chart-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.charts__chart-card {
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  border: 1px solid #aaa4;
+  box-shadow: 0 3px 15px #aaa4;
+  border-radius: 10px;
+
+  width: calc(50% - 10px);
+  margin: 5px;
+  box-sizing: border-box;
+  padding: 15px 15px 0 15px;
+}
+
+.charts__chart-symbol-container {
+  display: flex;
+  flex: 3;
+}
+
+.charts__chart-symbol-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  margin-inline-end: 5px;
+}
+
+.charts__chart-symbol-name {
+  font-size: 20px;
+  color: #0e2d5f;
+  margin: 0;
+}
+
+.charts__chart-prices-container {
+  flex: 2;
+  text-align: end;
+}
+
+.charts__chart-price {
+  font-size: 16px;
+  color: #0e2d5f;
+  display: block;
+}
+
+.charts__chart-price-change {
+  font-size: 12px;
+  color: #0e2d5f;
+}
+
+.positive-change .charts__chart-price-change {
+  color: #8ed23f;
+}
+
+.negative-change .charts__chart-price-change {
+  color: #f5153d;
+}
+
+.charts__chartist-world-price {
+  height: 110px;
+  width: 100%;
+  padding: 0;
+}
+
+.charts__chartist-world-price .ct-series-a .ct-line {
+  stroke-width: 3px;
+}
+
+.positive-change .charts__chartist-world-price .ct-series-a .ct-line {
+  stroke: #8ed23f;
+}
+
+.negative-change .charts__chartist-world-price .ct-series-a .ct-line {
+  stroke: #f5153d;
+}
+
+.positive-change .charts__chartist-world-price .ct-series-a .ct-area {
+  fill: #8ed23f;
+}
+
+.negative-change .charts__chartist-world-price .ct-series-a .ct-area {
+  fill: #f5153d;
+}
+
+#charts__live-price-container {
+  margin-inline-start: 50px;
+}
+
+/* ////////////////////// */
+
+.prices__price-cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.prices__price-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border: 1px solid #aaa4;
+  box-shadow: 0 3px 15px #aaa4;
+  border-radius: 5px;
+
+  width: 100%;
+  margin: 5.75px 0;
+  box-sizing: border-box;
+  padding: 15px 10px;
+}
+
+.prices__symbol-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  margin-inline-end: 5px;
+}
+
+.prices__symbol-details {
+  margin-inline-end: 7px;
+}
+
+.prices__symbol-name {
+  font-size: 12px;
+  font-weight: bold;
+  color: #0e2d5f;
+  margin: 7px 0 0 0;
+}
+
+.prices__symbol-value {
+  font-size: 12px;
+  color: #cfcfcf;
+}
+
+.prices__volume-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.prices__change-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.prices__chart-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.prices__subsection-title {
+  font-size: 12px;
+  color: #cfcfcf;
+}
+
+.prices__subsection-value {
+  font-size: 12px;
+  color: #0e2d5f;
+}
+
+.positive-change .prices__subsection-value.change-value {
+  color: #8ed23f;
+}
+
+.negative-change .prices__subsection-value.change-value {
+  color: #f5153d;
+}
+
+.prices__chartist-live-price {
+  height: 25px;
+  width: 70px;
+  position: relative;
+}
+
+.prices__chartist-live-price svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px !important;
+  width: 110px !important;
+}
+
+.prices__chartist-live-price svg .ct-series {
+  transform: translateX(-40px) translateY(5px);
+}
+
+.prices__chartist-live-price svg .ct-series .ct-line {
+  stroke-width: 2px;
+}
+
+.positive-change .prices__chartist-live-price .ct-series-a .ct-line {
+  stroke: #8ed23f;
+}
+
+.negative-change .prices__chartist-live-price .ct-series-a .ct-line {
+  stroke: #f5153d;
+}
+
+.positive-change .prices__chartist-live-price .ct-series-a .ct-area {
+  fill: #8ed23f;
+}
+
+.negative-change .prices__chartist-live-price .ct-series-a .ct-area {
+  fill: #f5153d;
+}
+
+.prices__cta {
+  box-sizing: border-box;
+}

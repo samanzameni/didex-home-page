@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DidEx</title>
+
+    <!-- Reset css -->
+    <link rel="stylesheet" href="styles/reset.css" />
+
+    <!-- Material UI -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.indigo-orange.min.css"
+    />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <!-- Animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+
+    <!-- Chartist -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css"
+    />
+
+    <!-- Nunito Sans -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito Sans"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/theme.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/charts.css" />
+    <link rel="stylesheet" href="styles/invest.css" />
+    <link rel="stylesheet" href="styles/app.css" />
+    <link rel="stylesheet" href="styles/exchange.css" />
+    <link rel="stylesheet" href="styles/features.css" />
+    <link rel="stylesheet" href="styles/pay.css" />
+    <link rel="stylesheet" href="styles/wallet.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+  </head>
+  <body>
+    <div class="header__container">
+      <header class="mdl-layout__header mdl-layout__header--transparent">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title ddx-logo__container">
+            <img
+              src="/assets/images/didex-logo.svg"
+              class="ddx-logo__symbol"
+              alt="didex logo"
+            />
+            <img
+              src="/assets/images/didex-logo-text.svg"
+              class="ddx-logo__text"
+              alt="didex logo"
+            />
+          </span>
+          <div class="mdl-layout-spacer"></div>
+          <nav class="mdl-navigation ddx-navigation">
+            <a
+              href="/auth/signin"
+              class="mdl-button mdl-js-button mdl-js-ripple-effect ddx-navigation__signin-button"
+            >
+              Sign in
+            </a>
+            <a
+              href="/auth/signup"
+              class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent ddx-navigation__signup-button"
+            >
+              Sign up
+            </a>
+
+            <div class="ddx-navigation__apps-menu-container">
+              <button
+                id="apps-menu"
+                class="mdl-button mdl-js-button mdl-button--icon ddx-navigation__apps-toggle-button"
+              >
+                <img
+                  src="/assets/images/menu-icon.svg"
+                  width="22px"
+                  height="22px"
+                />
+              </button>
+
+              <ul
+                class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                for="apps-menu"
+              >
+                <li class="mdl-menu__item">
+                  <a class="ddx-navigation__apps-item" href="/">
+                    <img src="/assets/images/home-icon.svg" />
+                    Home
+                  </a>
+                </li>
+                <li class="mdl-menu__item">
+                  <a class="ddx-navigation__apps-item" href="/trade">
+                    <img src="/assets/images/trade-icon.svg" />
+                    Trade
+                  </a>
+                </li>
+                <li class="mdl-menu__item">
+                  <a class="ddx-navigation__apps-item" href="/invest">
+                    <img src="/assets/images/invest-icon.svg" />
+                    Invest
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <ul class="header__content-container">
+        <li class="header__content-item">
+          <h1 class="header__title">Trade</h1>
+          <h2 class="header__subtitle">Start your crypto journey!</h2>
+          <a
+            href="/trade"
+            class="animate__animated animate__fadeInUpBig header__cta-link"
+          >
+            <span class="header__cta-link-text">Get started</span>
+            <i class="header__cta-link-icon">
+              <img src="/assets/images/right-arrow.svg" />
+            </i>
+          </a>
+        </li>
+        <li class="header__content-item">
+          <img
+            src="/assets/images/trade-mockup.png"
+            class="header__trade-mockup"
+            alt="didex trade"
+          />
+        </li>
+      </ul>
+    </div>
+
+    <main>
+      <div class="main__sticky-navbar">
+        <header
+          class="mdl-layout__header mdl-layout__header--transparent mdl-layout__header--scroll"
+        >
+          <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title ddx-logo__container">
+              <img
+                src="/assets/images/didex-logo-alt.svg"
+                class="ddx-logo__symbol"
+                alt="didex logo"
+              />
+              <img
+                src="/assets/images/didex-logo-text-alt.svg"
+                class="ddx-logo__text alt"
+                alt="didex logo"
+              />
+            </span>
+            <div class="mdl-layout-spacer"></div>
+            <nav class="mdl-navigation ddx-navigation-secondary">
+              <a class="mdl-navigation__link" href="">Trade</a>
+              <a class="mdl-navigation__link" href="">Chart</a>
+              <a class="mdl-navigation__link" href="">Invest</a>
+              <a class="mdl-navigation__link" href="">App</a>
+              <a class="mdl-navigation__link" href="">Exchange</a>
+              <a class="mdl-navigation__link" href="">Features</a>
+              <a class="mdl-navigation__link" href="">Pay</a>
+              <a class="mdl-navigation__link" href="">Wallet</a>
+            </nav>
+          </div>
+        </header>
+      </div>
+      <section id="charts-section">
+        <ul class="charts__volume-container">
+          <li class="charts__volume-item">
+            <img
+              src="/assets/images/volume-7d-icon.svg"
+              id="volume-7d-icon"
+              class="charts__volume-icon"
+            />
+            <div class="charts__volume-details">
+              <span class="charts__volume-title">7 Days Volume</span
+              ><span
+                class="charts__volume-value ajax-load"
+                data-ajax="7DaysVolume"
+                data-format="currency"
+                data-currency="$"
+              ></span>
+            </div>
+          </li>
+          <li class="charts__volume-item">
+            <img
+              src="/assets/images/volume-24h-icon.svg"
+              class="charts__volume-icon"
+            />
+            <div class="charts__volume-details">
+              <span class="charts__volume-title">24 Hours Volume</span
+              ><span
+                class="charts__volume-value ajax-load"
+                data-ajax="24HoursVolume"
+                data-format="currency"
+                data-currency="$"
+              ></span>
+            </div>
+          </li>
+          <li class="charts__volume-item">
+            <img
+              src="/assets/images/volume-users-icon.svg"
+              class="charts__volume-icon"
+            />
+            <div class="charts__volume-details">
+              <span class="charts__volume-title">Users</span
+              ><span
+                class="charts__volume-value ajax-load"
+                data-ajax="usersVolume"
+                data-format="number"
+              ></span>
+            </div>
+          </li>
+        </ul>
+        <div id="charts__world-price-container">
+          <h3 class="charts__title">World Price</h3>
+          <ul class="charts__chart-cards">
+            <li class="charts__chart-card positive-change">
+              <div class="charts__chart-symbol-container">
+                <img
+                  src="https://www.cryptocompare.com//media/20646/eth_logo.png"
+                  alt=""
+                  class="charts__chart-symbol-icon"
+                />
+                <h4 class="charts__chart-symbol-name">ETH/USDT</h4>
+              </div>
+              <div class="charts__chart-prices-container">
+                <span class="charts__chart-price">5678</span>
+                <span class="charts__chart-price-change">+1.945%</span>
+              </div>
+              <div class="ct-chart charts__chartist-world-price"></div>
+            </li>
+            <li class="charts__chart-card negative-change">
+              <div class="charts__chart-symbol-container">
+                <img
+                  src="https://www.cryptocompare.com//media/20646/eth_logo.png"
+                  alt=""
+                  class="charts__chart-symbol-icon"
+                />
+                <h4 class="charts__chart-symbol-name">ETH/USDT</h4>
+              </div>
+              <div class="charts__chart-prices-container">
+                <span class="charts__chart-price">5678</span>
+                <span class="charts__chart-price-change">+1.945%</span>
+              </div>
+              <div class="ct-chart charts__chartist-world-price"></div>
+            </li>
+            <li class="charts__chart-card negative-change">
+              <div class="charts__chart-symbol-container">
+                <img
+                  src="https://www.cryptocompare.com//media/20646/eth_logo.png"
+                  alt=""
+                  class="charts__chart-symbol-icon"
+                />
+                <h4 class="charts__chart-symbol-name">ETH/USDT</h4>
+              </div>
+              <div class="charts__chart-prices-container">
+                <span class="charts__chart-price">5678</span>
+                <span class="charts__chart-price-change">+1.945%</span>
+              </div>
+              <div class="ct-chart charts__chartist-world-price"></div>
+            </li>
+            <li class="charts__chart-card negative-change">
+              <div class="charts__chart-symbol-container">
+                <img
+                  src="https://www.cryptocompare.com//media/20646/eth_logo.png"
+                  alt=""
+                  class="charts__chart-symbol-icon"
+                />
+                <h4 class="charts__chart-symbol-name">ETH/USDT</h4>
+              </div>
+              <div class="charts__chart-prices-container">
+                <span class="charts__chart-price">5678</span>
+                <span class="charts__chart-price-change">+1.945%</span>
+              </div>
+              <div class="ct-chart charts__chartist-world-price"></div>
+            </li>
+          </ul>
+        </div>
+        <div id="charts__live-price-container">
+          <h3 class="charts__title">Live Price</h3>
+          <ul class="prices__price-cards">
+            <li class="prices__price-card positive-change">
+              <img
+                src="https://www.cryptocompare.com//media/20646/eth_logo.png"
+                class="prices__symbol-logo"
+              />
+              <div class="prices__symbol-details">
+                <h5 class="prices__symbol-name">ETH/USDT</h5>
+                <span class="prices__symbol-value">87191</span>
+              </div>
+              <div class="prices__volume-details">
+                <span class="prices__subsection-title">Volume</span>
+                <span class="prices__subsection-value">12345</span>
+              </div>
+              <div class="prices__change-details">
+                <span class="prices__subsection-title">Change</span>
+                <span class="prices__subsection-value change-value"
+                  >1.2345%</span
+                >
+              </div>
+              <div class="prices__chart-details">
+                <span class="prices__subsection-title">Chart</span>
+                <div class="prices__chartist-live-price"></div>
+              </div>
+              <a
+                href="/trade"
+                class="prices__cta mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                >Buy</a
+              >
+            </li>
+            <li class="prices__price-card negative-change">
+              <img
+                src="https://www.cryptocompare.com//media/20646/eth_logo.png"
+                class="prices__symbol-logo"
+              />
+              <div class="prices__symbol-details">
+                <h5 class="prices__symbol-name">ETH/USDT</h5>
+                <span class="prices__symbol-value">87191</span>
+              </div>
+              <div class="prices__volume-details">
+                <span class="prices__subsection-title">Volume</span>
+                <span class="prices__subsection-value">12345</span>
+              </div>
+              <div class="prices__change-details">
+                <span class="prices__subsection-title">Change</span>
+                <span class="prices__subsection-value change-value"
+                  >1.2345%</span
+                >
+              </div>
+              <div class="prices__chart-details">
+                <span class="prices__subsection-title">Chart</span>
+                <div class="prices__chartist-live-price"></div>
+              </div>
+              <a
+                href="/trade"
+                class="prices__cta mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                >Buy</a
+              >
+            </li>
+            <li class="prices__price-card positive-change">
+              <img
+                src="https://www.cryptocompare.com//media/20646/eth_logo.png"
+                class="prices__symbol-logo"
+              />
+              <div class="prices__symbol-details">
+                <h5 class="prices__symbol-name">ETH/USDT</h5>
+                <span class="prices__symbol-value">87191</span>
+              </div>
+              <div class="prices__volume-details">
+                <span class="prices__subsection-title">Volume</span>
+                <span class="prices__subsection-value">12345</span>
+              </div>
+              <div class="prices__change-details">
+                <span class="prices__subsection-title">Change</span>
+                <span class="prices__subsection-value change-value"
+                  >1.2345%</span
+                >
+              </div>
+              <div class="prices__chart-details">
+                <span class="prices__subsection-title">Chart</span>
+                <div class="prices__chartist-live-price"></div>
+              </div>
+              <a
+                href="/trade"
+                class="prices__cta mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                >Buy</a
+              >
+            </li>
+            <li class="prices__price-card positive-change">
+              <img
+                src="https://www.cryptocompare.com//media/20646/eth_logo.png"
+                class="prices__symbol-logo"
+              />
+              <div class="prices__symbol-details">
+                <h5 class="prices__symbol-name">ETH/USDT</h5>
+                <span class="prices__symbol-value">87191</span>
+              </div>
+              <div class="prices__volume-details">
+                <span class="prices__subsection-title">Volume</span>
+                <span class="prices__subsection-value">12345</span>
+              </div>
+              <div class="prices__change-details">
+                <span class="prices__subsection-title">Change</span>
+                <span class="prices__subsection-value change-value"
+                  >1.2345%</span
+                >
+              </div>
+              <div class="prices__chart-details">
+                <span class="prices__subsection-title">Chart</span>
+                <div class="prices__chartist-live-price"></div>
+              </div>
+              <a
+                href="/trade"
+                class="prices__cta mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                >Buy</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="invest-section">
+        <ul class="invest__content-container">
+          <li class="invest__content-item invest-mockup__container">
+            <img
+              src="/assets/images/invest-mockup.svg"
+              class="invest__invest-mockup"
+              alt="didex invest"
+            />
+          </li>
+          <li class="invest__content-item invest-content__container">
+            <h2 class="invest__title">Invest</h2>
+            <h3 class="invest__subtitle">
+              Know where you invest, know what to earn!
+            </h3>
+            <a
+              href="/invest"
+              class="animate__animated animate__fadeInUp invest__cta-link"
+            >
+              <span class="invest__cta-link-text">Get started</span>
+              <i class="invest__cta-link-icon">
+                <img src="/assets/images/right-arrow.svg" />
+              </i>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section id="app-section">
+        <ul class="app__content-container">
+          <li class="app__content-item app-content__container">
+            <h4 class="app__coming-soon">Coming soon ...</h4>
+            <h2 class="app__title">Application</h2>
+            <h3 class="app__subtitle">
+              Buy 45+ coins at true cost, no fees, no markups
+            </h3>
+            <a
+              href="/app"
+              class="animate__animated animate__fadeInUp app__cta-link"
+            >
+              <span class="app__cta-link-text">Learn more</span>
+              <i class="app__cta-link-icon">
+                <img src="/assets/images/right-arrow.svg" />
+              </i>
+            </a>
+          </li>
+          <li class="app__content-item app-mockup__container">
+            <img
+              src="/assets/images/app-mockup.svg"
+              class="app__app-mockup"
+              alt="didex app"
+            />
+          </li>
+        </ul>
+      </section>
+      <section id="exchange-section">
+        <ul class="exchange__content-container">
+          <li class="exchange__content-item exchange-mockup__container">
+            <img
+              src="/assets/images/exchange-mockup.svg"
+              class="exchange__exchange-mockup"
+              alt="didex exchange"
+            />
+          </li>
+          <li class="exchange__content-item exchange-content__container">
+            <h4 class="exchange__coming-soon">Coming soon ...</h4>
+            <h2 class="exchange__title">Exchange</h2>
+            <h3 class="exchange__subtitle">
+              Powered by DidEx, with deep liquidity, low fees and best execution
+              prices
+            </h3>
+            <a
+              href="/exchange"
+              class="animate__animated animate__fadeInUp exchange__cta-link"
+            >
+              <span class="exchange__cta-link-text">Learn more</span>
+              <i class="exchange__cta-link-icon">
+                <img src="/assets/images/right-arrow.svg" />
+              </i>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section id="features-section">
+        <h2 class="features__title">Features</h2>
+        <p class="features__subtitle">
+          Advanced and unique features make it a different experience to buy and
+          sell bitcoin and other digital currencies
+        </p>
+        <ul class="features__cards-list">
+          <li class="features__card-item">
+            <img
+              src="/assets/images/features-icon-support.svg"
+              class="features__card-icon"
+            /><span class="features__card-title">BE THERE BY YOUR SIDE</span>
+            <p class="features__card-body">
+              Seek assistance from our 24/7 professional customer support! Stay
+              updated with our latest crypto news & tips on our blog!
+            </p>
+          </li>
+          <li class="features__card-item">
+            <img
+              src="/assets/images/features-icon-best.svg"
+              class="features__card-icon"
+            /><span class="features__card-title">WE HAVE THE BEST</span>
+            <p class="features__card-body">
+              Professional team with rich experience in the field of blockchain,
+              finance, digital assets and AI
+            </p>
+          </li>
+          <li class="features__card-item">
+            <img
+              src="/assets/images/features-icon-secure.svg"
+              class="features__card-icon"
+            /><span class="features__card-title">STABLE & SECURE</span>
+            <p class="features__card-body">
+              Our in-house developed security system with multiple fail-safe
+              layers gives your cryptocurrencies bank-graded protection!
+            </p>
+          </li>
+          <li class="features__card-item">
+            <img
+              src="/assets/images/features-icon-ease.svg"
+              class="features__card-icon"
+            /><span class="features__card-title">BUY CRYPTO WITH EASE</span>
+            <p class="features__card-body">
+              Buy your favorite crypto using credit/debit card, and enjoy the
+              best rates on the market!
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section id="pay-section">
+        <ul class="pay__content-container">
+          <li class="pay__content-item pay-mockup__container">
+            <img
+              src="/assets/images/pay-mockup.svg"
+              class="pay__pay-mockup"
+              alt="didex pay"
+            />
+          </li>
+          <li class="pay__content-item pay-content__container">
+            <h4 class="pay__coming-soon">Coming soon ...</h4>
+            <h2 class="pay__title">Pay</h2>
+            <h3 class="pay__subtitle">
+              Pay and get paid in crypto, anywhere, for free
+            </h3>
+            <a
+              href="/pay"
+              class="animate__animated animate__fadeInUp pay__cta-link"
+            >
+              <span class="pay__cta-link-text">Learn more</span>
+              <i class="pay__cta-link-icon">
+                <img src="/assets/images/right-arrow.svg" />
+              </i>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section id="wallet-section">
+        <ul class="wallet__content-container">
+          <li class="wallet__content-item wallet-content__container">
+            <h4 class="wallet__coming-soon">Coming soon ...</h4>
+            <h2 class="wallet__title">Wallet</h2>
+            <h3 class="wallet__subtitle">With state of art security</h3>
+            <a
+              href="/wallet"
+              class="animate__animated animate__fadeInUp wallet__cta-link"
+            >
+              <span class="wallet__cta-link-text">Learn more</span>
+              <i class="wallet__cta-link-icon">
+                <img src="/assets/images/right-arrow.svg" />
+              </i>
+            </a>
+          </li>
+          <li class="wallet__content-item wallet-mockup__container">
+            <img
+              src="/assets/images/wallet-mockup.svg"
+              class="wallet__wallet-mockup"
+              alt="didex wallet"
+            />
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="mdl-mega-footer">
+      <div class="mdl-mega-footer__subscription-section">
+        <p class="footer__subscription-message">
+          Subscribe to stay up to date on exclusive content and notifications
+        </p>
+        <form class="footer__subscription-form" action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              placeholder="Enter your email"
+              type="text"
+              id="email"
+            />
+            <label class="mdl-textfield__label" for="email"></label>
+          </div>
+
+          <button
+            type="submit"
+            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          >
+            Subscribe
+          </button>
+        </form>
+
+        <ul class="footer__link-list">
+          <li>
+            <a href="#">
+              <img src="/assets/images/footer-icon-tw.svg" srcset="" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="/assets/images/footer-icon-fa.svg" srcset="" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="/assets/images/footer-icon-tg.svg" srcset="" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="/assets/images/footer-icon-ig.svg" srcset="" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="/assets/images/footer-icon-in.svg" srcset="" />
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mdl-mega-footer__middle-section">
+        <div class="mdl-mega-footer__drop-down-section">
+          <input
+            class="mdl-mega-footer__heading-checkbox"
+            type="checkbox"
+            checked
+          />
+          <span class="mdl-mega-footer__heading">Company</span>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input
+            class="mdl-mega-footer__heading-checkbox"
+            type="checkbox"
+            checked
+          />
+          <span class="mdl-mega-footer__heading">Services</span>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="#">API</a></li>
+            <li><a href="#">Fees and Limits</a></li>
+            <li><a href="#">Application</a></li>
+            <li><a href="#">Trading Rules</a></li>
+          </ul>
+        </div>
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input
+            class="mdl-mega-footer__heading-checkbox"
+            type="checkbox"
+            checked
+          />
+          <span class="mdl-mega-footer__heading">Product</span>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="/trade">Trade</a></li>
+            <li><a href="/invest">Invest</a></li>
+            <li><a href="#">Exchange</a></li>
+            <li><a href="#">P2P Exchange</a></li>
+            <li><a href="#">DidPay</a></li>
+          </ul>
+        </div>
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input
+            class="mdl-mega-footer__heading-checkbox"
+            type="checkbox"
+            checked
+          />
+          <span class="mdl-mega-footer__heading">Support</span>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Security Guidelines</a></li>
+            <li><a href="#">API Documentation</a></li>
+            <li><a href="#">Glossary</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/scripts/index.js"></script>
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <script src="/scripts/charts.js"></script>
+  </body>
+</html>

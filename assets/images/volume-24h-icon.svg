@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="114.593" height="114.593" viewBox="0 0 114.593 114.593">
+  <g id="Group_2294" data-name="Group 2294" transform="translate(-698.187 -1204.932)">
+    <circle id="Ellipse_38" data-name="Ellipse 38" cx="31.5" cy="31.5" r="31.5" transform="translate(699 1230.873)" fill="#d8eff6" opacity="0.54"/>
+    <g id="Group_2292" data-name="Group 2292" transform="translate(701.015 1207.761)">
+      <path id="Path_2748" data-name="Path 2748" d="M70.452,16.98A38.518,38.518,0,1,1,38.515,0" transform="translate(0 54.468) rotate(-45)" fill="none" stroke="#7d88b3" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
+      <path id="Path_2749" data-name="Path 2749" d="M0,24.4A30.157,30.157,0,1,1,8.28,51.477" transform="translate(12.213 54.078) rotate(-45)" fill="none" stroke="#7d88b3" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
+      <text id="_24H" data-name="24H" transform="translate(32.985 64.112)" fill="#7d88b3" font-size="21" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">24H</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,7 +1,7 @@
 #invest-section {
   background-color: #f7f7f7;
   background-image: url("/assets/images/invest-bg.svg");
-  background-size: calc(100vw - 160px);
+  background-size: 80%;
   background-position: center center;
   background-repeat: no-repeat;
   height: 700px;
@@ -73,4 +73,68 @@
   max-height: 65vh;
   width: 100%;
   object-fit: contain;
+}
+
+@media screen and (max-width: 1280px) {
+  #invest-section {
+    background-size: calc(100vw - 80px);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 500px;
+    padding-bottom: 10px;
+  }
+
+  .invest__content-container {
+    margin: 0 40px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .invest__content-container {
+    flex-direction: column;
+  }
+
+  .invest__invest-mockup {
+    max-height: 300px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  #invest-section {
+    background-size: 100%;
+    background-position: 20% 10%;
+    background-repeat: no-repeat;
+    height: 540px;
+  }
+
+  .invest__invest-mockup {
+    max-height: 230px;
+    padding-bottom: 10px;
+  }
+
+  .invest__content-container {
+    align-items: flex-start;
+  }
+
+  .invest-content__container {
+    padding: 0;
+  }
+
+  .invest__cta-link {
+    justify-content: flex-start;
+    margin-top: 5px;
+  }
+
+  .invest__subtitle {
+    width: unset;
+    text-align: start;
+    font-size: 20px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .invest__content-container {
+    margin: 0 10px;
+  }
 }

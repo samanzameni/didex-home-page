@@ -127,3 +127,40 @@
 .ddx-navigation-secondary .mdl-navigation__link {
   color: #0e2d5f;
 }
+
+@media screen and (max-width: 1024px) {
+  .mdl-layout__main-header {
+    display: flex;
+  }
+
+  .mdl-layout__header-row {
+    padding: 0 40px;
+  }
+
+  .header__content-container {
+    flex-direction: column-reverse;
+    padding-top: 64px;
+  }
+
+  .header__content-item {
+    flex: 0;
+  }
+
+  .header__trade-mockup {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .mdl-layout__header-row {
+    padding: 0 10px;
+  }
+
+  .ddx-logo__text {
+    display: none;
+  }
+
+  .header__content-container {
+    margin: 0 10px;
+  }
+}

@@ -55,3 +55,47 @@
   color: #0e2d5f;
   font-size: 14px;
 }
+
+@media screen and (max-width: 1280px) {
+  .features__cards-list {
+    display: flex;
+    justify-content: center;
+    width: calc(100vw - 80px);
+    margin: 10px auto;
+  }
+
+  .features__card-title {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #features-section {
+    padding-bottom: 20px;
+  }
+
+  .features__cards-list {
+    flex-wrap: wrap;
+  }
+
+  .features__card-item {
+    width: calc(50% - 10px);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .features__subtitle {
+    padding: 0 15px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .features__cards-list {
+    width: calc(100% - 20px);
+  }
+
+  .features__card-item {
+    width: calc(100% - 10px);
+  }
+}

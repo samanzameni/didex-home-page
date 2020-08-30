@@ -38,7 +38,7 @@
     />
 
     <link rel="stylesheet" href="styles/theme.css" />
-    <link rel="stylesheet" href="styles/layout.css" />
+
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/charts.css" />
     <link rel="stylesheet" href="styles/invest.css" />
@@ -51,74 +51,78 @@
   </head>
   <body>
     <div class="header__container">
-      <header class="mdl-layout__header mdl-layout__header--transparent">
-        <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title ddx-logo__container">
-            <img
-              src="/assets/images/didex-logo.svg"
-              class="ddx-logo__symbol"
-              alt="didex logo"
-            />
-            <img
-              src="/assets/images/didex-logo-text.svg"
-              class="ddx-logo__text"
-              alt="didex logo"
-            />
-          </span>
-          <div class="mdl-layout-spacer"></div>
-          <nav class="mdl-navigation ddx-navigation">
-            <a
-              href="/auth/signin"
-              class="mdl-button mdl-js-button mdl-js-ripple-effect ddx-navigation__signin-button"
-            >
-              Sign in
-            </a>
-            <a
-              href="/auth/signup"
-              class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent ddx-navigation__signup-button"
-            >
-              Sign up
-            </a>
-
-            <div class="ddx-navigation__apps-menu-container">
-              <button
-                id="apps-menu"
-                class="mdl-button mdl-js-button mdl-button--icon ddx-navigation__apps-toggle-button"
+      <div class="mdl-layout mdl-js-layout">
+        <header
+          class="mdl-layout__header mdl-layout__main-header mdl-layout__header--transparent"
+        >
+          <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title ddx-logo__container">
+              <img
+                src="/assets/images/didex-logo.svg"
+                class="ddx-logo__symbol"
+                alt="didex logo"
+              />
+              <img
+                src="/assets/images/didex-logo-text.svg"
+                class="ddx-logo__text"
+                alt="didex logo"
+              />
+            </span>
+            <div class="mdl-layout-spacer"></div>
+            <nav class="mdl-navigation ddx-navigation">
+              <a
+                href="/auth/signin"
+                class="mdl-button mdl-js-button mdl-js-ripple-effect ddx-navigation__signin-button"
               >
-                <img
-                  src="/assets/images/menu-icon.svg"
-                  width="22px"
-                  height="22px"
-                />
-              </button>
-
-              <ul
-                class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
-                for="apps-menu"
+                Sign in
+              </a>
+              <a
+                href="/auth/signup"
+                class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent ddx-navigation__signup-button"
               >
-                <li class="mdl-menu__item">
-                  <a class="ddx-navigation__apps-item" href="/">
-                    <img src="/assets/images/home-icon.svg" />
-                    Home
-                  </a>
-                </li>
-                <li class="mdl-menu__item">
-                  <a class="ddx-navigation__apps-item" href="/trade">
-                    <img src="/assets/images/trade-icon.svg" />
-                    Trade
-                  </a>
-                </li>
-                <li class="mdl-menu__item">
-                  <a class="ddx-navigation__apps-item" href="/invest">
-                    <img src="/assets/images/invest-icon.svg" />
-                    Invest
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </header>
+                Sign up
+              </a>
+
+              <div class="ddx-navigation__apps-menu-container">
+                <button
+                  id="apps-menu"
+                  class="mdl-button mdl-js-button mdl-button--icon ddx-navigation__apps-toggle-button"
+                >
+                  <img
+                    src="/assets/images/menu-icon.svg"
+                    width="22px"
+                    height="22px"
+                  />
+                </button>
+
+                <ul
+                  class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                  for="apps-menu"
+                >
+                  <li class="mdl-menu__item">
+                    <a class="ddx-navigation__apps-item" href="/">
+                      <img src="/assets/images/home-icon.svg" />
+                      Home
+                    </a>
+                  </li>
+                  <li class="mdl-menu__item">
+                    <a class="ddx-navigation__apps-item" href="/trade">
+                      <img src="/assets/images/trade-icon.svg" />
+                      Trade
+                    </a>
+                  </li>
+                  <li class="mdl-menu__item">
+                    <a class="ddx-navigation__apps-item" href="/invest">
+                      <img src="/assets/images/invest-icon.svg" />
+                      Invest
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </header>
+      </div>
 
       <ul class="header__content-container">
         <li class="header__content-item">
@@ -456,11 +460,13 @@
             </a>
           </li>
           <li class="app__content-item app-mockup__container">
-            <img
-              src="/assets/images/app-mockup.svg"
-              class="app__app-mockup"
-              alt="didex app"
-            />
+            <div class="app-mockup__frame">
+              <!-- <img
+                src="/assets/images/app-mockup.svg"
+                class="app__app-mockup"
+                alt="didex app"
+              /> -->
+            </div>
           </li>
         </ul>
       </section>
@@ -649,14 +655,9 @@
       </div>
 
       <div class="mdl-mega-footer__middle-section">
-        <div class="mdl-mega-footer__drop-down-section">
-          <input
-            class="mdl-mega-footer__heading-checkbox"
-            type="checkbox"
-            checked
-          />
+        <div class="mdl-mega-footer__links-section">
           <span class="mdl-mega-footer__heading">Company</span>
-          <ul class="mdl-mega-footer__link-list">
+          <ul class="mdl-mega-footer__links-list">
             <li><a href="#">About</a></li>
             <li><a href="#">Careers</a></li>
             <li><a href="#">Terms of Service</a></li>
@@ -665,14 +666,9 @@
           </ul>
         </div>
 
-        <div class="mdl-mega-footer__drop-down-section">
-          <input
-            class="mdl-mega-footer__heading-checkbox"
-            type="checkbox"
-            checked
-          />
+        <div class="mdl-mega-footer__links-section">
           <span class="mdl-mega-footer__heading">Services</span>
-          <ul class="mdl-mega-footer__link-list">
+          <ul class="mdl-mega-footer__links-list">
             <li><a href="#">API</a></li>
             <li><a href="#">Fees and Limits</a></li>
             <li><a href="#">Application</a></li>
@@ -680,14 +676,9 @@
           </ul>
         </div>
 
-        <div class="mdl-mega-footer__drop-down-section">
-          <input
-            class="mdl-mega-footer__heading-checkbox"
-            type="checkbox"
-            checked
-          />
+        <div class="mdl-mega-footer__links-section">
           <span class="mdl-mega-footer__heading">Product</span>
-          <ul class="mdl-mega-footer__link-list">
+          <ul class="mdl-mega-footer__links-list">
             <li><a href="/trade">Trade</a></li>
             <li><a href="/invest">Invest</a></li>
             <li><a href="#">Exchange</a></li>
@@ -696,14 +687,9 @@
           </ul>
         </div>
 
-        <div class="mdl-mega-footer__drop-down-section">
-          <input
-            class="mdl-mega-footer__heading-checkbox"
-            type="checkbox"
-            checked
-          />
+        <div class="mdl-mega-footer__links-section">
           <span class="mdl-mega-footer__heading">Support</span>
-          <ul class="mdl-mega-footer__link-list">
+          <ul class="mdl-mega-footer__links-list">
             <li><a href="#">FAQ</a></li>
             <li><a href="#">Help Center</a></li>
             <li><a href="#">Security Guidelines</a></li>

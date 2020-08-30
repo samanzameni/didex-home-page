@@ -32,6 +32,15 @@
   max-width: 720px;
 }
 
+.app-mockup__frame {
+  height: 570px;
+  background: url("/assets/images/app-mockup.svg");
+  background-size: 125%;
+  background-position-x: 65%;
+  background-position-y: center;
+  background-repeat: no-repeat;
+}
+
 .app__app-mockup {
   height: 570px;
 }
@@ -76,4 +85,61 @@
   height: 26px;
 
   margin-inline-start: 7px;
+}
+
+@media screen and (max-width: 1280px) {
+  .app__content-container {
+    margin: 0 40px;
+  }
+
+  .app-mockup__frame {
+    background-size: 110%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  #app-section {
+    height: 500px;
+  }
+
+  .app__content-container {
+    flex-direction: column;
+    align-self: flex-start;
+    transform: translateY(46px);
+  }
+
+  .app-mockup__frame {
+    background-size: 100%;
+    height: 360px;
+  }
+
+  .app__subtitle {
+    margin: 5px 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .app__content-container {
+    margin: 0 10px;
+    align-items: flex-start;
+  }
+
+  .app__subtitle {
+    width: 100%;
+    text-align: start;
+  }
+
+  .app__cta-link {
+    justify-content: flex-start;
+  }
+
+  .app-mockup__container {
+    max-width: 380px;
+    align-self: center;
+  }
+
+  .app-mockup__frame {
+    background-size: 150%;
+    background-position-x: 60%;
+  }
 }

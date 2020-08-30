@@ -15,6 +15,7 @@
 }
 
 .exchange__content-container {
+  width: 100%;
   display: flex;
   align-items: flex-end;
   justify-content: space-evenly;
@@ -79,4 +80,74 @@
   max-height: 65vh;
   width: 100%;
   object-fit: contain;
+}
+
+@media screen and (max-width: 1280px) {
+  #exchange-section {
+    background-size: 55vw;
+    height: 400px;
+
+    padding-bottom: 10px;
+  }
+
+  .exchange__content-container {
+    margin: 0 40px;
+  }
+
+  .exchange-mockup__container img {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #exchange-section {
+    height: 600px;
+    background-size: 90vw;
+  }
+
+  .exchange__content-container {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .exchange-mockup__container {
+    align-self: center;
+    max-width: 500px;
+  }
+
+  .exchange-content__container {
+    padding: 0;
+  }
+
+  .exchange__cta-link {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .exchange-mockup__container img {
+    max-width: 460px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  #exchange-section {
+    background-position-x: initial;
+    background-position-y: 75%;
+    height: 600px;
+  }
+
+  .exchange-mockup__container {
+    padding-top: 40px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .exchange__subtitle {
+    width: 100%;
+  }
+
+  .exchange__content-container {
+    margin: 0 10px;
+  }
 }

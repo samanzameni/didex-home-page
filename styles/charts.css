@@ -289,3 +289,102 @@
 .prices__cta {
   box-sizing: border-box;
 }
+
+@media screen and (max-width: 1280px) {
+  #charts__world-price-container {
+    margin-inline-start: 40px;
+  }
+
+  #charts__live-price-container {
+    margin-inline-end: 40px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #charts-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, fit-content);
+    grid-template-areas:
+      "volumes"
+      "live"
+      "world";
+
+    padding-bottom: 50px;
+  }
+
+  #charts__world-price-container {
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+  }
+
+  #charts__live-price-container {
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .charts__volume-container {
+    flex-direction: column;
+  }
+
+  .charts__volume-item {
+    border-right: none;
+    border-bottom: 1px solid #7d88b3;
+  }
+
+  .charts__volume-icon {
+    margin-inline-end: 20px;
+  }
+
+  #volume-7d-icon {
+    margin-inline-end: 35px;
+  }
+
+  .charts__volume-details {
+    width: 30%;
+    text-align: start;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #charts__world-price-container {
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+  }
+
+  #charts__live-price-container {
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+  }
+
+  .charts__volume-item {
+    justify-content: flex-start;
+    padding: 0 5px;
+    box-sizing: border-box;
+  }
+
+  .charts__volume-icon {
+    margin-inline-end: 10px;
+  }
+
+  #volume-7d-icon {
+    margin-inline-end: 25px;
+  }
+
+  .charts__chart-card {
+    width: calc(100% - 10px);
+  }
+
+  .prices__price-card {
+    flex-wrap: wrap;
+  }
+
+  .prices__cta {
+    width: 100%;
+  }
+
+  .prices__chart-details {
+    display: none;
+  }
+}

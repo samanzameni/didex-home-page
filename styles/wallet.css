@@ -1,7 +1,7 @@
 #wallet-section {
   background-color: #f7f7f7;
   background-image: url("/assets/images/wallet-bg.svg");
-  background-size: 80%;
+  background-size: 70%;
   background-position-x: calc(100% - 80px);
   background-position-y: center;
   background-repeat: no-repeat;
@@ -78,4 +78,52 @@
   max-height: 65vh;
   width: 100%;
   object-fit: contain;
+}
+
+@media screen and (max-width: 1280px) {
+  #wallet-section {
+    background-size: 80%;
+    height: 650px;
+    background-position-x: calc(100% - 40px);
+
+    padding-bottom: 10px;
+  }
+
+  .wallet__content-container {
+    margin: 0 40px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  #wallet-section {
+    background-size: 110%;
+    height: 650px;
+    background-position: center;
+  }
+
+  .wallet__content-container {
+    flex-direction: column;
+  }
+
+  .wallet__wallet-mockup {
+    max-height: 400px;
+  }
+
+  .wallet__cta-link {
+    justify-content: flex-start;
+  }
+
+  .wallet__subtitle {
+    margin: 5px 0;
+  }
+
+  .wallet-content__container {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .wallet__content-container {
+    margin: 0 10px;
+  }
 }

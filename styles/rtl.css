@@ -1,0 +1,17 @@
+body.fa {
+  direction: rtl;
+  font-size: 90%;
+}
+
+body.fa header {
+  direction: ltr;
+}
+
+body.fa .header__cta-link-icon,
+body.fa .invest__cta-link-icon,
+body.fa .app__cta-link-icon,
+body.fa .exchange__cta-link-icon,
+body.fa .pay__cta-link-icon,
+body.fa .waller__cta-link-icon {
+  transform: rotateZ(180deg);
+}

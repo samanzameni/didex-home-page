@@ -37,6 +37,14 @@
       rel="stylesheet"
     />
 
+    <!-- Shabnam -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/shabnam-font/5.0.1/font-face.min.css"
+      integrity="sha512-K7kg/b/uwKLejlClSl2m2CDutNLO7w6Wh8R7X2921f6TSs/q+MuhKlTHbM9/8dvN5TK7Y9q2VV6pNtyVKdEKJQ=="
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="styles/theme.css" />
 
     <link rel="stylesheet" href="styles/header.css" />
@@ -48,91 +56,114 @@
     <link rel="stylesheet" href="styles/pay.css" />
     <link rel="stylesheet" href="styles/wallet.css" />
     <link rel="stylesheet" href="styles/footer.css" />
+
+    <link rel="stylesheet" href="styles/rtl.css" />
   </head>
   <body>
     <div class="header__container">
-      <div class="mdl-layout mdl-js-layout">
-        <header
-          class="mdl-layout__header mdl-layout__main-header mdl-layout__header--transparent"
-        >
-          <div class="mdl-layout__header-row">
-            <span class="mdl-layout-title ddx-logo__container">
-              <img
-                src="/assets/images/didex-logo.svg"
-                class="ddx-logo__symbol"
-                alt="didex logo"
-              />
-              <img
-                src="/assets/images/didex-logo-text.svg"
-                class="ddx-logo__text"
-                alt="didex logo"
-              />
-            </span>
-            <div class="mdl-layout-spacer"></div>
-            <nav class="mdl-navigation ddx-navigation">
-              <a
-                href="/auth/signin"
-                class="mdl-button mdl-js-button mdl-js-ripple-effect ddx-navigation__signin-button"
-              >
-                Sign in
-              </a>
-              <a
-                href="/auth/signup"
-                class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent ddx-navigation__signup-button"
-              >
-                Sign up
-              </a>
+      <header
+        class="mdl-layout__header mdl-layout__main-header mdl-layout__header--transparent"
+      >
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title ddx-logo__container">
+            <img
+              src="/assets/images/didex-logo.svg"
+              class="ddx-logo__symbol"
+              alt="didex logo"
+            />
+            <img
+              src="/assets/images/didex-logo-text.svg"
+              class="ddx-logo__text"
+              alt="didex logo"
+            />
+          </span>
+          <div class="mdl-layout-spacer"></div>
+          <nav class="mdl-navigation ddx-navigation">
+            <a
+              href="/auth/signin"
+              class="ddx-locale mdl-button mdl-js-button mdl-js-ripple-effect ddx-navigation__signin-button"
+              data-resource_code="navbar_signin"
+            >
+            </a>
+            <a
+              href="/auth/signup"
+              class="ddx-locale mdl-button mdl-js-button mdl-button--raised mdl-button--accent ddx-navigation__signup-button"
+              data-resource_code="navbar_signup"
+            >
+            </a>
 
-              <div class="ddx-navigation__apps-menu-container">
-                <button
-                  id="apps-menu"
-                  class="mdl-button mdl-js-button mdl-button--icon ddx-navigation__apps-toggle-button"
-                >
-                  <img
-                    src="/assets/images/menu-icon.svg"
-                    width="22px"
-                    height="22px"
-                  />
-                </button>
+            <div class="ddx-navigation__apps-menu-container">
+              <button
+                id="apps-menu"
+                class="mdl-button mdl-js-button mdl-button--icon ddx-navigation__apps-toggle-button"
+              >
+                <img
+                  src="/assets/images/menu-icon.svg"
+                  width="22px"
+                  height="22px"
+                />
+              </button>
 
-                <ul
-                  class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
-                  for="apps-menu"
-                >
-                  <li class="mdl-menu__item">
-                    <a class="ddx-navigation__apps-item" href="/">
-                      <img src="/assets/images/home-icon.svg" />
-                      Home
-                    </a>
-                  </li>
-                  <li class="mdl-menu__item">
-                    <a class="ddx-navigation__apps-item" href="/trade">
-                      <img src="/assets/images/trade-icon.svg" />
-                      Trade
-                    </a>
-                  </li>
-                  <li class="mdl-menu__item">
-                    <a class="ddx-navigation__apps-item" href="/invest">
-                      <img src="/assets/images/invest-icon.svg" />
-                      Invest
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-        </header>
-      </div>
+              <ul
+                class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                for="apps-menu"
+              >
+                <li class="mdl-menu__item">
+                  <a class="ddx-navigation__apps-item" href="/">
+                    <img src="/assets/images/home-icon.svg" />
+                    <span
+                      class="ddx-locale"
+                      data-resource_code="navbar_home"
+                    ></span>
+                  </a>
+                </li>
+                <li class="mdl-menu__item">
+                  <a class="ddx-navigation__apps-item" href="/trade">
+                    <img src="/assets/images/trade-icon.svg" />
+                    <span
+                      class="ddx-locale"
+                      data-resource_code="navbar_trade"
+                    ></span>
+                  </a>
+                </li>
+                <li class="mdl-menu__item">
+                  <a class="ddx-navigation__apps-item" href="/invest">
+                    <img src="/assets/images/invest-icon.svg" />
+                    <span
+                      class="ddx-locale"
+                      data-resource_code="navbar_invest"
+                    ></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
 
       <ul class="header__content-container">
         <li class="header__content-item">
-          <h1 class="header__title">Trade</h1>
-          <h2 class="header__subtitle">Start your crypto journey!</h2>
+          <h1
+            class="ddx-locale header__title"
+            data-resource_code="header_title"
+          >
+            Trade
+          </h1>
+          <h2
+            class="ddx-locale header__subtitle"
+            data-resource_code="header_subtitle"
+          >
+            Start your crypto journey!
+          </h2>
           <a
             href="/trade"
             class="animate__animated animate__fadeInUpBig header__cta-link"
           >
-            <span class="header__cta-link-text">Get started</span>
+            <span
+              class="ddx-locale header__cta-link-text"
+              data-resource_code="header_cta"
+              >Get started</span
+            >
             <i class="header__cta-link-icon">
               <img src="/assets/images/right-arrow.svg" />
             </i>
@@ -700,8 +731,10 @@
       </div>
     </footer>
 
+    <script src="/locale/resource-classes.js"></script>
     <script src="/scripts/index.js"></script>
     <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
     <script src="/scripts/charts.js"></script>
+    <script src="/scripts/locale.js"></script>
   </body>
 </html>

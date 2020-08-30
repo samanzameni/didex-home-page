@@ -20,6 +20,28 @@ li {
   font-family: "Nunito Sans";
 }
 
+html.fa,
+body.fa {
+  font-family: Shabnam;
+}
+
+.fa h1,
+.fa h2,
+.fa h3,
+.fa h4,
+.fa h5,
+.fa h6,
+.fa p,
+.fa span,
+.fa b,
+.fa i,
+.fa a,
+.fa button,
+.fa .mdl-button,
+.fa li {
+  font-family: Shabnam;
+}
+
 .mdl-button--accent.mdl-button--accent.mdl-button--raised,
 .mdl-button--accent.mdl-button--accent.mdl-button--fab {
   background-color: #f5aa28;

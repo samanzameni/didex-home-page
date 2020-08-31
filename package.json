@@ -4,7 +4,7 @@
   "description": "",
   "main": "scripts/index.js",
   "scripts": {
-    "start": "browser-sync start --server --browser \"google chrome\" --files *.html styles/*.css scripts/*.js assets/*.* config/*.json",
+    "start": "browser-sync start --server --browser \"google chrome\" --files *.html styles/*.css scripts/*.js locale/*.js assets/*.* config/*.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Azad Kavian",

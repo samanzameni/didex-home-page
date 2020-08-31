@@ -61,6 +61,7 @@
 .mdl-mega-footer__links-list a {
   color: white;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .mdl-mega-footer__links-section {

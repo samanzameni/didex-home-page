@@ -17,4 +17,9 @@ function updateAJAXLoaders() {
   });
 }
 
+function scrollToElementID(elID) {
+  const element = document.getElementById(elID);
+  element.scrollIntoView({ behavior: "smooth" });
+}
+
 updateAJAXLoaders();

@@ -126,6 +126,7 @@
 
 .ddx-navigation-secondary .mdl-navigation__link {
   color: #0e2d5f;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1024px) {

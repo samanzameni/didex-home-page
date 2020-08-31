@@ -60,7 +60,7 @@
     <link rel="stylesheet" href="styles/rtl.css" />
   </head>
   <body>
-    <div class="header__container">
+    <div class="header__container" id="trade-section">
       <header
         class="mdl-layout__header mdl-layout__main-header mdl-layout__header--transparent"
       >
@@ -199,14 +199,54 @@
             </span>
             <div class="mdl-layout-spacer"></div>
             <nav class="mdl-navigation ddx-navigation-secondary">
-              <a class="mdl-navigation__link" href="">Trade</a>
-              <a class="mdl-navigation__link" href="">Chart</a>
-              <a class="mdl-navigation__link" href="">Invest</a>
-              <a class="mdl-navigation__link" href="">App</a>
-              <a class="mdl-navigation__link" href="">Exchange</a>
-              <a class="mdl-navigation__link" href="">Features</a>
-              <a class="mdl-navigation__link" href="">Pay</a>
-              <a class="mdl-navigation__link" href="">Wallet</a>
+              <a
+                class="ddx-locale mdl-navigation__link"
+                onclick="scrollToElementID('trade-section')"
+                data-resource_code="navbar_second_Trade"
+                >Trade</a
+              >
+              <a
+                class="ddx-locale mdl-navigation__link"
+                onclick="scrollToElementID('charts-section')"
+                data-resource_code="navbar_second_Chart"
+                >Chart</a
+              >
+              <a
+                class="ddx-locale mdl-navigation__link"
+                onclick="scrollToElementID('invest-section')"
+                data-resource_code="navbar_second_Invest"
+                >Invest</a
+              >
+              <a
+                class="ddx-locale mdl-navigation__link"
+                onclick="scrollToElementID('app-section')"
+                data-resource_code="navbar_second_App"
+                >App</a
+              >
+              <a
+                class="ddx-locale mdl-navigation__link"
+                onclick="scrollToElementID('exchange-section')"
+                data-resource_code="navbar_second_Exchange"
+                >Exchange</a
+              >
+              <a
+                class="ddx-locale mdl-navigation__link"
+                onclick="scrollToElementID('features-section')"
+                data-resource_code="navbar_second_Features"
+                >Features</a
+              >
+              <a
+                class="ddx-locale mdl-navigation__link"
+                onclick="scrollToElementID('pay-section')"
+                data-resource_code="navbar_second_Pay"
+                >Pay</a
+              >
+              <a
+                class="ddx-locale mdl-navigation__link"
+                onclick="scrollToElementID('wallet-section')"
+                data-resource_code="navbar_second_Wallet"
+                >Wallet</a
+              >
             </nav>
           </div>
         </header>
@@ -220,7 +260,10 @@
               class="charts__volume-icon"
             />
             <div class="charts__volume-details">
-              <span class="charts__volume-title">7 Days Volume</span
+              <span
+                class="ddx-locale charts__volume-title"
+                data-resource_code="charts_volume_7d"
+                >7 Days Volume</span
               ><span
                 class="charts__volume-value ajax-load"
                 data-ajax="7DaysVolume"
@@ -235,7 +278,10 @@
               class="charts__volume-icon"
             />
             <div class="charts__volume-details">
-              <span class="charts__volume-title">24 Hours Volume</span
+              <span
+                class="ddx-locale charts__volume-title"
+                data-resource_code="charts_volume_24h"
+                >24 Hours Volume</span
               ><span
                 class="charts__volume-value ajax-load"
                 data-ajax="24HoursVolume"
@@ -250,7 +296,10 @@
               class="charts__volume-icon"
             />
             <div class="charts__volume-details">
-              <span class="charts__volume-title">Users</span
+              <span
+                class="ddx-locale charts__volume-title"
+                data-resource_code="charts_volume_users"
+                >Users</span
               ><span
                 class="charts__volume-value ajax-load"
                 data-ajax="usersVolume"
@@ -260,7 +309,12 @@
           </li>
         </ul>
         <div id="charts__world-price-container">
-          <h3 class="charts__title">World Price</h3>
+          <h3
+            class="ddx-locale charts__title"
+            data-resource_code="charts_title_world"
+          >
+            World Price
+          </h3>
           <ul class="charts__chart-cards">
             <li class="charts__chart-card positive-change">
               <div class="charts__chart-symbol-container">
@@ -325,7 +379,12 @@
           </ul>
         </div>
         <div id="charts__live-price-container">
-          <h3 class="charts__title">Live Price</h3>
+          <h3
+            class="ddx-locale charts__title"
+            data-resource_code="charts_title_live"
+          >
+            Live Price
+          </h3>
           <ul class="prices__price-cards">
             <li class="prices__price-card positive-change">
               <img
@@ -337,22 +396,35 @@
                 <span class="prices__symbol-value">87191</span>
               </div>
               <div class="prices__volume-details">
-                <span class="prices__subsection-title">Volume</span>
+                <span
+                  class="ddx-locale prices__subsection-title"
+                  data-resource_code="charts_live_Volume"
+                  >Volume</span
+                >
                 <span class="prices__subsection-value">12345</span>
               </div>
               <div class="prices__change-details">
-                <span class="prices__subsection-title">Change</span>
+                <span
+                  class="ddx-locale prices__subsection-title"
+                  data-resource_code="charts_live_Change"
+                  >Change</span
+                >
                 <span class="prices__subsection-value change-value"
                   >1.2345%</span
                 >
               </div>
               <div class="prices__chart-details">
-                <span class="prices__subsection-title">Chart</span>
+                <span
+                  class="ddx-locale prices__subsection-title"
+                  data-resource_code="charts_live_Chart"
+                  >Chart</span
+                >
                 <div class="prices__chartist-live-price"></div>
               </div>
               <a
                 href="/trade"
-                class="prices__cta mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                class="ddx-locale prices__cta mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                data-resource_code="charts_live_buy"
                 >Buy</a
               >
             </li>
@@ -366,22 +438,35 @@
                 <span class="prices__symbol-value">87191</span>
               </div>
               <div class="prices__volume-details">
-                <span class="prices__subsection-title">Volume</span>
+                <span
+                  class="ddx-locale prices__subsection-title"
+                  data-resource_code="charts_live_Volume"
+                  >Volume</span
+                >
                 <span class="prices__subsection-value">12345</span>
               </div>
               <div class="prices__change-details">
-                <span class="prices__subsection-title">Change</span>
+                <span
+                  class="ddx-locale prices__subsection-title"
+                  data-resource_code="charts_live_Change"
+                  >Change</span
+                >
                 <span class="prices__subsection-value change-value"
                   >1.2345%</span
                 >
               </div>
               <div class="prices__chart-details">
-                <span class="prices__subsection-title">Chart</span>
+                <span
+                  class="ddx-locale prices__subsection-title"
+                  data-resource_code="charts_live_Chart"
+                  >Chart</span
+                >
                 <div class="prices__chartist-live-price"></div>
               </div>
               <a
                 href="/trade"
-                class="prices__cta mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                class="ddx-locale prices__cta mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                data-resource_code="charts_live_buy"
                 >Buy</a
               >
             </li>
@@ -395,22 +480,35 @@
                 <span class="prices__symbol-value">87191</span>
               </div>
               <div class="prices__volume-details">
-                <span class="prices__subsection-title">Volume</span>
+                <span
+                  class="ddx-locale prices__subsection-title"
+                  data-resource_code="charts_live_Volume"
+                  >Volume</span
+                >
                 <span class="prices__subsection-value">12345</span>
               </div>
               <div class="prices__change-details">
-                <span class="prices__subsection-title">Change</span>
+                <span
+                  class="ddx-locale prices__subsection-title"
+                  data-resource_code="charts_live_Change"
+                  >Change</span
+                >
                 <span class="prices__subsection-value change-value"
                   >1.2345%</span
                 >
               </div>
               <div class="prices__chart-details">
-                <span class="prices__subsection-title">Chart</span>
+                <span
+                  class="ddx-locale prices__subsection-title"
+                  data-resource_code="charts_live_Chart"
+                  >Chart</span
+                >
                 <div class="prices__chartist-live-price"></div>
               </div>
               <a
                 href="/trade"
-                class="prices__cta mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                class="ddx-locale prices__cta mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                data-resource_code="charts_live_buy"
                 >Buy</a
               >
             </li>
@@ -424,22 +522,35 @@
                 <span class="prices__symbol-value">87191</span>
               </div>
               <div class="prices__volume-details">
-                <span class="prices__subsection-title">Volume</span>
+                <span
+                  class="ddx-locale prices__subsection-title"
+                  data-resource_code="charts_live_Volume"
+                  >Volume</span
+                >
                 <span class="prices__subsection-value">12345</span>
               </div>
               <div class="prices__change-details">
-                <span class="prices__subsection-title">Change</span>
+                <span
+                  class="ddx-locale prices__subsection-title"
+                  data-resource_code="charts_live_Change"
+                  >Change</span
+                >
                 <span class="prices__subsection-value change-value"
                   >1.2345%</span
                 >
               </div>
               <div class="prices__chart-details">
-                <span class="prices__subsection-title">Chart</span>
+                <span
+                  class="ddx-locale prices__subsection-title"
+                  data-resource_code="charts_live_Chart"
+                  >Chart</span
+                >
                 <div class="prices__chartist-live-price"></div>
               </div>
               <a
                 href="/trade"
-                class="prices__cta mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                class="ddx-locale prices__cta mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                data-resource_code="charts_live_buy"
                 >Buy</a
               >
             </li>
@@ -456,15 +567,27 @@
             />
           </li>
           <li class="invest__content-item invest-content__container">
-            <h2 class="invest__title">Invest</h2>
-            <h3 class="invest__subtitle">
+            <h2
+              class="ddx-locale invest__title"
+              data-resource_code="invest_title"
+            >
+              Invest
+            </h2>
+            <h3
+              class="ddx-locale invest__subtitle"
+              data-resource_code="invest_subtitle"
+            >
               Know where you invest, know what to earn!
             </h3>
             <a
               href="/invest"
               class="animate__animated animate__fadeInUp invest__cta-link"
             >
-              <span class="invest__cta-link-text">Get started</span>
+              <span
+                class="ddx-locale invest__cta-link-text"
+                data-resource_code="invest_cta"
+                >Get started</span
+              >
               <i class="invest__cta-link-icon">
                 <img src="/assets/images/right-arrow.svg" />
               </i>
@@ -475,29 +598,37 @@
       <section id="app-section">
         <ul class="app__content-container">
           <li class="app__content-item app-content__container">
-            <h4 class="app__coming-soon">Coming soon ...</h4>
-            <h2 class="app__title">Application</h2>
-            <h3 class="app__subtitle">
+            <h4
+              class="ddx-locale app__coming-soon"
+              data-resource_code="app_coming_soon"
+            >
+              Coming soon ...
+            </h4>
+            <h2 class="ddx-locale app__title" data-resource_code="app_title">
+              Application
+            </h2>
+            <h3
+              class="ddx-locale app__subtitle"
+              data-resource_code="app_subtitle"
+            >
               Buy 45+ coins at true cost, no fees, no markups
             </h3>
             <a
               href="/app"
               class="animate__animated animate__fadeInUp app__cta-link"
             >
-              <span class="app__cta-link-text">Learn more</span>
+              <span
+                class="ddx-locale app__cta-link-text"
+                data-resource_code="app_cta"
+                >Learn more</span
+              >
               <i class="app__cta-link-icon">
                 <img src="/assets/images/right-arrow.svg" />
               </i>
             </a>
           </li>
           <li class="app__content-item app-mockup__container">
-            <div class="app-mockup__frame">
-              <!-- <img
-                src="/assets/images/app-mockup.svg"
-                class="app__app-mockup"
-                alt="didex app"
-              /> -->
-            </div>
+            <div class="app-mockup__frame"></div>
           </li>
         </ul>
       </section>
@@ -511,9 +642,22 @@
             />
           </li>
           <li class="exchange__content-item exchange-content__container">
-            <h4 class="exchange__coming-soon">Coming soon ...</h4>
-            <h2 class="exchange__title">Exchange</h2>
-            <h3 class="exchange__subtitle">
+            <h4
+              class="ddx-locale exchange__coming-soon"
+              data-resource_code="exchange_coming_soon"
+            >
+              Coming soon ...
+            </h4>
+            <h2
+              class="ddx-locale exchange__title"
+              data-resource_code="exchange_title"
+            >
+              Exchange
+            </h2>
+            <h3
+              class="ddx-locale exchange__subtitle"
+              data-resource_code="exchange_subtitle"
+            >
               Powered by DidEx, with deep liquidity, low fees and best execution
               prices
             </h3>
@@ -521,7 +665,11 @@
               href="/exchange"
               class="animate__animated animate__fadeInUp exchange__cta-link"
             >
-              <span class="exchange__cta-link-text">Learn more</span>
+              <span
+                class="ddx-locale exchange__cta-link-text"
+                data-resource_code="exchange_cta"
+                >Learn more</span
+              >
               <i class="exchange__cta-link-icon">
                 <img src="/assets/images/right-arrow.svg" />
               </i>
@@ -530,8 +678,16 @@
         </ul>
       </section>
       <section id="features-section">
-        <h2 class="features__title">Features</h2>
-        <p class="features__subtitle">
+        <h2
+          class="ddx-locale features__title"
+          data-resource_code="features_title"
+        >
+          Features
+        </h2>
+        <p
+          class="ddx-locale features__subtitle"
+          data-resource_code="features_subtitle"
+        >
           Advanced and unique features make it a different experience to buy and
           sell bitcoin and other digital currencies
         </p>
@@ -540,8 +696,15 @@
             <img
               src="/assets/images/features-icon-support.svg"
               class="features__card-icon"
-            /><span class="features__card-title">BE THERE BY YOUR SIDE</span>
-            <p class="features__card-body">
+            /><span
+              class="ddx-locale features__card-title"
+              data-resource_code="features_card_title_support"
+              >BE THERE BY YOUR SIDE</span
+            >
+            <p
+              class="ddx-locale features__card-body"
+              data-resource_code="features_card_body_support"
+            >
               Seek assistance from our 24/7 professional customer support! Stay
               updated with our latest crypto news & tips on our blog!
             </p>
@@ -550,8 +713,15 @@
             <img
               src="/assets/images/features-icon-best.svg"
               class="features__card-icon"
-            /><span class="features__card-title">WE HAVE THE BEST</span>
-            <p class="features__card-body">
+            /><span
+              class="ddx-locale features__card-title"
+              data-resource_code="features_card_title_best"
+              >WE HAVE THE BEST</span
+            >
+            <p
+              class="ddx-locale features__card-body"
+              data-resource_code="features_card_body_best"
+            >
               Professional team with rich experience in the field of blockchain,
               finance, digital assets and AI
             </p>
@@ -560,8 +730,15 @@
             <img
               src="/assets/images/features-icon-secure.svg"
               class="features__card-icon"
-            /><span class="features__card-title">STABLE & SECURE</span>
-            <p class="features__card-body">
+            /><span
+              class="ddx-locale features__card-title"
+              data-resource_code="features_card_title_secure"
+              >STABLE & SECURE</span
+            >
+            <p
+              class="ddx-locale features__card-body"
+              data-resource_code="features_card_body_secure"
+            >
               Our in-house developed security system with multiple fail-safe
               layers gives your cryptocurrencies bank-graded protection!
             </p>
@@ -570,8 +747,15 @@
             <img
               src="/assets/images/features-icon-ease.svg"
               class="features__card-icon"
-            /><span class="features__card-title">BUY CRYPTO WITH EASE</span>
-            <p class="features__card-body">
+            /><span
+              class="ddx-locale features__card-title"
+              data-resource_code="features_card_title_ease"
+              >BUY CRYPTO WITH EASE</span
+            >
+            <p
+              class="ddx-locale features__card-body"
+              data-resource_code="features_card_body_ease"
+            >
               Buy your favorite crypto using credit/debit card, and enjoy the
               best rates on the market!
             </p>
@@ -588,16 +772,30 @@
             />
           </li>
           <li class="pay__content-item pay-content__container">
-            <h4 class="pay__coming-soon">Coming soon ...</h4>
-            <h2 class="pay__title">Pay</h2>
-            <h3 class="pay__subtitle">
+            <h4
+              class="ddx-locale pay__coming-soon"
+              data-resource_code="pay_coming_soon"
+            >
+              Coming soon ...
+            </h4>
+            <h2 class="ddx-locale pay__title" data-resource_code="pay_title">
+              Pay
+            </h2>
+            <h3
+              class="ddx-locale pay__subtitle"
+              data-resource_code="pay_subtitle"
+            >
               Pay and get paid in crypto, anywhere, for free
             </h3>
             <a
               href="/pay"
               class="animate__animated animate__fadeInUp pay__cta-link"
             >
-              <span class="pay__cta-link-text">Learn more</span>
+              <span
+                class="ddx-locale pay__cta-link-text"
+                data-resource_code="pay_cta"
+                >Learn more</span
+              >
               <i class="pay__cta-link-icon">
                 <img src="/assets/images/right-arrow.svg" />
               </i>
@@ -608,14 +806,33 @@
       <section id="wallet-section">
         <ul class="wallet__content-container">
           <li class="wallet__content-item wallet-content__container">
-            <h4 class="wallet__coming-soon">Coming soon ...</h4>
-            <h2 class="wallet__title">Wallet</h2>
-            <h3 class="wallet__subtitle">With state of art security</h3>
+            <h4
+              class="ddx-locale wallet__coming-soon"
+              data-resource_code="wallet_coming_soon"
+            >
+              Coming soon ...
+            </h4>
+            <h2
+              class="ddx-locale wallet__title"
+              data-resource_code="wallet_title"
+            >
+              Wallet
+            </h2>
+            <h3
+              class="ddx-locale wallet__subtitle"
+              data-resource_code="wallet_subtitle"
+            >
+              With state of art security
+            </h3>
             <a
               href="/wallet"
               class="animate__animated animate__fadeInUp wallet__cta-link"
             >
-              <span class="wallet__cta-link-text">Learn more</span>
+              <span
+                class="ddx-locale wallet__cta-link-text"
+                data-resource_code="wallet_cta"
+                >Learn more</span
+              >
               <i class="wallet__cta-link-icon">
                 <img src="/assets/images/right-arrow.svg" />
               </i>
@@ -634,23 +851,22 @@
 
     <footer class="mdl-mega-footer">
       <div class="mdl-mega-footer__subscription-section">
-        <p class="footer__subscription-message">
+        <p
+          class="ddx-locale footer__subscription-message"
+          data-resource_code="footer_subscription_body"
+        >
           Subscribe to stay up to date on exclusive content and notifications
         </p>
         <form class="footer__subscription-form" action="#">
           <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              placeholder="Enter your email"
-              type="text"
-              id="email"
-            />
+            <input class="mdl-textfield__input" type="text" id="email" />
             <label class="mdl-textfield__label" for="email"></label>
           </div>
 
           <button
             type="submit"
-            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+            class="ddx-locale mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+            data-resource_code="footer_subscription_submit"
           >
             Subscribe
           </button>
@@ -659,27 +875,27 @@
         <ul class="footer__link-list">
           <li>
             <a href="#">
-              <img src="/assets/images/footer-icon-tw.svg" srcset="" />
+              <img src="/assets/images/footer-icon-tw.svg" />
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="/assets/images/footer-icon-fa.svg" srcset="" />
+              <img src="/assets/images/footer-icon-fa.svg" />
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="/assets/images/footer-icon-tg.svg" srcset="" />
+              <img src="/assets/images/footer-icon-tg.svg" />
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="/assets/images/footer-icon-ig.svg" srcset="" />
+              <img src="/assets/images/footer-icon-ig.svg" />
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="/assets/images/footer-icon-in.svg" srcset="" />
+              <img src="/assets/images/footer-icon-in.svg" />
             </a>
           </li>
         </ul>
@@ -687,45 +903,180 @@
 
       <div class="mdl-mega-footer__middle-section">
         <div class="mdl-mega-footer__links-section">
-          <span class="mdl-mega-footer__heading">Company</span>
+          <span
+            class="ddx-locale mdl-mega-footer__heading"
+            data-resource_code="footer_links_company"
+            >Company</span
+          >
           <ul class="mdl-mega-footer__links-list">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li>
+              <a
+                class="ddx-locale"
+                href="#"
+                data-resource_code="footer_links_about"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="ddx-locale"
+                href="#"
+                data-resource_code="footer_links_careers"
+                >Careers</a
+              >
+            </li>
+            <li>
+              <a
+                class="ddx-locale"
+                href="#"
+                data-resource_code="footer_links_terms"
+                >Terms of Service</a
+              >
+            </li>
+            <li>
+              <a
+                class="ddx-locale"
+                href="#"
+                data-resource_code="footer_links_privacy"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a
+                class="ddx-locale"
+                href="#"
+                data-resource_code="footer_links_contact"
+                >Contact Us</a
+              >
+            </li>
           </ul>
         </div>
 
         <div class="mdl-mega-footer__links-section">
-          <span class="mdl-mega-footer__heading">Services</span>
+          <span
+            class="ddx-locale mdl-mega-footer__heading"
+            data-resource_code="footer_links_services"
+            >Services</span
+          >
           <ul class="mdl-mega-footer__links-list">
-            <li><a href="#">API</a></li>
-            <li><a href="#">Fees and Limits</a></li>
-            <li><a href="#">Application</a></li>
-            <li><a href="#">Trading Rules</a></li>
+            <li>
+              <a
+                class="ddx-locale"
+                href="#"
+                data-resource_code="footer_links_api"
+                >API</a
+              >
+            </li>
+            <li>
+              <a
+                class="ddx-locale"
+                href="#"
+                data-resource_code="footer_links_fees"
+                >Fees and Limits</a
+              >
+            </li>
+            <li>
+              <a
+                class="ddx-locale"
+                onclick="scrollToElementID('app-section')"
+                data-resource_code="footer_links_app"
+                >Application</a
+              >
+            </li>
+            <li>
+              <a
+                class="ddx-locale"
+                href="#"
+                data-resource_code="footer_links_rules"
+                >Trading Rules</a
+              >
+            </li>
           </ul>
         </div>
 
         <div class="mdl-mega-footer__links-section">
-          <span class="mdl-mega-footer__heading">Product</span>
+          <span
+            class="ddx-locale mdl-mega-footer__heading"
+            data-resource_code="footer_links_product"
+            >Product</span
+          >
           <ul class="mdl-mega-footer__links-list">
             <li><a href="/trade">Trade</a></li>
             <li><a href="/invest">Invest</a></li>
-            <li><a href="#">Exchange</a></li>
-            <li><a href="#">P2P Exchange</a></li>
-            <li><a href="#">DidPay</a></li>
+            <li>
+              <a
+                class="ddx-locale"
+                onclick="scrollToElementID('exchange-section')"
+                data-resource_code="footer_links_exchange"
+                >Exchange</a
+              >
+            </li>
+            <li>
+              <a
+                class="ddx-locale"
+                onclick="scrollToElementID('exchange-section')"
+                data-resource_code="footer_links_p2p"
+                >P2P Exchange</a
+              >
+            </li>
+            <li>
+              <a
+                class="ddx-locale"
+                onclick="scrollToElementID('pay-section')"
+                data-resource_code="footer_links_pay"
+                >DidPay</a
+              >
+            </li>
           </ul>
         </div>
 
         <div class="mdl-mega-footer__links-section">
-          <span class="mdl-mega-footer__heading">Support</span>
+          <span
+            class="ddx-locale mdl-mega-footer__heading"
+            data-resource_code="footer_links_support"
+            >Support</span
+          >
           <ul class="mdl-mega-footer__links-list">
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Help Center</a></li>
-            <li><a href="#">Security Guidelines</a></li>
-            <li><a href="#">API Documentation</a></li>
-            <li><a href="#">Glossary</a></li>
+            <li>
+              <a
+                class="ddx-locale"
+                href="#"
+                data-resource_code="footer_links_faq"
+                >FAQ</a
+              >
+            </li>
+            <li>
+              <a
+                class="ddx-locale"
+                href="#"
+                data-resource_code="footer_links_help"
+                >Help Center</a
+              >
+            </li>
+            <li>
+              <a
+                class="ddx-locale"
+                href="#"
+                data-resource_code="footer_links_security"
+                >Security Guidelines</a
+              >
+            </li>
+            <li>
+              <a
+                class="ddx-locale"
+                href="#"
+                data-resource_code="footer_links_apidoc"
+                >API Documentation</a
+              >
+            </li>
+            <li>
+              <a
+                class="ddx-locale"
+                href="#"
+                data-resource_code="footer_links_glossary"
+                >Glossary</a
+              >
+            </li>
           </ul>
         </div>
       </div>

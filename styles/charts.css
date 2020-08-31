@@ -37,15 +37,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100px;
+  width: 85px;
   height: 100px;
+  margin-inline-end: 10px;
   object-fit: contain;
 }
-
+/* 
 #volume-7d-icon {
   width: 80px;
   margin-inline-end: 15px;
-}
+} */
 
 .charts__volume-details {
   display: flex;
@@ -54,6 +55,7 @@
 
 .charts__volume-title {
   font-size: 16px;
+  margin-bottom: 5px;
   color: #7d88b3;
 }
 
@@ -339,10 +341,6 @@
     margin-inline-end: 20px;
   }
 
-  #volume-7d-icon {
-    margin-inline-end: 35px;
-  }
-
   .charts__volume-details {
     width: 30%;
     text-align: start;
@@ -372,10 +370,6 @@
 
   .charts__volume-icon {
     margin-inline-end: 10px;
-  }
-
-  #volume-7d-icon {
-    margin-inline-end: 25px;
   }
 
   .charts__chart-card {

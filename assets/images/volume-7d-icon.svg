@@ -1,10 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="92.362" height="82.269" viewBox="0 0 92.362 82.269">
-  <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(0 2)">
-    <circle id="Ellipse_37" data-name="Ellipse 37" cx="32" cy="32" r="32" transform="translate(0 7.779)" fill="#e7f3f7"/>
-    <g id="Group_2291" data-name="Group 2291" transform="translate(12.093)">
-      <path id="Path_2748" data-name="Path 2748" d="M330.853,426.821A39.138,39.138,0,1,1,298.4,409.567" transform="translate(-259.267 -409.567)" fill="none" stroke="#7d88b3" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
-      <path id="Path_2749" data-name="Path 2749" d="M268.836,443.332a30.642,30.642,0,1,1,8.413,27.517" transform="translate(-259.781 -410.049)" fill="none" stroke="#7d88b3" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
-      <text id="_7D" data-name="7D" transform="translate(23.255 51.021)" fill="#7d88b3" font-size="27" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">7D</tspan></text>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="89" height="89" viewBox="0 0 89 89">
+  <g id="Group_2291" data-name="Group 2291" transform="translate(2 2)">
+    <path id="Path_2748" data-name="Path 2748" d="M337.009,428.3a42.5,42.5,0,1,1-35.242-18.737" transform="translate(-259.267 -409.567)" fill="none" stroke="#7d88b3" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
+    <path id="Path_2749" data-name="Path 2749" d="M268.836,446.055a34.035,34.035,0,1,1,9.346,30.539" transform="translate(-259.781 -410.049)" fill="none" stroke="#7d88b3" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
+    <path id="Path_6686" data-name="Path 6686" d="M1.485-19.035H14.742v2.592L6.1,0H2.4l8.613-16.227H1.485Zm16.767,0h7.02q4.671,0,7.249,2.5A9.3,9.3,0,0,1,35.1-9.531a9.347,9.347,0,0,1-2.579,7.02Q29.943,0,25.272,0h-7.02Zm6.8,16.2q6.561,0,6.561-6.7,0-6.669-6.561-6.669H21.735V-2.835Z" transform="translate(24.683 54.655)" fill="#7d88b3"/>
   </g>
 </svg>

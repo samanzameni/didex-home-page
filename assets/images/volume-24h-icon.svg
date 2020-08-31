@@ -1,10 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="114.593" height="114.593" viewBox="0 0 114.593 114.593">
-  <g id="Group_2294" data-name="Group 2294" transform="translate(-698.187 -1204.932)">
-    <circle id="Ellipse_38" data-name="Ellipse 38" cx="31.5" cy="31.5" r="31.5" transform="translate(699 1230.873)" fill="#d8eff6" opacity="0.54"/>
-    <g id="Group_2292" data-name="Group 2292" transform="translate(701.015 1207.761)">
-      <path id="Path_2748" data-name="Path 2748" d="M70.452,16.98A38.518,38.518,0,1,1,38.515,0" transform="translate(0 54.468) rotate(-45)" fill="none" stroke="#7d88b3" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
-      <path id="Path_2749" data-name="Path 2749" d="M0,24.4A30.157,30.157,0,1,1,8.28,51.477" transform="translate(12.213 54.078) rotate(-45)" fill="none" stroke="#7d88b3" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
-      <text id="_24H" data-name="24H" transform="translate(32.985 64.112)" fill="#7d88b3" font-size="21" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">24H</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="85" height="85" viewBox="0 0 85 85">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1951" data-name="Rectangle 1951" width="85" height="85" transform="translate(706 1214)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_30" data-name="Mask Group 30" transform="translate(-706 -1214)" clip-path="url(#clip-path)">
+    <g id="Group_2294" data-name="Group 2294" transform="translate(-7 -6.873)">
+      <g id="Group_2292" data-name="Group 2292" transform="translate(701.015 1207.761)">
+        <path id="Path_2748" data-name="Path 2748" d="M70.452,16.98A38.518,38.518,0,1,1,38.515,0" transform="translate(0 54.468) rotate(-45)" fill="none" stroke="#7d88b3" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
+        <path id="Path_2749" data-name="Path 2749" d="M0,24.4A30.157,30.157,0,1,1,8.28,51.477" transform="translate(12.213 54.078) rotate(-45)" fill="none" stroke="#7d88b3" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
+        <path id="Path_6687" data-name="Path 6687" d="M11.487-2.184V0H1.533V-2l5.04-5.418A8.289,8.289,0,0,0,7.865-9.188a3.532,3.532,0,0,0,.41-1.606A1.933,1.933,0,0,0,7.7-12.317a2.466,2.466,0,0,0-1.69-.514A6.623,6.623,0,0,0,2-11.3l-.9-1.974a6.63,6.63,0,0,1,2.258-1.25,8.452,8.452,0,0,1,2.761-.473A5.317,5.317,0,0,1,9.639-13.9a3.639,3.639,0,0,1,1.3,2.94,5.429,5.429,0,0,1-.546,2.4,10.656,10.656,0,0,1-1.848,2.51L4.914-2.184ZM24.654-5v2.1H22.575V0H19.929V-2.9H13.5V-4.893l6.888-9.912h2.184V-5ZM16.023-5h3.906v-5.649Zm21.042-9.807h2.646V0H37.065V-6.426H29.484V0H26.817V-14.805h2.667v6.2h7.581Z" transform="translate(32.985 64.112)" fill="#7d88b3"/>
+      </g>
     </g>
   </g>
 </svg>

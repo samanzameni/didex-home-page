@@ -140,7 +140,7 @@
 
   .header__content-container {
     flex-direction: column-reverse;
-    padding-top: 64px;
+    padding-top: 40px;
   }
 
   .header__content-item {
@@ -163,5 +163,18 @@
 
   .header__content-container {
     margin: 0 10px;
+  }
+
+  .header__title {
+    font-size: 32px;
+  }
+
+  .header__subtitle {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .header__content-container {
+    padding-top: 0;
   }
 }

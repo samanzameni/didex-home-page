@@ -113,6 +113,7 @@
   .exchange-mockup__container {
     align-self: center;
     max-width: 500px;
+    margin-top: 35px;
   }
 
   .exchange-content__container {

@@ -12,6 +12,116 @@ body.fa .invest__cta-link-icon,
 body.fa .app__cta-link-icon,
 body.fa .exchange__cta-link-icon,
 body.fa .pay__cta-link-icon,
-body.fa .waller__cta-link-icon {
+body.fa .wallet__cta-link-icon {
   transform: rotateZ(180deg);
+}
+
+body.fa .ddx-navigation__apps-item {
+  direction: rtl;
+}
+
+body.fa .header__container {
+  background-image: url("/assets/images/trade-bg-fa.svg");
+}
+
+body.fa .header__title {
+  font-weight: bold;
+  font-size: 42px;
+}
+
+body.fa .header__subtitle {
+  font-size: 30px;
+}
+
+body.fa .ddx-navigation-secondary {
+  direction: rtl;
+}
+
+body.fa .charts__title {
+  font-size: 30px;
+}
+
+body.fa #invest-section {
+  background-image: url("/assets/images/invest-bg-fa.svg");
+}
+
+body.fa .invest__subtitle {
+  margin: 10px 0;
+  text-align: start;
+}
+
+body.fa .invest__cta-link {
+  justify-content: flex-start;
+}
+
+body.fa .invest-content__container {
+  padding-bottom: 10px;
+}
+
+body.fa .app__subtitle {
+  text-align: start;
+}
+
+body.fa .app__cta-link {
+  justify-content: flex-start;
+}
+
+body.fa #exchange-section {
+  background-position-x: 100%;
+}
+
+body.fa .pay__subtitle {
+  text-align: start;
+}
+
+body.fa .pay__cta-link {
+  justify-content: flex-start;
+}
+
+body.fa .wallet__subtitle {
+  width: 323px;
+}
+
+body.fa .wallet__cta-link {
+  justify-content: flex-start;
+}
+
+body.fa .features__card-icon {
+  width: fit-content;
+}
+
+body.fa .features__card-title {
+  font-weight: normal;
+  text-align: start;
+}
+
+body.fa .features__card-body {
+  font-weight: 100;
+  margin-top: 10px;
+  text-align: start;
+}
+
+body.fa .features__cards-list {
+  direction: ltr;
+}
+
+body.fa .features__card-item {
+  direction: rtl;
+}
+
+body.fa #featureIconEase {
+  transform: rotateY(180deg) translateX(-15px);
+}
+
+body.fa #wallet-section {
+  background-image: url("/assets/images/wallet-bg-fa.svg");
+  background-position-x: 80px;
+}
+
+body.fa .mdl-mega-footer {
+  direction: ltr;
+}
+
+body.fa .mdl-mega-footer > div {
+  direction: rtl;
 }

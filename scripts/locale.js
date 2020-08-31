@@ -19,6 +19,7 @@ function changeLocale(newLocale, shouldStore = false) {
 
   updateTextContent();
   updateBodyClass();
+  updateAssets();
 }
 
 function updateTextContent() {

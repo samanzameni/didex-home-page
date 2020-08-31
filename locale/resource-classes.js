@@ -119,7 +119,7 @@ const RESOURCE = {
     navbar_second_Pay: "درگاه پرداخت",
     navbar_second_Wallet: "کیف پول",
 
-    charts_volume_7d: "حجم معاملات هفت‌روزه",
+    charts_volume_7d: "حجم معاملات 7روزه",
     charts_volume_24h: "حجم معاملات 24ساعته",
     charts_volume_users: "کاربران",
 
@@ -127,20 +127,22 @@ const RESOURCE = {
     charts_title_live: "قیمت لحظه‌ای",
 
     charts_live_Volume: "حجم معاملات",
-    charts_live_Change: "درصد تغییرات",
+    charts_live_Change: "تغییرات",
     charts_live_Chart: "نمودار",
     charts_live_buy: "خرید",
 
     invest_title: "سرمایه‌گذاری",
-    invest_subtitle: "مکان سرمایه‌گذاری را بشناسید تا سود مطلوبتان را به‌دست آورید",
+    invest_subtitle:
+      "مکان سرمایه‌گذاری را بشناسید تا سود مطلوبتان را به‌دست آورید",
     invest_cta: "شروع کنید",
 
-    app_coming_soon: "...به‌زودی",
+    app_coming_soon: "به‌زودی",
     app_title: "اپلیکیشن",
-    app_subtitle: "بیش از 45 رمز‌ارز متنوع را با قیمت واقعی، بدون کارمزد و بهره از ما بخواهید",
+    app_subtitle:
+      "بیش از 45 رمز‌ارز متنوع را با قیمت واقعی، بدون کارمزد و بهره از ما بخواهید",
     app_cta: "اطلاعات بیشتر",
 
-    exchange_coming_soon: "...به‌زودی",
+    exchange_coming_soon: "به‌زودی",
     exchange_title: "خرید و فروش مستقیم",
     exchange_subtitle:
       "ارائه‌ای قدرتمند از دیدکس، با نقدینگی بالا، کارمزد پایین و بهترین‌قیمت رقابتی",
@@ -162,12 +164,12 @@ const RESOURCE = {
     features_card_body_ease:
       "!رمزارز مورد نظر خود را با استفاده از کارت اعتباری خریداری کنید و از بهترین نرخ‌های موجود در بازار لذت ببرید",
 
-    pay_coming_soon: "...به‌زودی",
+    pay_coming_soon: "به‌زودی",
     pay_title: "درگاه پرداخت",
     pay_subtitle: "پرداخت و دریافت کریپتو در هر مکان و هر زمان",
     pay_cta: "اطلاعات بیشتر",
 
-    wallet_coming_soon: "...به‌زودی",
+    wallet_coming_soon: "به‌زودی",
     wallet_title: "کیف پول",
     wallet_subtitle: "مطابق با پیشرفته‌ترین روش‌های تامین امنیت",
     wallet_cta: "اطلاعات بیشتر",

@@ -75,6 +75,16 @@ function updateAJAXLoaders() {
   });
 }
 
+function updateAssets() {
+  const elements = document.querySelectorAll(".dynamic-asset");
+
+  elements.forEach(function (el) {
+    const src = currentLocale === "fa" ? el.dataset.src_fa : el.dataset.src_en;
+
+    el.setAttribute("src", src);
+  });
+}
+
 function scrollToElementID(elID) {
   const element = document.getElementById(elID);
   element.scrollIntoView({ behavior: "smooth" });

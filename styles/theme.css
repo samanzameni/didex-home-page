@@ -22,7 +22,7 @@ li {
 
 html.fa,
 body.fa {
-  font-family: Shabnam;
+  font-family: IRANSans, Shabnam;
 }
 
 .fa h1,
@@ -39,7 +39,7 @@ body.fa {
 .fa button,
 .fa .mdl-button,
 .fa li {
-  font-family: Shabnam;
+  font-family: IRANSans, Shabnam;
 }
 
 .mdl-button--accent.mdl-button--accent.mdl-button--raised,

@@ -87,9 +87,28 @@ function updateAssets() {
 
 function scrollToElementID(elID) {
   const element = document.getElementById(elID);
-  element.scrollIntoView({ behavior: "smooth" });
+  element.scrollIntoView({ behavior: "smooth", block: "center" });
 }
 
+function listenToKavianZ() {
+  const sections = document.querySelectorAll(".body-section");
+  const links = document.querySelectorAll(
+    ".ddx-navigation-secondary .mdl-navigation__link"
+  );
+  sections.forEach(function (section) {
+    section.addEventListener("mouseenter", function ($event) {
+      const id = section.getAttribute("id");
+
+      links.forEach(function (link) {
+        link.classList.remove("active");
+      });
+
+      document.getElementById("for-" + id).classList.add("active");
+    });
+  });
+}
+
+listenToKavianZ();
 loadAccessToken();
 loadTawkToScript();
 updateAJAXLoaders();

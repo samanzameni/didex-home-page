@@ -63,3 +63,7 @@ body.fa {
   padding-right: 0;
   padding-inline-end: 40px;
 }
+
+.hidden-by-auth {
+  display: none;
+}

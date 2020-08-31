@@ -109,6 +109,10 @@ body.fa .features__card-item {
   direction: rtl;
 }
 
+body.fa .ddx-navigation-secondary .mdl-navigation__link.active {
+  font-weight: normal;
+}
+
 body.fa #featureIconEase {
   transform: rotateY(180deg) translateX(-15px);
 }

@@ -63,7 +63,7 @@
     <link rel="stylesheet" href="styles/rtl.css" />
   </head>
   <body>
-    <div class="header__container" id="trade-section">
+    <div class="body-section header__container" id="trade-section">
       <header
         class="mdl-layout__header mdl-layout__main-header mdl-layout__header--transparent"
       >
@@ -84,16 +84,49 @@
           <nav class="mdl-navigation ddx-navigation">
             <a
               href="/auth/signin"
-              class="ddx-locale mdl-button mdl-js-button mdl-js-ripple-effect ddx-navigation__signin-button"
+              class="ddx-locale no-auth mdl-button mdl-js-button mdl-js-ripple-effect ddx-navigation__signin-button"
               data-resource_code="navbar_signin"
             >
             </a>
             <a
               href="/auth/signup"
-              class="ddx-locale mdl-button mdl-js-button mdl-button--raised mdl-button--accent ddx-navigation__signup-button"
+              class="ddx-locale no-auth mdl-button mdl-js-button mdl-button--raised mdl-button--accent ddx-navigation__signup-button"
               data-resource_code="navbar_signup"
             >
             </a>
+
+            <div class="auth-needed ddx-navigation__apps-menu-container">
+              <button
+                id="profile-menu"
+                class="mdl-button mdl-js-button ddx-navigation__profile-toggle-button"
+              >
+                <img
+                  src="/assets/images/profile-icon.svg"
+                  width="22px"
+                  height="22px"
+                />
+                <b class="ddx-locale" data-resource_code="navbar_profile">
+                  Profile
+                </b>
+                <img
+                  src="/assets/images/arrow-icon.svg"
+                  width="12px"
+                  height="12px"
+                />
+              </button>
+
+              <ul
+                class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                for="profile-menu"
+              >
+                <li class="mdl-menu__item">
+                  <span
+                    class="ddx-locale"
+                    data-resource_code="navbar_profile_hello"
+                  ></span>
+                </li>
+              </ul>
+            </div>
 
             <div class="ddx-navigation__apps-menu-container">
               <button
@@ -192,12 +225,12 @@
           <div class="mdl-layout__header-row">
             <span class="mdl-layout-title ddx-logo__container">
               <img
-                src="/assets/images/didex-logo-alt.svg"
+                src="/assets/images/didex-logo.svg"
                 class="ddx-logo__symbol"
                 alt="didex logo"
               />
               <img
-                src="/assets/images/didex-logo-text-alt.svg"
+                src="/assets/images/didex-logo-text.svg"
                 class="ddx-logo__text alt"
                 alt="didex logo"
               />
@@ -206,48 +239,56 @@
             <nav class="mdl-navigation ddx-navigation-secondary">
               <a
                 class="ddx-locale mdl-navigation__link"
+                id="for-trade-section"
                 onclick="scrollToElementID('trade-section')"
                 data-resource_code="navbar_second_Trade"
                 >Trade</a
               >
               <a
                 class="ddx-locale mdl-navigation__link"
+                id="for-charts-section"
                 onclick="scrollToElementID('charts-section')"
                 data-resource_code="navbar_second_Chart"
                 >Chart</a
               >
               <a
                 class="ddx-locale mdl-navigation__link"
+                id="for-invest-section"
                 onclick="scrollToElementID('invest-section')"
                 data-resource_code="navbar_second_Invest"
                 >Invest</a
               >
               <a
                 class="ddx-locale mdl-navigation__link"
+                id="for-app-section"
                 onclick="scrollToElementID('app-section')"
                 data-resource_code="navbar_second_App"
                 >App</a
               >
               <a
                 class="ddx-locale mdl-navigation__link"
+                id="for-exchange-section"
                 onclick="scrollToElementID('exchange-section')"
                 data-resource_code="navbar_second_Exchange"
                 >Exchange</a
               >
               <a
                 class="ddx-locale mdl-navigation__link"
+                id="for-features-section"
                 onclick="scrollToElementID('features-section')"
                 data-resource_code="navbar_second_Features"
                 >Features</a
               >
               <a
                 class="ddx-locale mdl-navigation__link"
+                id="for-pay-section"
                 onclick="scrollToElementID('pay-section')"
                 data-resource_code="navbar_second_Pay"
                 >Pay</a
               >
               <a
                 class="ddx-locale mdl-navigation__link"
+                id="for-wallet-section"
                 onclick="scrollToElementID('wallet-section')"
                 data-resource_code="navbar_second_Wallet"
                 >Wallet</a
@@ -256,7 +297,7 @@
           </div>
         </header>
       </div>
-      <section id="charts-section">
+      <section class="body-section" id="charts-section">
         <ul class="charts__volume-container">
           <li class="charts__volume-item">
             <img
@@ -668,7 +709,7 @@
           </ul>
         </div>
       </section>
-      <section id="invest-section">
+      <section class="body-section" id="invest-section">
         <ul class="invest__content-container">
           <li class="invest__content-item invest-mockup__container">
             <img
@@ -707,7 +748,7 @@
           </li>
         </ul>
       </section>
-      <section id="app-section">
+      <section class="body-section" id="app-section">
         <ul class="app__content-container">
           <li class="app__content-item app-content__container">
             <h4
@@ -744,7 +785,7 @@
           </li>
         </ul>
       </section>
-      <section id="exchange-section">
+      <section class="body-section" id="exchange-section">
         <ul class="exchange__content-container">
           <li class="exchange__content-item exchange-mockup__container">
             <img
@@ -790,7 +831,7 @@
           </li>
         </ul>
       </section>
-      <section id="features-section">
+      <section class="body-section" id="features-section">
         <h2
           class="ddx-locale features__title"
           data-resource_code="features_title"
@@ -876,7 +917,7 @@
           </li>
         </ul>
       </section>
-      <section id="pay-section">
+      <section class="body-section" id="pay-section">
         <ul class="pay__content-container">
           <li class="pay__content-item pay-mockup__container">
             <img
@@ -918,7 +959,7 @@
           </li>
         </ul>
       </section>
-      <section id="wallet-section">
+      <section class="body-section" id="wallet-section">
         <ul class="wallet__content-container">
           <li class="wallet__content-item wallet-content__container">
             <h4
@@ -1207,5 +1248,6 @@
     <script src="/scripts/charts.js"></script>
     <script src="/scripts/index.js"></script>
     <script src="/scripts/locale.js"></script>
+    <script src="/scripts/auth.js"></script>
   </body>
 </html>

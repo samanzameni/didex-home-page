@@ -87,6 +87,16 @@
   box-sizing: border-box;
 }
 
+.ddx-navigation__profile-toggle-button {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.ddx-navigation__profile-toggle-button b {
+  margin: 0 10px;
+}
+
 .ddx-navigation__apps-menu-container {
   position: relative;
 }
@@ -118,15 +128,31 @@
 .main__sticky-navbar {
   position: sticky;
   top: 0;
-  background-color: #fff;
+  background-color: #0e2d5f;
   z-index: 2;
   border-bottom: 1px solid #aaa4;
-  box-shadow: 0 3px 15px #aaa4;
+  box-shadow: 0 5px 10px #aaa4;
+}
+
+.main__sticky-navbar .ddx-logo__symbol {
+  height: 28px;
+}
+
+.main__sticky-navbar .mdl-layout__header,
+.main__sticky-navbar .mdl-layout__header-row {
+  height: 46px;
+  min-height: 46px;
 }
 
 .ddx-navigation-secondary .mdl-navigation__link {
-  color: #0e2d5f;
+  color: white;
   cursor: pointer;
+  transition: 0.23s ease-in-out;
+}
+
+.ddx-navigation-secondary .mdl-navigation__link.active {
+  color: #f5aa28;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 1024px) {

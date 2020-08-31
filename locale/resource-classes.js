@@ -5,6 +5,7 @@ const RESOURCE = {
     navbar_home: "Home",
     navbar_trade: "Trade",
     navbar_invest: "Invest",
+    navbar_profile: "Profile",
 
     header_title: "Trade",
     header_subtitle: "Start your crypto journey!",
@@ -106,6 +107,8 @@ const RESOURCE = {
     navbar_home: "خانه",
     navbar_trade: "بازار حرفه‌ای",
     navbar_invest: "سرمایه‌گذاری",
+    navbar_profile: "نمایه",
+
     header_title: "پلتفرم معاملات ارز دیجیتال",
     header_subtitle: "تجربه‌ای امن از تجارت جهانی!",
     header_cta: "شروع کنید",

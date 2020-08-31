@@ -319,60 +319,120 @@
             <li class="charts__chart-card positive-change">
               <div class="charts__chart-symbol-container">
                 <img
-                  src="https://www.cryptocompare.com//media/20646/eth_logo.png"
-                  alt=""
-                  class="charts__chart-symbol-icon"
+                  data-ajax="symbol1Logo"
+                  data-format="src"
+                  class="ajax-load charts__chart-symbol-icon"
                 />
-                <h4 class="charts__chart-symbol-name">ETH/USDT</h4>
+                <h4
+                  class="ajax-load charts__chart-symbol-name"
+                  data-ajax="symbol1"
+                >
+                  ETH/USDT
+                </h4>
               </div>
               <div class="charts__chart-prices-container">
-                <span class="charts__chart-price">5678</span>
-                <span class="charts__chart-price-change">+1.945%</span>
+                <span
+                  class="ajax-load charts__chart-price"
+                  data-ajax="volume1"
+                  data-format="currency"
+                  data-currency="$"
+                  >5678</span
+                >
+                <span
+                  class="ajax-load charts__chart-price-change"
+                  data-ajax="change1"
+                  >+1.945%</span
+                >
               </div>
               <div class="ct-chart charts__chartist-world-price"></div>
             </li>
             <li class="charts__chart-card negative-change">
               <div class="charts__chart-symbol-container">
                 <img
-                  src="https://www.cryptocompare.com//media/20646/eth_logo.png"
-                  alt=""
-                  class="charts__chart-symbol-icon"
+                  data-ajax="symbol2Logo"
+                  data-format="src"
+                  class="ajax-load charts__chart-symbol-icon"
                 />
-                <h4 class="charts__chart-symbol-name">ETH/USDT</h4>
+                <h4
+                  class="ajax-load charts__chart-symbol-name"
+                  data-ajax="symbol2"
+                >
+                  ETH/USDT
+                </h4>
               </div>
               <div class="charts__chart-prices-container">
-                <span class="charts__chart-price">5678</span>
-                <span class="charts__chart-price-change">+1.945%</span>
+                <span
+                  class="ajax-load charts__chart-price"
+                  data-ajax="volume2"
+                  data-format="currency"
+                  data-currency="$"
+                  >5678</span
+                >
+                <span
+                  class="ajax-load charts__chart-price-change"
+                  data-ajax="change2"
+                  >+1.945%</span
+                >
               </div>
               <div class="ct-chart charts__chartist-world-price"></div>
             </li>
             <li class="charts__chart-card negative-change">
               <div class="charts__chart-symbol-container">
                 <img
-                  src="https://www.cryptocompare.com//media/20646/eth_logo.png"
-                  alt=""
-                  class="charts__chart-symbol-icon"
+                  data-ajax="symbol3Logo"
+                  data-format="src"
+                  class="ajax-load charts__chart-symbol-icon"
                 />
-                <h4 class="charts__chart-symbol-name">ETH/USDT</h4>
+                <h4
+                  class="ajax-load charts__chart-symbol-name"
+                  data-ajax="symbol3"
+                >
+                  ETH/USDT
+                </h4>
               </div>
               <div class="charts__chart-prices-container">
-                <span class="charts__chart-price">5678</span>
-                <span class="charts__chart-price-change">+1.945%</span>
+                <span
+                  class="ajax-load charts__chart-price"
+                  data-ajax="volume3"
+                  data-format="currency"
+                  data-currency="$"
+                  >5678</span
+                >
+                <span
+                  class="ajax-load charts__chart-price-change"
+                  data-ajax="change3"
+                  >+1.945%</span
+                >
               </div>
               <div class="ct-chart charts__chartist-world-price"></div>
             </li>
             <li class="charts__chart-card negative-change">
               <div class="charts__chart-symbol-container">
                 <img
-                  src="https://www.cryptocompare.com//media/20646/eth_logo.png"
-                  alt=""
-                  class="charts__chart-symbol-icon"
+                  data-ajax="symbol4Logo"
+                  data-format="src"
+                  class="ajax-load charts__chart-symbol-icon"
                 />
-                <h4 class="charts__chart-symbol-name">ETH/USDT</h4>
+                <h4
+                  class="ajax-load charts__chart-symbol-name"
+                  data-ajax="symbol4"
+                >
+                  ETH/USDT
+                </h4>
               </div>
               <div class="charts__chart-prices-container">
-                <span class="charts__chart-price">5678</span>
-                <span class="charts__chart-price-change">+1.945%</span>
+                <span
+                  class="ajax-load charts__chart-price"
+                  data-ajax="volume4"
+                  data-format="currency"
+                  data-currency="$"
+                  >5678</span
+                >
+                <span
+                  class="ajax-load charts__chart-price-change"
+                  data-ajax="change4"
+                  >+1.945%</span
+                >
               </div>
               <div class="ct-chart charts__chartist-world-price"></div>
             </li>
@@ -388,12 +448,17 @@
           <ul class="prices__price-cards">
             <li class="prices__price-card positive-change">
               <img
-                src="https://www.cryptocompare.com//media/20646/eth_logo.png"
-                class="prices__symbol-logo"
+                data-ajax="symbol1Logo"
+                data-format="src"
+                class="ajax-load prices__symbol-logo"
               />
               <div class="prices__symbol-details">
-                <h5 class="prices__symbol-name">ETH/USDT</h5>
-                <span class="prices__symbol-value">87191</span>
+                <h5 class="prices__symbol-name" data-ajax="symbol1">
+                  ETH/USDT
+                </h5>
+                <!-- <span class="ajax-load prices__symbol-value" data-ajax="7DaysVolume"
+                data-format="currency"
+                data-currency="$">87191</span> -->
               </div>
               <div class="prices__volume-details">
                 <span
@@ -401,7 +466,13 @@
                   data-resource_code="charts_live_Volume"
                   >Volume</span
                 >
-                <span class="prices__subsection-value">12345</span>
+                <span
+                  class="ajax-load prices__subsection-value"
+                  data-ajax="volume1"
+                  data-format="currency"
+                  data-currency="$"
+                  >12345</span
+                >
               </div>
               <div class="prices__change-details">
                 <span
@@ -409,7 +480,9 @@
                   data-resource_code="charts_live_Change"
                   >Change</span
                 >
-                <span class="prices__subsection-value change-value"
+                <span
+                  class="ajax-load prices__subsection-value change-value"
+                  data-ajax="change1"
                   >1.2345%</span
                 >
               </div>
@@ -430,12 +503,15 @@
             </li>
             <li class="prices__price-card negative-change">
               <img
-                src="https://www.cryptocompare.com//media/20646/eth_logo.png"
-                class="prices__symbol-logo"
+                data-ajax="symbol2Logo"
+                data-format="src"
+                class="ajax-load prices__symbol-logo"
               />
               <div class="prices__symbol-details">
-                <h5 class="prices__symbol-name">ETH/USDT</h5>
-                <span class="prices__symbol-value">87191</span>
+                <h5 class="prices__symbol-name" data-ajax="symbol2">
+                  ETH/USDT
+                </h5>
+                <!-- <span class="prices__symbol-value">87191</span> -->
               </div>
               <div class="prices__volume-details">
                 <span
@@ -443,7 +519,13 @@
                   data-resource_code="charts_live_Volume"
                   >Volume</span
                 >
-                <span class="prices__subsection-value">12345</span>
+                <span
+                  class="ajax-load prices__subsection-value"
+                  data-ajax="volume2"
+                  data-format="currency"
+                  data-currency="$"
+                  >12345</span
+                >
               </div>
               <div class="prices__change-details">
                 <span
@@ -451,7 +533,9 @@
                   data-resource_code="charts_live_Change"
                   >Change</span
                 >
-                <span class="prices__subsection-value change-value"
+                <span
+                  class="ajax-load prices__subsection-value change-value"
+                  data-ajax="change2"
                   >1.2345%</span
                 >
               </div>
@@ -472,12 +556,15 @@
             </li>
             <li class="prices__price-card positive-change">
               <img
-                src="https://www.cryptocompare.com//media/20646/eth_logo.png"
-                class="prices__symbol-logo"
+                data-ajax="symbol3Logo"
+                data-format="src"
+                class="ajax-load prices__symbol-logo"
               />
               <div class="prices__symbol-details">
-                <h5 class="prices__symbol-name">ETH/USDT</h5>
-                <span class="prices__symbol-value">87191</span>
+                <h5 class="prices__symbol-name" data-ajax="symbol3">
+                  ETH/USDT
+                </h5>
+                <!-- <span class="prices__symbol-value">87191</span> -->
               </div>
               <div class="prices__volume-details">
                 <span
@@ -485,7 +572,13 @@
                   data-resource_code="charts_live_Volume"
                   >Volume</span
                 >
-                <span class="prices__subsection-value">12345</span>
+                <span
+                  class="ajax-load prices__subsection-value"
+                  data-ajax="volume3"
+                  data-format="currency"
+                  data-currency="$"
+                  >12345</span
+                >
               </div>
               <div class="prices__change-details">
                 <span
@@ -493,7 +586,9 @@
                   data-resource_code="charts_live_Change"
                   >Change</span
                 >
-                <span class="prices__subsection-value change-value"
+                <span
+                  class="ajax-load prices__subsection-value change-value"
+                  data-ajax="change3"
                   >1.2345%</span
                 >
               </div>
@@ -514,12 +609,15 @@
             </li>
             <li class="prices__price-card positive-change">
               <img
-                src="https://www.cryptocompare.com//media/20646/eth_logo.png"
-                class="prices__symbol-logo"
+                data-ajax="symbol4Logo"
+                data-format="src"
+                class="ajax-load prices__symbol-logo"
               />
               <div class="prices__symbol-details">
-                <h5 class="prices__symbol-name">ETH/USDT</h5>
-                <span class="prices__symbol-value">87191</span>
+                <h5 class="prices__symbol-name" data-ajax="symbol4">
+                  ETH/USDT
+                </h5>
+                <!-- <span class="prices__symbol-value">87191</span> -->
               </div>
               <div class="prices__volume-details">
                 <span
@@ -527,7 +625,13 @@
                   data-resource_code="charts_live_Volume"
                   >Volume</span
                 >
-                <span class="prices__subsection-value">12345</span>
+                <span
+                  class="ajax-load prices__subsection-value"
+                  data-ajax="volume4"
+                  data-format="currency"
+                  data-currency="$"
+                  >12345</span
+                >
               </div>
               <div class="prices__change-details">
                 <span
@@ -535,7 +639,9 @@
                   data-resource_code="charts_live_Change"
                   >Change</span
                 >
-                <span class="prices__subsection-value change-value"
+                <span
+                  class="ajax-load prices__subsection-value change-value"
+                  data-ajax="change4"
                   >1.2345%</span
                 >
               </div>
@@ -874,27 +980,30 @@
 
         <ul class="footer__link-list">
           <li>
-            <a href="#">
+            <a target="_blank" href="https://www.twitter.com/didexcrypto/">
               <img src="/assets/images/footer-icon-tw.svg" />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a target="_blank" href="https://www.facebook.com/crypto.didex/">
               <img src="/assets/images/footer-icon-fa.svg" />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a target="_blank" href="https://t.me/didexcrypto/">
               <img src="/assets/images/footer-icon-tg.svg" />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a target="_blank" href="https://www.instagram.com/didexcrypto/">
               <img src="/assets/images/footer-icon-ig.svg" />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/company/didexcrypto"
+            >
               <img src="/assets/images/footer-icon-in.svg" />
             </a>
           </li>
@@ -912,7 +1021,7 @@
             <li>
               <a
                 class="ddx-locale"
-                href="#"
+                href="/about-us"
                 data-resource_code="footer_links_about"
                 >About</a
               >
@@ -920,7 +1029,7 @@
             <li>
               <a
                 class="ddx-locale"
-                href="#"
+                href="/careers"
                 data-resource_code="footer_links_careers"
                 >Careers</a
               >
@@ -928,7 +1037,7 @@
             <li>
               <a
                 class="ddx-locale"
-                href="#"
+                href="/terms-service"
                 data-resource_code="footer_links_terms"
                 >Terms of Service</a
               >
@@ -936,7 +1045,7 @@
             <li>
               <a
                 class="ddx-locale"
-                href="#"
+                href="/privacy-policy"
                 data-resource_code="footer_links_privacy"
                 >Privacy Policy</a
               >
@@ -944,7 +1053,7 @@
             <li>
               <a
                 class="ddx-locale"
-                href="#"
+                href="/contact"
                 data-resource_code="footer_links_contact"
                 >Contact Us</a
               >
@@ -962,7 +1071,7 @@
             <li>
               <a
                 class="ddx-locale"
-                href="#"
+                href="/api"
                 data-resource_code="footer_links_api"
                 >API</a
               >
@@ -970,7 +1079,7 @@
             <li>
               <a
                 class="ddx-locale"
-                href="#"
+                href="/fees-limits"
                 data-resource_code="footer_links_fees"
                 >Fees and Limits</a
               >
@@ -986,7 +1095,7 @@
             <li>
               <a
                 class="ddx-locale"
-                href="#"
+                href="/trading-rules"
                 data-resource_code="footer_links_rules"
                 >Trading Rules</a
               >
@@ -1040,7 +1149,7 @@
             <li>
               <a
                 class="ddx-locale"
-                href="#"
+                href="/help-center/faq"
                 data-resource_code="footer_links_faq"
                 >FAQ</a
               >
@@ -1048,7 +1157,7 @@
             <li>
               <a
                 class="ddx-locale"
-                href="#"
+                href="/help-center"
                 data-resource_code="footer_links_help"
                 >Help Center</a
               >
@@ -1056,7 +1165,7 @@
             <li>
               <a
                 class="ddx-locale"
-                href="#"
+                href="/security-guidelines"
                 data-resource_code="footer_links_security"
                 >Security Guidelines</a
               >
@@ -1064,7 +1173,7 @@
             <li>
               <a
                 class="ddx-locale"
-                href="#"
+                href="https://devapi.didex.com/swagger"
                 data-resource_code="footer_links_apidoc"
                 >API Documentation</a
               >
@@ -1072,7 +1181,7 @@
             <li>
               <a
                 class="ddx-locale"
-                href="#"
+                href="/glossary"
                 data-resource_code="footer_links_glossary"
                 >Glossary</a
               >
@@ -1082,10 +1191,11 @@
       </div>
     </footer>
 
+    <script src="/scripts/jwt-decode.min.js"></script>
     <script src="/locale/resource-classes.js"></script>
-    <script src="/scripts/index.js"></script>
     <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
     <script src="/scripts/charts.js"></script>
+    <script src="/scripts/index.js"></script>
     <script src="/scripts/locale.js"></script>
   </body>
 </html>

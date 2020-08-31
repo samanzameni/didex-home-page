@@ -197,6 +197,7 @@
   height: 32px;
   object-fit: contain;
   margin-inline-end: 5px;
+  border-radius: 100%;
 }
 
 .prices__symbol-details {
@@ -207,7 +208,7 @@
   font-size: 12px;
   font-weight: bold;
   color: #0e2d5f;
-  margin: 7px 0 0 0;
+  margin: 0;
 }
 
 .prices__symbol-value {

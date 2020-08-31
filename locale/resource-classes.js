@@ -88,6 +88,8 @@ const RESOURCE = {
     footer_links_app: "Application",
     footer_links_rules: "Trading Rules",
     footer_links_product: "Product",
+    footer_links_trade: "Trade",
+    footer_links_invest: "Invest",
     footer_links_exchange: "Exchange",
     footer_links_p2p: "P2P Exchange",
     footer_links_pay: "DidPay",

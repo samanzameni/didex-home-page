@@ -21,7 +21,7 @@ body.fa .ddx-navigation__apps-item {
 }
 
 body.fa .header__container {
-  background-image: url("/assets/images/trade-bg-fa.svg");
+  background-image: url("/newhome/assets/images/trade-bg-fa.svg");
 }
 
 body.fa .header__title {
@@ -118,7 +118,7 @@ body.fa #featureIconEase {
 }
 
 body.fa #wallet-section {
-  background-image: url("/assets/images/wallet-bg-fa.svg");
+  background-image: url("/newhome/assets/images/wallet-bg-fa.svg");
   background-position-x: 80px;
 }
 

@@ -18,6 +18,8 @@ const AJAX_DATA_DICT = {
   volume2: "0.00$",
   volume3: "0.00$",
   volume4: "0.00$",
+  navbar_name: "Trader",
+  navbar_email: "---",
 };
 
 let accessToken;

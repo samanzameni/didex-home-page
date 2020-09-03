@@ -42,7 +42,7 @@ body.fa .charts__title {
 }
 
 body.fa #invest-section {
-  background-image: url("/assets/images/invest-bg-fa.svg");
+  /* background-image: url("/assets/images/invest-bg-fa.svg"); */
 }
 
 body.fa .invest__subtitle {

@@ -67,3 +67,13 @@ body.fa {
 .hidden-by-auth {
   display: none;
 }
+
+.hidden-by-kyc {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  body #tawkchat-container {
+    display: none !important;
+  }
+}

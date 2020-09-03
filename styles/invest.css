@@ -1,6 +1,6 @@
 #invest-section {
-  background-color: #f7f7f7;
-  background-image: url("/assets/images/invest-bg.svg");
+  background-color: #214682;
+  /* background-image: url("/assets/images/invest-bg.svg"); */
   background-size: 80%;
   background-position: center center;
   background-repeat: no-repeat;
@@ -33,14 +33,16 @@
 }
 
 .invest__title {
-  color: #04193b;
+  /* color: #04193b; */
+  color: white;
   font-weight: 900;
   margin: 0;
   font-size: 36px;
 }
 
 .invest__subtitle {
-  color: #04193b;
+  /* color: #04193b; */
+  color: white;
   font-size: 18px;
   text-align: end;
   width: 353px;

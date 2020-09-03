@@ -1,6 +1,6 @@
 #exchange-section {
-  background-color: #f7f7f7;
-  background-image: url("/assets/images/exchange-bg.svg");
+  background-color: #214682;
+  /* background-image: url("/assets/images/exchange-bg.svg"); */
   background-size: 62vw;
   background-position-x: initial;
   background-position-y: center;
@@ -39,14 +39,16 @@
 }
 
 .exchange__title {
-  color: #04193b;
+  /* color: #04193b; */
+  color: white;
   font-weight: 900;
   margin: 0;
   font-size: 36px;
 }
 
 .exchange__subtitle {
-  color: #04193b;
+  /* color: #04193b; */
+  color: white;
   font-size: 16px;
   text-align: start;
   width: 370px;

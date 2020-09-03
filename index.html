@@ -94,8 +94,14 @@
               data-resource_code="navbar_signup"
             >
             </a>
+            <a
+              href="/trade/user/kyc/personal-info"
+              class="ddx-locale kyc-needed mdl-button mdl-js-button mdl-js-ripple-effect ddx-navigation__kyc-button"
+              data-resource_code="navbar_kyc"
+            >
+            </a>
 
-            <div class="auth-needed ddx-navigation__apps-menu-container">
+            <div class="auth-needed ddx-navigation__profile-menu-container">
               <button
                 id="profile-menu"
                 class="mdl-button mdl-js-button ddx-navigation__profile-toggle-button"
@@ -105,7 +111,7 @@
                   width="22px"
                   height="22px"
                 />
-                <b class="ddx-locale" data-resource_code="navbar_profile">
+                <b class="ddx-locale ddx-navigation__profile-menu-text" data-resource_code="navbar_profile">
                   Profile
                 </b>
                 <img
@@ -119,12 +125,56 @@
                 class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
                 for="profile-menu"
               >
-                <li class="mdl-menu__item">
+                <p class="">
                   <span
                     class="ddx-locale"
                     data-resource_code="navbar_profile_hello"
                   ></span>
+                  <span 
+                    class="ajax-load"
+                    data-ajax="navbar_name">
+                  </span>
+                </p>
+                <p class="">
+                  <span 
+                    class="ajax-load ddx-navigation__profile-menu-blue-item"
+                    data-ajax="navbar_email">
+                  </span>
+                </p>
+                <hr class="ddx-navigation__profile-menu-divider"></hr>
+                <li class="mdl-menu__item">
+                  <a
+                    href="/trade/user/settings?tab=general"
+                    class="ddx-locale"
+                    data-resource_code="navbar_profile_general"
+                  ></a>
                 </li>
+                <li class="mdl-menu__item">
+                  <a
+                    href="/trade/user/settings?tab=security"
+                    class="ddx-locale"
+                    data-resource_code="navbar_profile_security"
+                  ></a>
+                </li>
+                <button
+                  class="ddx-locale mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
+                  data-resource_code="navbar_profile_signout"
+                  onclick="onLogout()"
+                >
+                  {{ 'navbar.sign_out' | ddxLocale }}
+                </button> 
+                
+                  
+                  <!-- 
+                  
+                  <a
+                    mat-menu-item
+                    routerLink="/user/settings"
+                    [queryParams]="{ tab: 'security' }"
+                    >{{ 'navbar.security' | ddxLocale }}</a
+                  >
+                  
+                -->
               </ul>
             </div>
 

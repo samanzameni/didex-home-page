@@ -6,6 +6,11 @@ const RESOURCE = {
     navbar_trade: "Trade",
     navbar_invest: "Invest",
     navbar_profile: "Profile",
+    navbar_profile_hello: "Hello, ",
+    navbar_profile_general: "General Settings",
+    navbar_profile_security: "Security",
+    navbar_profile_signout: "Sign out",
+    navbar_kyc: "ID Verification",
 
     header_title: "Trade",
     header_subtitle: "Start your crypto journey!",
@@ -108,6 +113,11 @@ const RESOURCE = {
     navbar_trade: "بازار حرفه‌ای",
     navbar_invest: "سرمایه‌گذاری",
     navbar_profile: "نمایه",
+    navbar_profile_hello: "سلام، ",
+    navbar_profile_general: "تنظیمات",
+    navbar_profile_security: "امنیت",
+    navbar_profile_signout: "خروج",
+    navbar_kyc: "احراز هویت",
 
     header_title: "پلتفرم معاملات ارز دیجیتال",
     header_subtitle: "تجربه‌ای امن از تجارت جهانی!",

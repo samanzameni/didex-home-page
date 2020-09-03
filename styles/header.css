@@ -108,6 +108,23 @@
   position: relative;
 }
 
+.ddx-navigation__locale-menu-container {
+  position: relative;
+}
+
+.ddx-navigation__locale-button {
+  box-sizing: border-box;
+  padding: 0 3px;
+  display: flex;
+  align-items: center;
+  min-width: 46px;
+}
+
+.ddx-navigation__locale-button-text {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
 .ddx-navigation__apps-menu-container {
   position: relative;
 }

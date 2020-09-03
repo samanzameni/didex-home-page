@@ -42,6 +42,14 @@ body.fa {
   font-family: IRANSans, Shabnam;
 }
 
+.force-english-font {
+  font-family: "Nunito Sans" !important;
+}
+
+.force-farsi-font {
+  font-family: IRANSans, Shabnam !important;
+}
+
 .mdl-button--accent.mdl-button--accent.mdl-button--raised,
 .mdl-button--accent.mdl-button--accent.mdl-button--fab {
   background-color: #f5aa28;

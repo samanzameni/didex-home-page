@@ -82,6 +82,39 @@
           </span>
           <div class="mdl-layout-spacer"></div>
           <nav class="mdl-navigation ddx-navigation">
+            <div class="ddx-navigation__locale-menu-container">
+              <button
+                id="locale-menu"
+                class="mdl-button mdl-js-button ddx-navigation__locale-button"
+              >
+                <span class="ajax-load ddx-navigation__locale-button-text" data-ajax="currentLocale"></span>
+                <img
+                  src="/assets/images/arrow-icon.svg"
+                  width="12px"
+                  height="12px"
+                />
+              </button>
+
+              <ul
+                class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                for="locale-menu"
+              >
+                <li class="mdl-menu__item" onclick="changeLocale('en', true)">
+                  <span class="force-english-font">English</span>
+                </li>
+                <li class="mdl-menu__item" onclick="changeLocale('fa', true)">
+                  <span class="force-farsi-font">فارسی</span>
+                </li>
+                <!-- <li class="mdl-menu__item" onclick="changeLocale('ru', true)">
+                  <span class="force-russian-font">русский</span>
+                </li>
+                <li class="mdl-menu__item" onclick="changeLocale('zh', true)">
+                  <span class="force-chinese-font">中文</span>
+                </li> -->
+              </ul>
+            </div>
+
+
             <a
               href="/auth/signin"
               class="ddx-locale no-auth mdl-button mdl-js-button mdl-js-ripple-effect ddx-navigation__signin-button"
@@ -96,7 +129,7 @@
             </a>
             <a
               href="/trade/user/kyc/personal-info"
-              class="ddx-locale kyc-needed mdl-button mdl-js-button mdl-js-ripple-effect ddx-navigation__kyc-button"
+              class="ddx-locale hidden-by-kyc kyc-needed mdl-button mdl-js-button mdl-js-ripple-effect ddx-navigation__kyc-button"
               data-resource_code="navbar_kyc"
             >
             </a>
@@ -163,18 +196,6 @@
                 >
                   {{ 'navbar.sign_out' | ddxLocale }}
                 </button> 
-                
-                  
-                  <!-- 
-                  
-                  <a
-                    mat-menu-item
-                    routerLink="/user/settings"
-                    [queryParams]="{ tab: 'security' }"
-                    >{{ 'navbar.security' | ddxLocale }}</a
-                  >
-                  
-                -->
               </ul>
             </div>
 

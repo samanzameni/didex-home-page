@@ -7,7 +7,7 @@ function initLocale() {
   } else {
     tempLocale = window.location.hostname.endsWith(".ir") ? "fa" : "en";
   }
-
+  RemoveFaLocale();
   changeLocale(tempLocale);
 }
 
@@ -22,6 +22,7 @@ function changeLocale(newLocale, shouldStore = false) {
   updateTextContent();
   updateBodyClass();
   updateAssets();
+
 }
 
 function updateTextContent() {
@@ -31,9 +32,17 @@ function updateTextContent() {
     el.innerHTML = RESOURCE[currentLocale][el.dataset.resource_code] || "";
     if(currentLocale == "fa" & el.hasAttribute("href"))
     {
-        el.href = el.href + "/fa";
+        el.href = "/fa" +el.href;
     }
   });
+}
+
+function RemoveFaLocale() {
+  if(!window.location.hostname.endsWith(".ir"))
+  {
+    const bilbil = document.querySelector(".bilbil");
+    bilbil.removeChild(bilbil.children[1]);
+  }
 }
 
 function updateBodyClass() {

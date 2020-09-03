@@ -32,7 +32,7 @@ function updateTextContent() {
     el.innerHTML = RESOURCE[currentLocale][el.dataset.resource_code] || "";
     if(currentLocale == "fa" & el.hasAttribute("href"))
     {
-        el.href = "/fa" +el.href;
+        el.href = "/fa/" +el.href.split("/").pop();
     }
   });
 }

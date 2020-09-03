@@ -32,7 +32,7 @@ const RESOURCE = {
     charts_title_world: "World Price",
     charts_title_live: "Live Price",
 
-    charts_live_Volume: "Volume",
+    charts_live_Volume: "Price",
     charts_live_Change: "Change",
     charts_live_Chart: "Chart",
     charts_live_buy: "Buy",
@@ -139,7 +139,7 @@ const RESOURCE = {
     charts_title_world: "قیمت جهانی",
     charts_title_live: "قیمت لحظه‌ای",
 
-    charts_live_Volume: "حجم معاملات",
+    charts_live_Volume: "قیمت",
     charts_live_Change: "تغییرات",
     charts_live_Chart: "نمودار",
     charts_live_buy: "خرید",

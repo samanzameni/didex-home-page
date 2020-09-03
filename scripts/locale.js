@@ -29,6 +29,10 @@ function updateTextContent() {
 
   elements.forEach(function (el) {
     el.innerHTML = RESOURCE[currentLocale][el.dataset.resource_code] || "";
+    if(currentLocale = "fa" && el.hasAttribute("href"))
+    {
+        el.href = el.href + "/fa";
+    }
   });
 }
 

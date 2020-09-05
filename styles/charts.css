@@ -360,7 +360,7 @@
 
   .charts__volume-item {
     justify-content: flex-start;
-    padding: 0 5px;
+    padding: 0 10px;
     box-sizing: border-box;
   }
 

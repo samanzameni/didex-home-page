@@ -1,6 +1,7 @@
 html,
 body {
   font-family: "Nunito Sans";
+  /* overflow-x: hidden; */
 }
 
 h1,

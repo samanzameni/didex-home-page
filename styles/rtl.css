@@ -87,18 +87,18 @@ body.fa .wallet__cta-link {
 }
 
 body.fa .features__card-icon {
-  width: fit-content;
+  /* width: fit-content; */
 }
 
 body.fa .features__card-title {
   font-weight: normal;
-  text-align: start;
+  /* text-align: start; */
 }
 
 body.fa .features__card-body {
   font-weight: 100;
   margin-top: 10px;
-  text-align: start;
+  /* text-align: start; */
 }
 
 body.fa .features__cards-list {
@@ -114,7 +114,7 @@ body.fa .ddx-navigation-secondary .mdl-navigation__link.active {
 }
 
 body.fa #featureIconEase {
-  transform: rotateY(180deg) translateX(-15px);
+  /* transform: rotateY(180deg) translateX(-15px); */
 }
 
 body.fa #wallet-section {

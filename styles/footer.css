@@ -121,5 +121,6 @@
   .mdl-mega-footer__links-section {
     width: calc(50% - 10px);
     margin: 5px;
+    flex: unset;
   }
 }

@@ -280,4 +280,8 @@
   .header__content-container {
     padding-top: 0;
   }
+
+  .header__content-item {
+    align-self: flex-start;
+  }
 }

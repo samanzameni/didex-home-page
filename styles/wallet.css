@@ -123,7 +123,17 @@
 }
 
 @media screen and (max-width: 640px) {
+  #wallet-section {
+    background-size: 110%;
+    height: 550px;
+    background-position: center;
+  }
+
   .wallet__content-container {
     margin: 0 10px;
+  }
+
+  .wallet__wallet-mockup {
+    max-height: 320px;
   }
 }

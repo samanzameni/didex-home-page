@@ -1,13 +1,13 @@
 let currentLocale;
 
 function initLocale() {
+  RemoveFaLocale();
   let tempLocale;
   if (localStorage.getItem("didexLocale")) {
     tempLocale = localStorage.getItem("didexLocale");
   } else {
     tempLocale = window.location.hostname.endsWith(".ir") ? "fa" : "en";
   }
-  RemoveFaLocale();
   changeLocale(tempLocale);
 }
 
@@ -22,7 +22,6 @@ function changeLocale(newLocale, shouldStore = false) {
   updateTextContent();
   updateBodyClass();
   updateAssets();
-
 }
 
 function updateTextContent() {
@@ -30,18 +29,28 @@ function updateTextContent() {
 
   elements.forEach(function (el) {
     el.innerHTML = RESOURCE[currentLocale][el.dataset.resource_code] || "";
-    if(currentLocale == "fa" & el.classList.contains("ddx-localized-url") & el.hasAttribute("href"))
-    {
-        el.href = "/fa/" +el.href.split("/").pop();
+    if (
+      (currentLocale == "fa") &
+      el.classList.contains("ddx-localized-url") &
+      el.hasAttribute("href")
+    ) {
+      el.href = "/fa/" + el.href.split("/").pop();
     }
   });
 }
 
 function RemoveFaLocale() {
-  if(!window.location.hostname.endsWith(".ir"))
-  {
-    const bilbil = document.querySelector(".bilbil");
-    bilbil.removeChild(bilbil.children[1]);
+  if (window.location.hostname.startsWith("localhost")) {
+    return;
+  }
+
+  if (!window.location.hostname.endsWith(".ir")) {
+    storedLocale = localStorage.getItem("didexLocale");
+    if (storedLocale === "fa") {
+      localStorage.setItem("didexLocale", "en");
+    }
+    const fa = document.getElementById("farsiLocale");
+    fa.parentElement.removeChild(fa);
   }
 }
 

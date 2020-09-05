@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <base href="/newhome/"> -->
     <title>DidEx</title>
 
     <!-- Reset css -->
-    <link rel="stylesheet" href="newhome/styles/reset.css" />
+    <link rel="stylesheet" href="styles/reset.css" />
 
     <!-- Material UI -->
     <link
@@ -46,21 +47,21 @@
     />
 
     <!-- IRANSans -->
-    <link rel="stylesheet" href="newhome/styles/iransans.css" />
+    <link rel="stylesheet" href="styles/iransans.css" />
 
-    <link rel="stylesheet" href="newhome/styles/theme.css" />
+    <link rel="stylesheet" href="styles/theme.css" />
 
-    <link rel="stylesheet" href="newhome/styles/header.css" />
-    <link rel="stylesheet" href="newhome/styles/charts.css" />
-    <link rel="stylesheet" href="newhome/styles/invest.css" />
-    <link rel="stylesheet" href="newhome/styles/app.css" />
-    <link rel="stylesheet" href="newhome/styles/exchange.css" />
-    <link rel="stylesheet" href="newhome/styles/features.css" />
-    <link rel="stylesheet" href="newhome/styles/pay.css" />
-    <link rel="stylesheet" href="newhome/styles/wallet.css" />
-    <link rel="stylesheet" href="newhome/styles/footer.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/charts.css" />
+    <link rel="stylesheet" href="styles/invest.css" />
+    <link rel="stylesheet" href="styles/app.css" />
+    <link rel="stylesheet" href="styles/exchange.css" />
+    <link rel="stylesheet" href="styles/features.css" />
+    <link rel="stylesheet" href="styles/pay.css" />
+    <link rel="stylesheet" href="styles/wallet.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
 
-    <link rel="stylesheet" href="newhome/styles/rtl.css" />
+    <link rel="stylesheet" href="styles/rtl.css" />
   </head>
   <body>
     <div class="body-section header__container" id="trade-section">
@@ -70,12 +71,12 @@
         <div class="mdl-layout__header-row">
           <span class="mdl-layout-title ddx-logo__container">
             <img
-              src="/newhome/assets/images/didex-logo.svg"
+              src="assets/images/didex-logo.svg"
               class="ddx-logo__symbol"
               alt="didex logo"
             />
             <img
-              src="/newhome/assets/images/didex-logo-text.svg"
+              src="assets/images/didex-logo-text.svg"
               class="ddx-logo__text"
               alt="didex logo"
             />
@@ -89,20 +90,20 @@
               >
                 <span class="ajax-load ddx-navigation__locale-button-text" data-ajax="currentLocale"></span>
                 <img
-                  src="/newhome/assets/images/arrow-icon.svg"
+                  src="assets/images/arrow-icon.svg"
                   width="12px"
                   height="12px"
                 />
               </button>
 
               <ul
-                class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect bilbil"
+                class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
                 for="locale-menu"
               >
                 <li class="mdl-menu__item" onclick="changeLocale('en', true)">
                   <span class="force-english-font">English</span>
                 </li>
-                <li class="mdl-menu__item" onclick="changeLocale('fa', true)" enabled = "false">
+                <li class="mdl-menu__item" onclick="changeLocale('fa', true)" id="farsiLocale">
                   <span class="force-farsi-font">فارسی</span>
                 </li>
                 <!-- <li class="mdl-menu__item" onclick="changeLocale('ru', true)">
@@ -140,7 +141,7 @@
                 class="mdl-button mdl-js-button ddx-navigation__profile-toggle-button"
               >
                 <img
-                  src="/newhome/assets/images/profile-icon.svg"
+                  src="assets/images/profile-icon.svg"
                   width="22px"
                   height="22px"
                 />
@@ -148,7 +149,7 @@
                   Profile
                 </b>
                 <img
-                  src="/newhome/assets/images/arrow-icon.svg"
+                  src="assets/images/arrow-icon.svg"
                   width="12px"
                   height="12px"
                 />
@@ -205,7 +206,7 @@
                 class="mdl-button mdl-js-button mdl-button--icon ddx-navigation__apps-toggle-button"
               >
                 <img
-                  src="/newhome/assets/images/menu-icon.svg"
+                  src="assets/images/menu-icon.svg"
                   width="22px"
                   height="22px"
                 />
@@ -217,7 +218,7 @@
               >
                 <li class="mdl-menu__item">
                   <a class="ddx-navigation__apps-item" href="/">
-                    <img src="/newhome/assets/images/home-icon.svg" />
+                    <img src="assets/images/home-icon.svg" />
                     <span
                       class="ddx-locale"
                       data-resource_code="navbar_home"
@@ -226,7 +227,7 @@
                 </li>
                 <li class="mdl-menu__item">
                   <a class="ddx-navigation__apps-item" href="/trade">
-                    <img src="/newhome/assets/images/trade-icon.svg" />
+                    <img src="assets/images/trade-icon.svg" />
                     <span
                       class="ddx-locale"
                       data-resource_code="navbar_trade"
@@ -235,7 +236,7 @@
                 </li>
                 <li class="mdl-menu__item">
                   <a class="ddx-navigation__apps-item" href="/invest">
-                    <img src="/newhome/assets/images/invest-icon.svg" />
+                    <img src="assets/images/invest-icon.svg" />
                     <span
                       class="ddx-locale"
                       data-resource_code="navbar_invest"
@@ -272,17 +273,17 @@
               >Get started</span
             >
             <i class="header__cta-link-icon">
-              <img src="/newhome/assets/images/right-arrow.svg" />
+              <img src="assets/images/right-arrow.svg" />
             </i>
           </a>
         </li>
         <li class="header__content-item">
           <img
-            src="/newhome/assets/images/trade-mockup.png"
+            src="assets/images/trade-mockup.png"
             class="dynamic-asset header__trade-mockup"
             alt="didex trade"
-            data-src_fa="/newhome/assets/images/trade-mockup-fa.svg"
-            data-src_en="/newhome/assets/images/trade-mockup.png"
+            data-src_fa="/assets/images/trade-mockup-fa.svg"
+            data-src_en="/assets/images/trade-mockup.png"
           />
         </li>
       </ul>
@@ -296,12 +297,12 @@
           <div class="mdl-layout__header-row">
             <span class="mdl-layout-title ddx-logo__container">
               <img
-                src="/newhome/assets/images/didex-logo.svg"
+                src="assets/images/didex-logo.svg"
                 class="ddx-logo__symbol"
                 alt="didex logo"
               />
               <img
-                src="/newhome/assets/images/didex-logo-text.svg"
+                src="assets/images/didex-logo-text.svg"
                 class="ddx-logo__text alt"
                 alt="didex logo"
               />
@@ -372,7 +373,7 @@
         <ul class="charts__volume-container">
           <li class="charts__volume-item">
             <img
-              src="/newhome/assets/images/volume-7d-icon.svg"
+              src="assets/images/volume-7d-icon.svg"
               id="volume-7d-icon"
               class="charts__volume-icon"
             />
@@ -391,7 +392,7 @@
           </li>
           <li class="charts__volume-item">
             <img
-              src="/newhome/assets/images/volume-24h-icon.svg"
+              src="assets/images/volume-24h-icon.svg"
               class="charts__volume-icon"
             />
             <div class="charts__volume-details">
@@ -409,7 +410,7 @@
           </li>
           <li class="charts__volume-item">
             <img
-              src="/newhome/assets/images/volume-users-icon.svg"
+              src="assets/images/volume-users-icon.svg"
               class="charts__volume-icon"
             />
             <div class="charts__volume-details">
@@ -784,8 +785,8 @@
         <ul class="invest__content-container">
           <li class="invest__content-item invest-mockup__container">
             <img
-              data-src_fa="/newhome/assets/images/invest-mockup-fa.svg"
-              data-src_en="/newhome/assets/images/invest-mockup.svg"
+              data-src_fa="/assets/images/invest-mockup-fa.svg"
+              data-src_en="/assets/images/invest-mockup.svg"
               class="dynamic-asset invest__invest-mockup"
               alt="didex invest"
             />
@@ -813,7 +814,7 @@
                 >Get started</span
               >
               <i class="invest__cta-link-icon">
-                <img src="/newhome/assets/images/right-arrow.svg" />
+                <img src="assets/images/right-arrow.svg" />
               </i>
             </a>
           </li>
@@ -847,7 +848,7 @@
                 >Learn more</span
               >
               <i class="app__cta-link-icon">
-                <img src="/newhome/assets/images/right-arrow.svg" />
+                <img src="assets/images/right-arrow.svg" />
               </i>
             </a>
           </li>
@@ -860,8 +861,8 @@
         <ul class="exchange__content-container">
           <li class="exchange__content-item exchange-mockup__container">
             <img
-              data-src_en="/newhome/assets/images/exchange-mockup.svg"
-              data-src_fa="/newhome/assets/images/exchange-mockup-fa.svg"
+              data-src_en="/assets/images/exchange-mockup.svg"
+              data-src_fa="/assets/images/exchange-mockup-fa.svg"
               class="dynamic-asset exchange__exchange-mockup"
               alt="didex exchange"
             />
@@ -896,7 +897,7 @@
                 >Learn more</span
               >
               <i class="exchange__cta-link-icon">
-                <img src="/newhome/assets/images/right-arrow.svg" />
+                <img src="assets/images/right-arrow.svg" />
               </i>
             </a>
           </li>
@@ -919,7 +920,7 @@
         <ul class="features__cards-list">
           <li class="features__card-item">
             <img
-              src="/newhome/assets/images/features-icon-support.svg"
+              src="assets/images/features-icon-support.svg"
               class="features__card-icon"
             /><span
               class="ddx-locale features__card-title"
@@ -936,7 +937,7 @@
           </li>
           <li class="features__card-item">
             <img
-              src="/newhome/assets/images/features-icon-best.svg"
+              src="assets/images/features-icon-best.svg"
               class="features__card-icon"
             /><span
               class="ddx-locale features__card-title"
@@ -953,7 +954,7 @@
           </li>
           <li class="features__card-item">
             <img
-              src="/newhome/assets/images/features-icon-secure.svg"
+              src="assets/images/features-icon-secure.svg"
               class="features__card-icon"
             /><span
               class="ddx-locale features__card-title"
@@ -970,7 +971,7 @@
           </li>
           <li class="features__card-item">
             <img
-              src="/newhome/assets/images/features-icon-ease.svg"
+              src="assets/images/features-icon-ease.svg"
               class="features__card-icon"
               id="featureIconEase"
             /><span
@@ -992,8 +993,8 @@
         <ul class="pay__content-container">
           <li class="pay__content-item pay-mockup__container">
             <img
-              data-src_en="/newhome/assets/images/pay-mockup.svg"
-              data-src_fa="/newhome/assets/images/pay-mockup-fa.svg"
+              data-src_en="/assets/images/pay-mockup.svg"
+              data-src_fa="/assets/images/pay-mockup-fa.svg"
               class="dynamic-asset pay__pay-mockup"
               alt="didex pay"
             />
@@ -1024,7 +1025,7 @@
                 >Learn more</span
               >
               <i class="pay__cta-link-icon">
-                <img src="/newhome/assets/images/right-arrow.svg" />
+                <img src="assets/images/right-arrow.svg" />
               </i>
             </a>
           </li>
@@ -1061,14 +1062,14 @@
                 >Learn more</span
               >
               <i class="wallet__cta-link-icon">
-                <img src="/newhome/assets/images/right-arrow.svg" />
+                <img src="assets/images/right-arrow.svg" />
               </i>
             </a>
           </li>
           <li class="wallet__content-item wallet-mockup__container">
             <img
-              data-src_en="/newhome/assets/images/wallet-mockup.svg"
-              data-src_fa="/newhome/assets/images/wallet-mockup-fa.svg"
+              data-src_en="/assets/images/wallet-mockup.svg"
+              data-src_fa="/assets/images/wallet-mockup-fa.svg"
               class="dynamic-asset wallet__wallet-mockup"
               alt="didex wallet"
             />
@@ -1103,22 +1104,22 @@
         <ul class="footer__link-list">
           <li>
             <a target="_blank" href="https://www.twitter.com/didexcrypto/">
-              <img src="/newhome/assets/images/footer-icon-tw.svg" />
+              <img src="assets/images/footer-icon-tw.svg" />
             </a>
           </li>
           <li>
             <a target="_blank" href="https://www.facebook.com/crypto.didex/">
-              <img src="/newhome/assets/images/footer-icon-fa.svg" />
+              <img src="assets/images/footer-icon-fa.svg" />
             </a>
           </li>
           <li>
             <a target="_blank" href="https://t.me/didexcrypto/">
-              <img src="/newhome/assets/images/footer-icon-tg.svg" />
+              <img src="assets/images/footer-icon-tg.svg" />
             </a>
           </li>
           <li>
             <a target="_blank" href="https://www.instagram.com/didexcrypto/">
-              <img src="/newhome/assets/images/footer-icon-ig.svg" />
+              <img src="assets/images/footer-icon-ig.svg" />
             </a>
           </li>
           <li>
@@ -1126,7 +1127,7 @@
               target="_blank"
               href="https://www.linkedin.com/company/didexcrypto"
             >
-              <img src="/newhome/assets/images/footer-icon-in.svg" />
+              <img src="assets/images/footer-icon-in.svg" />
             </a>
           </li>
         </ul>
@@ -1232,8 +1233,8 @@
             >Product</span
           >
           <ul class="mdl-mega-footer__links-list">
-            <li><a href="/trade">Trade</a></li>
-            <li><a href="/invest">Invest</a></li>
+            <li><a class="ddx-locale" data-resource_code="footer_links_trade" href="/trade">Trade</a></li>
+            <li><a class="ddx-locale" data-resource_code="footer_links_invest" href="/invest">Invest</a></li>
             <li>
               <a
                 class="ddx-locale"
@@ -1313,12 +1314,12 @@
       </div>
     </footer>
 
-    <script src="/newhome/scripts/jwt-decode.min.js"></script>
-    <script src="/newhome/locale/resource-classes.js"></script>
+    <script src="scripts/jwt-decode.min.js"></script>
+    <script src="locale/resource-classes.js"></script>
     <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
-    <script src="/newhome/scripts/charts.js"></script>
-    <script src="/newhome/scripts/index.js"></script>
-    <script src="/newhome/scripts/locale.js"></script>
-    <script src="/newhome/scripts/auth.js"></script>
+    <script src="scripts/charts.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/locale.js"></script>
+    <script src="scripts/auth.js"></script>
   </body>
 </html>

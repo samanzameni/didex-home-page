@@ -52,7 +52,9 @@ function updateAJAXLoaders() {
       el.innerHTML =
         AJAX_DATA_DICT[el.dataset.ajax]?.toLocaleString() + el.dataset.currency;
     } else if (el.dataset.format === "number") {
-      el.innerHTML = AJAX_DATA_DICT[el.dataset.ajax]?.toLocaleString();
+      el.innerHTML = AJAX_DATA_DICT[el.dataset.ajax]
+        ? AJAX_DATA_DICT[el.dataset.ajax].toLocaleString()
+        : "";
     } else if (el.dataset.format === "src") {
       if (AJAX_DATA_DICT[el.dataset.ajax]) {
         el.setAttribute("src", AJAX_DATA_DICT[el.dataset.ajax]);

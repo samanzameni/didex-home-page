@@ -41,10 +41,6 @@ body.fa .charts__title {
   font-size: 30px;
 }
 
-body.fa #invest-section {
-  /* background-image: url("/newhome/assets/images/invest-bg-fa.svg"); */
-}
-
 body.fa .invest__subtitle {
   margin: 10px 0;
   text-align: start;
@@ -86,10 +82,6 @@ body.fa .wallet__cta-link {
   justify-content: flex-start;
 }
 
-body.fa .features__card-icon {
-  /* width: fit-content; */
-}
-
 body.fa .features__card-title {
   font-weight: normal;
   /* text-align: start; */
@@ -111,10 +103,6 @@ body.fa .features__card-item {
 
 body.fa .ddx-navigation-secondary .mdl-navigation__link.active {
   font-weight: normal;
-}
-
-body.fa #featureIconEase {
-  /* transform: rotateY(180deg) translateX(-15px); */
 }
 
 body.fa #wallet-section {

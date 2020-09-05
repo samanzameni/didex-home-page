@@ -41,7 +41,7 @@ function updateKYCStatus() {
   if (isAuthorized()) {
     const url = window.location.hostname.startsWith("localhost")
       ? "https://devapi.didex.com/api/Trader"
-      : "/api/Trader";
+      : "https://api.didex.com/api/Trader";
     const xhr = new XMLHttpRequest();
 
     xhr.onreadystatechange = function () {

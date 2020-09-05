@@ -50,6 +50,10 @@ body.fa {
   font-family: IRANSans, Shabnam !important;
 }
 
+.mdl-button--raised {
+  box-shadow: none;
+}
+
 .mdl-button--accent.mdl-button--accent.mdl-button--raised,
 .mdl-button--accent.mdl-button--accent.mdl-button--fab {
   background-color: #f5aa28;
@@ -80,8 +84,22 @@ body.fa {
   display: none;
 }
 
-@media screen and (max-width: 640px) {
-  body #tawkchat-container {
-    display: none !important;
-  }
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #214682;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f5aa28cc;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f5aa28ff;
 }

@@ -110,17 +110,6 @@ function listenToKavianZ() {
   });
 }
 
-function addBaseHrefTag() {
-  if (window.location.hostname.startsWith("localhost")) {
-    return;
-  }
-
-  const head = document.getElementsByTagName("head").item(0);
-  const base = document.createElement("base");
-  base.href = "/newhome/";
-  head.appendChild(base);
-}
-
 listenToKavianZ();
 loadAccessToken();
 loadTawkToScript();

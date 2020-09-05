@@ -2,22 +2,6 @@ const AJAX_DATA_DICT = {
   "7DaysVolume": 102234545,
   "24HoursVolume": 938783,
   usersVolume: 1567,
-  change1: "+0.00%",
-  change2: "+0.00%",
-  change3: "+0.00%",
-  change4: "+0.00%",
-  symbol1: symbols[0],
-  symbol2: symbols[1],
-  symbol3: symbols[2],
-  symbol4: symbols[3],
-  symbol1Logo: logos[0],
-  symbol2Logo: logos[1],
-  symbol3Logo: logos[2],
-  symbol4Logo: logos[3],
-  volume1: "0.00$",
-  volume2: "0.00$",
-  volume3: "0.00$",
-  volume4: "0.00$",
   navbar_name: "Trader",
   navbar_email: "---",
 };
@@ -66,11 +50,13 @@ function updateAJAXLoaders() {
   elements.forEach(function (el) {
     if (el.dataset.format === "currency") {
       el.innerHTML =
-        AJAX_DATA_DICT[el.dataset.ajax].toLocaleString() + el.dataset.currency;
+        AJAX_DATA_DICT[el.dataset.ajax]?.toLocaleString() + el.dataset.currency;
     } else if (el.dataset.format === "number") {
-      el.innerHTML = AJAX_DATA_DICT[el.dataset.ajax].toLocaleString();
+      el.innerHTML = AJAX_DATA_DICT[el.dataset.ajax]?.toLocaleString();
     } else if (el.dataset.format === "src") {
-      el.setAttribute("src", AJAX_DATA_DICT[el.dataset.ajax]);
+      if (AJAX_DATA_DICT[el.dataset.ajax]) {
+        el.setAttribute("src", AJAX_DATA_DICT[el.dataset.ajax]);
+      }
     } else {
       el.innerHTML = AJAX_DATA_DICT[el.dataset.ajax];
     }

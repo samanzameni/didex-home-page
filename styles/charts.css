@@ -27,10 +27,11 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .charts__volume-item:last-child {
-  border-color: transparent;
+  border-inline-end: none;
 }
 
 .charts__volume-icon {

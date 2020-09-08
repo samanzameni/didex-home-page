@@ -1,7 +1,7 @@
 let currentLocale;
 
 function initLocale() {
-  RemoveFaLocale();
+  HandleFaLocale();
   let tempLocale;
   if (localStorage.getItem("didexLocale")) {
     tempLocale = localStorage.getItem("didexLocale");
@@ -39,12 +39,19 @@ function updateTextContent() {
   });
 }
 
-function RemoveFaLocale() {
+function HandleFaLocale() {
   if (window.location.hostname.startsWith("localhost")) {
     return;
   }
 
-  if (!window.location.hostname.endsWith(".ir")) {
+  if (window.location.hostname.endsWith(".ir")) {
+    storedLocale = localStorage.getItem("didexLocale");
+    if (storedLocale !== "fa") {
+      localStorage.setItem("didexLocale", "fa");
+    }
+    const localeMenu = document.getElementById("localeMenu");
+    localeMenu.parentElement.removeChild(localeMenu);
+  } else {
     storedLocale = localStorage.getItem("didexLocale");
     if (storedLocale === "fa") {
       localStorage.setItem("didexLocale", "en");

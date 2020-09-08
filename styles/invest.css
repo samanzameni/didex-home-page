@@ -96,9 +96,9 @@
 
 @media screen and (max-width: 1280px) {
   #invest-section {
-    background-size: calc(100vw - 80px);
-    background-position: center 5%;
-    background-repeat: no-repeat;
+    /* background-size: calc(100vw - 80px); */
+    /* background-position: center 5%; */
+    /* background-repeat: no-repeat; */
     height: 580px;
     padding-bottom: 10px;
   }
@@ -132,9 +132,9 @@
 
 @media screen and (max-width: 760px) {
   #invest-section {
-    background-size: 100%;
-    background-position: 20% 10%;
-    background-repeat: no-repeat;
+    /* background-size: 100%; */
+    /* background-position: 20% 10%; */
+    /* background-repeat: no-repeat; */
     height: 540px;
   }
 

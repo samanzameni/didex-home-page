@@ -17,7 +17,7 @@ function changeLocale(newLocale, shouldStore = false) {
     localStorage.setItem("didexLocale", currentLocale);
   }
 
-  AJAX_DATA_DICT.currentLocale = currentLocale;
+  window.AJAX_DATA_DICT.currentLocale = currentLocale;
   updateAJAXLoaders();
   updateTextContent();
   updateBodyClass();

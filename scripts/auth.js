@@ -2,7 +2,7 @@ const DEV_ACCESS_TOKEN =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNiIsImVtYWlsIjoibS5oYWRpLmphbXNoaWRpQGdtYWlsLmNvbSIsImp0aSI6IjIzMGU3ZjkwLWY3Y2MtNGNjYS1iMzBjLTExMTFkYmFkYmJhNCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiMTYiLCJyZWdpb24iOiIyIiwibmFtZWlkIjoiTWVoZGlpIE1lbWFycG91cmkiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJ0cmFkZXIiLCJleHAiOjE2MjkyMjY5NDgsImlzcyI6IkRpZGV4IENvcnAiLCJhdWQiOiJEaWRleCBDb3JwIn0.AEyPDPGWMrW_bn1-XmNfhSr6KGeof5FhNwH72DP4OzE";
 
 function isAuthorized() {
-  return !!localStorage.getItem("didexAccessToken");
+  return !!localStorage.getItem("didexwindow.accessToken");
 }
 
 function updateAuthState() {
@@ -27,10 +27,10 @@ function updateAuthState() {
 }
 
 function extractNameAndEmail() {
-  if (accessToken) {
-    const decoded = decodeAccessToken(accessToken);
-    AJAX_DATA_DICT.navbar_name = decoded.nameid || "Trader";
-    AJAX_DATA_DICT.navbar_email = decoded.email;
+  if (window.accessToken) {
+    const decoded = decodeAccessToken(window.accessToken);
+    window.AJAX_DATA_DICT.navbar_name = decoded.nameid || "Trader";
+    window.AJAX_DATA_DICT.navbar_email = decoded.email;
   }
 }
 
@@ -69,15 +69,15 @@ function updateKYCStatus() {
       }
     };
     xhr.open("GET", url, true);
-    xhr.setRequestHeader("Authorization", `Bearer ${accessToken}`);
+    xhr.setRequestHeader("Authorization", `Bearer ${window.accessToken}`);
     xhr.setRequestHeader("Content-Type", `application/json;charset=utf-8`);
     xhr.send();
   }
 }
 
 function onLogout() {
-  accessToken = null;
-  localStorage.removeItem("didexAccessToken");
+  window.accessToken = null;
+  localStorage.removeItem("didexwindow.accessToken");
   updateAuthState();
 }
 

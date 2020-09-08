@@ -102,15 +102,16 @@ function drawWorldPriceCharts() {
       chartsData[i].change = sign * val;
       chartsData[i].volume = chartsData[i].data[chartsData[i].data.length - 1];
 
-      AJAX_DATA_DICT[`change_${normalizedSymbol}`] =
+      window.AJAX_DATA_DICT[`change_${normalizedSymbol}`] =
         chartsData[i].change.toFixed(3) + "%";
 
-      AJAX_DATA_DICT[`volume_${normalizedSymbol}`] =
+      window.AJAX_DATA_DICT[`volume_${normalizedSymbol}`] =
         chartsData[i].data[chartsData[i].data.length - 1];
 
-      AJAX_DATA_DICT[`icon_${normalizedSymbol}`] = chartsData[i].iconURL;
+      window.AJAX_DATA_DICT[`icon_${normalizedSymbol}`] = chartsData[i].iconURL;
 
-      AJAX_DATA_DICT[`symbol_${normalizedSymbol}`] = chartsData[i].symbol;
+      window.AJAX_DATA_DICT[`symbol_${normalizedSymbol}`] =
+        chartsData[i].symbol;
 
       cards[i].classList.remove("positive-change");
       cards[i].classList.remove("negative-change");

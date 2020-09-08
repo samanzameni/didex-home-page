@@ -1,5 +1,6 @@
 #app-section {
-  background-color: #214682;
+  background-color: white;
+  /* background-color: #214682; */
   /* background-image: url("/newhome/assets/images/app-bg.svg"); */
   background-size: cover;
   background-position: center center;
@@ -43,14 +44,14 @@
 }
 
 .app__title {
-  color: white;
+  color: #214682;
   font-weight: 600;
   margin: 0;
   font-size: 36px;
 }
 
 .app__subtitle {
-  color: white;
+  color: #214682;
   font-size: 18px;
   text-align: end;
   width: 381px;

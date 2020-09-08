@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <base href="/newhome/">
+    <!-- <base href="/newhome/"> -->
     <!-- <script>
       function addBaseHrefTag() {
         if (window.location.hostname.startsWith("localhost")) {
@@ -100,11 +100,14 @@
               class="ddx-logo__symbol"
               alt="didex logo"
             />
-            <img
-              src="assets/images/didex-logo-text.svg"
-              class="ddx-logo__text"
-              alt="didex logo"
-            />
+            <div class="ddx-logo__text">
+              <img
+                src="assets/images/didex-logo-text.svg"
+                alt="didex logo"
+              />
+              <span class="ddx-logo__text-slogan">Decide Different</span>
+            </div>
+            
           </span>
           <div class="mdl-layout-spacer"></div>
           <nav class="mdl-navigation ddx-navigation">
@@ -153,12 +156,12 @@
               data-resource_code="navbar_signup"
             >
             </a>
-            <a
+            <!-- <a
               href="/trade/user/kyc/personal-info"
               class="ddx-locale hidden-by-kyc kyc-needed mdl-button mdl-js-button mdl-js-ripple-effect ddx-navigation__kyc-button"
               data-resource_code="navbar_kyc"
             >
-            </a>
+            </a> -->
 
             <div class="auth-needed ddx-navigation__profile-menu-container">
               <button

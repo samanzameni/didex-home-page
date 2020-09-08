@@ -14,14 +14,15 @@
 .charts__volume-container {
   display: flex;
   justify-content: space-evenly;
-  border-bottom: 1px solid #7d88b3;
+  border-bottom: 1px solid #7d88b3aa;
+  border-top: 1px solid #7d88b3aa;
   grid-area: volumes;
   background-color: #fff;
-  margin-bottom: 30px;
+  margin: 30px 0;
 }
 
 .charts__volume-item {
-  border-inline-end: 1px solid #7d88b3;
+  border-inline-end: 1px solid #7d88b3aa;
   display: flex;
   align-items: center;
   justify-content: center;

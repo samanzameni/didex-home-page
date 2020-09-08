@@ -1,7 +1,24 @@
 #exchange-section {
   background-color: #214682;
+  background: rgb(67, 114, 188);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(67, 114, 188, 1) 0%,
+    rgba(18, 50, 102, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(67, 114, 188, 1) 0%,
+    rgba(18, 50, 102, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(67, 114, 188, 1) 0%,
+    rgba(18, 50, 102, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4372bc",endColorstr="#123266",GradientType=1);
   /* background-image: url("/newhome/assets/images/exchange-bg.svg"); */
-  background-size: 62vw;
+  /* background-size: 62vw; */
   background-position-x: initial;
   background-position-y: center;
   background-repeat: no-repeat;
@@ -11,7 +28,7 @@
   align-items: center;
   justify-content: center;
 
-  padding-bottom: 100px;
+  /* padding-bottom: 100px; */
 }
 
 .exchange__content-container {

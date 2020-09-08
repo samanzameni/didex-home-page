@@ -1,6 +1,7 @@
 .header__container {
   background-color: #0e2d5f;
-  background-image: url("/newhome/assets/images/trade-bg.jpg");
+  background-image: url("/assets/images/trade-bg.jpg");
+  /* background-image: url("/newhome/assets/images/trade-bg.jpg"); */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -18,9 +19,18 @@
 }
 
 .ddx-logo__text {
+  position: relative;
   margin-inline-start: 4px;
   width: 80px;
+}
+
+.ddx-logo__text > img {
+  margin-bottom: -10px;
   object-fit: contain;
+}
+
+.ddx-logo__text-slogan {
+  font-size: 10px;
 }
 
 .header__content-container {
@@ -253,6 +263,31 @@
   }
 
   .ddx-logo__text {
+    width: 60px;
+  }
+
+  .ddx-logo__text > img {
+    margin-bottom: -15px;
+  }
+
+  .ddx-logo__text-slogan {
+    font-size: 7.35px;
+  }
+
+  .ddx-navigation__signin-button,
+  .ddx-navigation__signup-button {
+    padding: 0px;
+  }
+
+  .ddx-navigation > * {
+    margin-inline-start: 2.5px;
+  }
+
+  .ddx-navigation__locale-button {
+    min-width: unset;
+  }
+
+  .ddx-navigation__locale-button > img {
     display: none;
   }
 

@@ -1,4 +1,4 @@
-const AJAX_DATA_DICT = {
+window.AJAX_DATA_DICT = {
   "7DaysVolume": 102234545,
   "24HoursVolume": 938783,
   usersVolume: 1567,
@@ -6,15 +6,13 @@ const AJAX_DATA_DICT = {
   navbar_email: "---",
 };
 
-let accessToken;
-
 function loadAccessToken() {
-  accessToken = localStorage.getItem("didexAccessToken");
+  window.accessToken = localStorage.getItem("didexwindow.accessToken");
 }
 
 function decodeAccessToken() {
-  if (accessToken) {
-    return jwt_decode(accessToken);
+  if (window.accessToken) {
+    return jwt_decode(window.accessToken);
   }
 }
 
@@ -31,8 +29,8 @@ function loadTawkToScript() {
     var Tawk_LoadStart = new Date();
     console.log("===TAWK.TO SCRIPT Loaded");
 
-    if (accessToken) {
-      const decoded = decodeAccessToken(accessToken);
+    if (window.accessToken) {
+      const decoded = decodewindow.accessToken(window.accessToken);
       Tawk_API.setAttributes(
         {
           name: decoded.nameid || "Trader",
@@ -49,19 +47,20 @@ function updateAJAXLoaders() {
 
   elements.forEach(function (el) {
     if (el.dataset.format === "currency") {
-      el.innerHTML = AJAX_DATA_DICT[el.dataset.ajax]
-        ? AJAX_DATA_DICT[el.dataset.ajax].toLocaleString() + el.dataset.currency
+      el.innerHTML = window.AJAX_DATA_DICT[el.dataset.ajax]
+        ? window.AJAX_DATA_DICT[el.dataset.ajax].toLocaleString() +
+          el.dataset.currency
         : "";
     } else if (el.dataset.format === "number") {
-      el.innerHTML = AJAX_DATA_DICT[el.dataset.ajax]
-        ? AJAX_DATA_DICT[el.dataset.ajax].toLocaleString()
+      el.innerHTML = window.AJAX_DATA_DICT[el.dataset.ajax]
+        ? window.AJAX_DATA_DICT[el.dataset.ajax].toLocaleString()
         : "";
     } else if (el.dataset.format === "src") {
-      if (AJAX_DATA_DICT[el.dataset.ajax]) {
-        el.setAttribute("src", AJAX_DATA_DICT[el.dataset.ajax]);
+      if (window.AJAX_DATA_DICT[el.dataset.ajax]) {
+        el.setAttribute("src", window.AJAX_DATA_DICT[el.dataset.ajax]);
       }
     } else {
-      el.innerHTML = AJAX_DATA_DICT[el.dataset.ajax];
+      el.innerHTML = window.AJAX_DATA_DICT[el.dataset.ajax];
     }
   });
 }

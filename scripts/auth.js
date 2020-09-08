@@ -36,7 +36,7 @@ function extractNameAndEmail() {
 
 function updateKYCStatus() {
   const kycNeededElements = document.querySelectorAll(".kyc-needed");
-  const noAuthElements = document.querySelectorAll(".no-kyc");
+  const noKYCElements = document.querySelectorAll(".no-kyc");
 
   if (isAuthorized()) {
     const url = window.location.hostname.startsWith("localhost")
@@ -55,14 +55,14 @@ function updateKYCStatus() {
           kycNeededElements.forEach(function (el) {
             el.classList.remove("hidden-by-kyc");
           });
-          noAuthElements.forEach(function (el) {
+          noKYCElements.forEach(function (el) {
             el.classList.add("hidden-by-kyc");
           });
         } else {
           kycNeededElements.forEach(function (el) {
             el.classList.add("hidden-by-kyc");
           });
-          noAuthElements.forEach(function (el) {
+          noKYCElements.forEach(function (el) {
             el.classList.remove("hidden-by-kyc");
           });
         }

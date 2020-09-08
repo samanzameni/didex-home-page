@@ -75,6 +75,7 @@
     <link rel="stylesheet" href="styles/iransans.css" />
 
     <link rel="stylesheet" href="styles/theme.css" />
+    <link rel="stylesheet" href="styles/snackbar.css" />
 
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/charts.css" />
@@ -1346,6 +1347,26 @@
         </div>
       </div>
     </footer>
+
+    <div class="animate__animated animate__bounceInUp ddx-snackbar__container" id="snackbarContainer">
+      <span class="ddx-snackbar__highlighted-border"></span>
+      <div class="ddx-snackbar__content">
+        <p class="ddx-locale ddx-snackbar__paragraph" data-resource_code="snackbar_first_p">
+          You have not done ID verification yet,
+        </p>
+        <p class="ddx-locale ddx-snackbar__paragraph" data-resource_code="snackbar_second_p">
+          Please validate your identity
+        </p>
+        <a
+            href="/trade/user/settings?tab=kyc"
+            class="ddx-locale mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+            data-resource_code="snackbar_validate"
+          >
+            Validate
+          </a>
+      </div>
+      <span class="ddx-snackbar__close-button" id="snackbarCloseButton">&times;</span>
+    </div>
 
     <script src="scripts/jwt-decode.min.js"></script>
     <script src="locale/resource-classes.js"></script>

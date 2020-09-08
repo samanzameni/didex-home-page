@@ -120,6 +120,40 @@ body.fa .mdl-mega-footer > div {
   direction: rtl;
 }
 
+body.fa .ddx-snackbar__container {
+  right: 80px;
+  left: 0;
+}
+
+body.fa .ddx-snackbar__highlighted-border {
+  left: unset;
+  right: 0;
+}
+
+body.fa .ddx-snackbar__close-button {
+  right: unset;
+  left: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+  body.fa .ddx-snackbar__container {
+    right: 40px;
+    left: unset;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  body.fa .ddx-snackbar__container {
+    right: 0px;
+    left: unset;
+  }
+
+  body.fa .ddx-snackbar__close-button {
+    left: 10px;
+    right: unset;
+  }
+}
+
 @media screen and (max-width: 640px) {
   body.fa .header__title {
     font-size: 28px;

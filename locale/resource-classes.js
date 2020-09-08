@@ -105,6 +105,10 @@ const RESOURCE = {
     footer_links_security: "Security Guidelines",
     footer_links_apidoc: "API Documentation",
     footer_links_glossary: "Glossary",
+
+    snackbar_first_p: "You have not done ID verification yet,",
+    snackbar_second_p: "Please validate your identity",
+    snackbar_validate: "Validate",
   },
   fa: {
     navbar_signup: "ثبت نام",
@@ -214,5 +218,9 @@ const RESOURCE = {
     footer_links_security: "ملاحظات امنیتی",
     footer_links_apidoc: "مستندات API",
     footer_links_glossary: "واژه نامه",
+
+    snackbar_first_p: "شما احراز هویت نکرده‌اید،",
+    snackbar_second_p: "لطفاً احراز هویت کنید",
+    snackbar_validate: "احراز هویت",
   },
 };

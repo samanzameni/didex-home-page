@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: IRANSans;
   src: url("/assets/fonts/IRANSans_UltraLight.ttf") format("truetype");
   font-weight: 100;
@@ -26,14 +26,13 @@
   font-family: IRANSans;
   src: url("/assets/fonts/IRANSans_Black.ttf") format("truetype");
   font-weight: 700;
-}
-/* 
+} */
+
 @font-face {
   font-family: IRANSans;
   src: url("/newhome/assets/fonts/IRANSans_UltraLight.ttf") format("truetype");
   font-weight: 100;
 }
-
 
 @font-face {
   font-family: IRANSans;
@@ -57,4 +56,4 @@
   font-family: IRANSans;
   src: url("/newhome/assets/fonts/IRANSans_Black.ttf") format("truetype");
   font-weight: 700;
-} */
+}

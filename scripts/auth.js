@@ -1,9 +1,9 @@
-
 function isAuthorized() {
   return !!localStorage.getItem("didexAccessToken");
 }
 
 function updateAuthState() {
+  window.accessToken = localStorage.getItem("didexAccessToken");
   const authNeededElements = document.querySelectorAll(".auth-needed");
   const noAuthElements = document.querySelectorAll(".no-auth");
 
@@ -75,7 +75,7 @@ function updateKYCStatus() {
 
 function onLogout() {
   window.accessToken = null;
-  localStorage.removeItem("didexwindow.accessToken");
+  localStorage.removeItem("didexAccessToken");
   updateAuthState();
 }
 

@@ -156,7 +156,7 @@ const RESOURCE = {
     app_coming_soon: "به‌زودی",
     app_title: "اپلیکیشن",
     app_subtitle:
-      "بیش از 45 رمز‌ارز متنوع را با قیمت واقعی، بدون کارمزد و بهره از ما بخواهید",
+      "بیش از 10 رمز‌ارز متنوع را با قیمت واقعی، بدون کارمزد و بهره از ما بخواهید",
     app_cta: "اطلاعات بیشتر",
 
     exchange_coming_soon: "به‌زودی",
@@ -187,7 +187,7 @@ const RESOURCE = {
     pay_cta: "اطلاعات بیشتر",
 
     wallet_coming_soon: "به‌زودی",
-    wallet_title: "کیف پول",
+    wallet_title: "کیف پول امن",
     wallet_subtitle: "مطابق با پیشرفته‌ترین روش‌های تامین امنیت",
     wallet_cta: "اطلاعات بیشتر",
 

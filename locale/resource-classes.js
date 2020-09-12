@@ -223,4 +223,206 @@ const RESOURCE = {
     snackbar_second_p: "لطفاً احراز هویت کنید",
     snackbar_validate: "احراز هویت",
   },
+  ru: {
+    navbar_signup: "Регистрация",
+    navbar_signin: "Войти",
+    navbar_home: "Home",
+    navbar_trade: "Торговля",
+    navbar_invest: "Инвестировать",
+
+    header_title: "Торговля",
+    header_subtitle: "Начните свое крипто-путешествие!",
+    header_cta: "Давайте начнем",
+
+    navbar_second_Trade: "Торговля",
+    navbar_second_Chart: "Графики",
+    navbar_second_Invest: "ИИнвестировать",
+    navbar_second_App: "Приложение",
+    navbar_second_Exchange: "Биржа",
+    navbar_second_Features: "Функции",
+    navbar_second_Pay: "ООплатить",
+    navbar_second_Wallet: "Кошелек",
+
+    charts_volume_7d: "7-дневный объем",
+    charts_volume_24h: "24-часовой объем",
+    charts_volume_users: "Пользователи",
+
+    charts_title_world: "Мировая цена",
+    charts_title_live: "Мгновенная цена",
+
+    charts_live_Volume: "Объем",
+    charts_live_Change: "Изменить",
+    charts_live_Chart: "График",
+    charts_live_buy: "Купить",
+
+    invest_title: "Инвестировать",
+    invest_subtitle: "Знайте, куда вы инвестируете, Знайте что вы зарабатываете!",
+    invest_cta: "Давайте начнем",
+
+    app_coming_soon: "Скоро будет...",
+    app_title: "Приложение",
+    app_subtitle: "Купите 45+ монет за истинную стоимость. Без комиссии, без наценок",
+    app_cta: "Learn more",
+
+    exchange_coming_soon: "Скоро будет...",
+    exchange_title: "Биржа",
+    exchange_subtitle:
+        "Питание от Didex с глубокой ликвидностью, низкими комиссиями, лучшими ценами исполнения",
+    exchange_cta: "больше информации",
+
+    features_title: "Функции",
+    features_subtitle:
+        "Расширенные функции и уникальные функции позволяют покупать и продавать биткойны и другие цифровые валюты совершенно другим опытом",
+    features_card_title_support: "БУДЕМ РЯДОМ С ТОБОЙ",
+    features_card_body_support:
+        "Обращайтесь за помощью к нашей круглосуточной профессиональной поддержке клиентов! Будьте в курсе наших последних крипто-новостей и советов в нашем блоге!",
+    features_card_title_best: "У НАС САМОЕ ЛУЧШЕЕ",
+    features_card_body_best:
+        "Профессиональная команда с богатым опытом в области блокчейна, финансов, цифровых активов и искусственного интеллекта!",
+    features_card_title_secure: "СТАБИЛЬНО И ОБЕСПЕЧЕННО",
+    features_card_body_secure:
+        "Наша собственная система безопасности с несколькими отказоустойчивыми уровнями обеспечивает вашу криптовалюту банковской защитой!",
+    features_card_title_ease: "КУПИТЬ КРИПТО С ЛЕГКОСТЬЮ",
+    features_card_body_ease:
+        "Купите ваше любимое крипто, используя кредитную/дебетовую карту, и наслаждайтесь лучшими ценами на рынке!",
+
+    pay_coming_soon: "Скоро будет...",
+    pay_title: "Оплатить",
+    pay_subtitle: "Платите и будьте оплаченным в крипто, где угодно, бесплатно",
+    pay_cta: "больше информации",
+
+    wallet_coming_soon: "Скоро будет...",
+    wallet_title: "КОШЕЛЕК",
+    wallet_subtitle: "С современным уровнем безопасности",
+    wallet_cta: "больше информации",
+
+    footer_subscription_body:
+        "Подпишитесь, чтобы были в курсе эксклюзивного контента и уведомлений",
+    footer_subscription_submit: "Подписаться",
+
+    footer_links_company: "Компания",
+    footer_links_about: "О нас",
+    footer_links_careers: "Карьера",
+    footer_links_terms: "Условия обслуживания",
+    footer_links_privacy: "Политика конфиденциальности",
+    footer_links_contact: "Контакты",
+    footer_links_services: "Услуги",
+    footer_links_api: "API",
+    footer_links_fees: "Комиссии и ограничения",
+    footer_links_app: "Приложение",
+    footer_links_rules: "Торговые правила",
+    footer_links_product: "Продукты",
+    footer_links_exchange: "Биржа",
+    footer_links_p2p: "P2P Биржа",
+    footer_links_trade: "Торговля",
+    footer_links_Invest: "Инвестировать",
+    footer_links_pay: "Оплатить",
+    footer_links_support: "Поддержка",
+    footer_links_faq: "Часто задаваемые вопросы",
+    footer_links_help: "Справочный центр ",
+    footer_links_security: "Руководящие принципы безопасности",
+    footer_links_apidoc: "API документация",
+    footer_links_glossary: "Словарь",
+  },
+  zn: {
+    navbar_signup: "注册",
+    navbar_signin: "登录",
+    navbar_home: "Home",
+    navbar_trade: "交易",
+    navbar_invest: "投资",
+
+    header_title: "交易",
+    header_subtitle: "开启您的电子货币之旅",
+    header_cta: "点击开始吧",
+
+    navbar_second_Trade: "交易",
+    navbar_second_Chart: "行情",
+    navbar_second_Invest: "投资",
+    navbar_second_App: "申请",
+    navbar_second_Exchange: "币币",
+    navbar_second_Features: "功能",
+    navbar_second_Pay: "支付",
+    navbar_second_Wallet: "钱包",
+
+    charts_volume_7d: "7日总量",
+    charts_volume_24h: "24小时总量",
+    charts_volume_users: "用户",
+
+    charts_title_world: "世界价格",
+    charts_title_live: "实时价格",
+
+    charts_live_Volume: "量",
+    charts_live_Change: "兑换",
+    charts_live_Chart: "图标",
+    charts_live_buy: "买入",
+
+    invest_title: "投资",
+    invest_subtitle: "投资，获利，一目了然",
+    invest_cta: "开始",
+
+    app_coming_soon: "即将到来 ...",
+    app_title: "申请",
+    app_subtitle: "购买45币以上享受优惠价格并免收手续费",
+    app_cta: "了解更多",
+
+    exchange_coming_soon: "即将到来 ...",
+    exchange_title: "兑换",
+    exchange_subtitle:
+        "DidEx为您带来具有高流动性，低费用和最佳执行价格",
+    exchange_cta: "了解更多",
+
+    features_title: "功能",
+    features_subtitle:
+        "先进，独特的功能让您感受不同的买卖比特币和其他数字货币体验",
+    features_card_title_support: "无时无刻，与您同在",
+    features_card_body_support:
+        "我们的7*24小时专业客服及实时资讯面板，随时为您提供服务",
+    features_card_title_best: "我们有最好的给您",
+    features_card_body_best:
+        "专业的区块链，电子资产及AI团队随时为您保驾护航",
+    features_card_title_secure: "稳定，安全",
+    features_card_body_secure:
+        "我们独创的多重防护安全系统，为您的电子资产提供最完整的防护",
+    features_card_title_ease: "购买方便",
+    features_card_body_ease:
+        "我们支持信用卡/借记卡，并提供最优惠的价格",
+
+    pay_coming_soon: "即将到来 ...",
+    pay_title: "支付",
+    pay_subtitle: "使用电子货币支付，免除任何费用",
+    pay_cta: "了解更多",
+
+    wallet_coming_soon: "即将到来 ...",
+    wallet_title: "W钱包 ",
+    wallet_subtitle: "资金安全，我来保障",
+    wallet_cta: "了解更多",
+
+    footer_subscription_body:
+        "订阅以了解最新的独家内容和通知",
+    footer_subscription_submit: "订购",
+
+    footer_links_company: "Company",
+    footer_links_about: "关于我们",
+    footer_links_careers: "加入我们",
+    footer_links_terms: "条款",
+    footer_links_privacy: "隐私政策",
+    footer_links_contact: "联系我们",
+    footer_links_services: "服务",
+    footer_links_api: "API",
+    footer_links_fees: "费用及限额",
+    footer_links_app: "应用程序",
+    footer_links_rules: "交易规则",
+    footer_links_product: "产品",
+    footer_links_exchange: "兑换",
+    footer_links_p2p: "P2P 兑换",
+    footer_links_trade: "T交易",
+    footer_links_Invest: "投资",
+    footer_links_pay: "支付",
+    footer_links_support: "S支持",
+    footer_links_faq: "问答",
+    footer_links_help: "支持中心",
+    footer_links_security: "安全指引",
+    footer_links_apidoc: "API 文件",
+    footer_links_glossary: "词汇表",
+  },
 };

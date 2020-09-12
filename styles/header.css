@@ -319,4 +319,9 @@
   .header__content-item {
     align-self: flex-start;
   }
+
+  .header__trade-mockup {
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
 }

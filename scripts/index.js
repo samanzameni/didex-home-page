@@ -30,7 +30,7 @@ function loadTawkToScript() {
     console.log("===TAWK.TO SCRIPT Loaded");
 
     if (window.accessToken) {
-      const decoded = decodewindow.accessToken(window.accessToken);
+      const decoded = decodeAccessToken(window.accessToken);
       Tawk_API.setAttributes(
         {
           name: decoded.nameid || "Trader",
@@ -106,8 +106,31 @@ function listenToSnackbarCloseEvent() {
   });
 }
 
+function updateVolumeMetrics() {
+  const url = window.location.hostname.startsWith("localhost")
+    ? "https://devapi.didex.com/api/Public/Metric"
+    : "https://api.didex.com/api/Public/Metric";
+  const xhr = new XMLHttpRequest();
+
+  xhr.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      const res = JSON.parse(xhr.response);
+      AJAX_DATA_DICT["usersVolume"] = res.users;
+      AJAX_DATA_DICT["7DaysVolume"] = res.volume7d;
+      AJAX_DATA_DICT["24HoursVolume"] = res.volume24h;
+
+      updateAJAXLoaders();
+    }
+  };
+  xhr.open("GET", url, true);
+  xhr.setRequestHeader("Authorization", `Bearer ${window.accessToken}`);
+  xhr.setRequestHeader("Content-Type", `application/json;charset=utf-8`);
+  xhr.send();
+}
+
 listenToKavianZ();
 loadAccessToken();
 loadTawkToScript();
 updateAJAXLoaders();
 listenToSnackbarCloseEvent();
+updateVolumeMetrics();

@@ -45,12 +45,12 @@ function HandleFaLocale() {
   }
 
   if (window.location.hostname.endsWith(".ir")) {
-    storedLocale = localStorage.getItem("didexLocale");
-    if (storedLocale !== "fa") {
-      localStorage.setItem("didexLocale", "fa");
-    }
-    const localeMenu = document.getElementById("localeMenu");
-    localeMenu.parentElement.removeChild(localeMenu);
+    // storedLocale = localStorage.getItem("didexLocale");
+    // if (storedLocale !== "fa") {
+    //   localStorage.setItem("didexLocale", "fa");
+    // }
+    // const localeMenu = document.getElementById("localeMenu");
+    // localeMenu.parentElement.removeChild(localeMenu);
   } else {
     storedLocale = localStorage.getItem("didexLocale");
     if (storedLocale === "fa") {

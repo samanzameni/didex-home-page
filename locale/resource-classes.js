@@ -73,7 +73,7 @@ const RESOURCE = {
     pay_subtitle: "Pay and get paid in crypto, anywhere, for free",
     pay_cta: "Learn more",
 
-    wallet_coming_soon: "Coming soon ...",
+    wallet_coming_soon: "",
     wallet_title: "Wallet",
     wallet_subtitle: "With state of art security",
     wallet_cta: "Learn more",
@@ -186,7 +186,7 @@ const RESOURCE = {
     pay_subtitle: "پرداخت و دریافت کریپتو برای کسب و کارها",
     pay_cta: "اطلاعات بیشتر",
 
-    wallet_coming_soon: "به‌زودی",
+    wallet_coming_soon: "",
     wallet_title: "کیف پول امن",
     wallet_subtitle: "مطابق با پیشرفته‌ترین روش‌های تامین امنیت",
     wallet_cta: "اطلاعات بیشتر",
@@ -291,7 +291,7 @@ const RESOURCE = {
     pay_subtitle: "Платите и будьте оплаченным в крипто, где угодно, бесплатно",
     pay_cta: "больше информации",
 
-    wallet_coming_soon: "Скоро будет...",
+    wallet_coming_soon: "",
     wallet_title: "КОШЕЛЕК",
     wallet_subtitle: "С современным уровнем безопасности",
     wallet_cta: "больше информации",
@@ -392,7 +392,7 @@ const RESOURCE = {
     pay_subtitle: "使用电子货币支付，免除任何费用",
     pay_cta: "了解更多",
 
-    wallet_coming_soon: "即将到来 ...",
+    wallet_coming_soon: "",
     wallet_title: "W钱包 ",
     wallet_subtitle: "资金安全，我来保障",
     wallet_cta: "了解更多",

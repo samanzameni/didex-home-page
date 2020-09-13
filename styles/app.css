@@ -95,7 +95,7 @@
     height: 500px;
   }
   .app__coming-soon {
-    margin-top: 100px;
+    margin-top: 150px;
   }
 
   .app__content-container {
@@ -121,6 +121,9 @@
   .app__content-container {
     margin: 0 10px;
     align-items: flex-start;
+  }
+  .app__coming-soon {
+    margin-top: 150px;
   }
 
 

@@ -183,7 +183,7 @@ const RESOURCE = {
 
     pay_coming_soon: "به‌زودی",
     pay_title: "درگاه پرداخت",
-    pay_subtitle: "پرداخت و دریافت کریپتو در هر مکان و هر زمان",
+    pay_subtitle: "پرداخت و دریافت کریپتو برای کسب و کارها",
     pay_cta: "اطلاعات بیشتر",
 
     wallet_coming_soon: "به‌زودی",
@@ -324,7 +324,7 @@ const RESOURCE = {
     footer_links_apidoc: "API документация",
     footer_links_glossary: "Словарь",
   },
-  zn: {
+  zh: {
     navbar_signup: "注册",
     navbar_signin: "登录",
     navbar_home: "Home",

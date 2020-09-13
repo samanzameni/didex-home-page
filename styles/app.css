@@ -95,7 +95,7 @@
     height: 500px;
   }
   .app__coming-soon {
-    margin-top: 150px;
+    margin-top: 100px;
   }
 
   .app__content-container {
@@ -105,11 +105,11 @@
   }
 
   .app-mockup__container {
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   .app__app-mockup {
-    height: 320px;
+    height: 280px;
   }
 
   .app__subtitle {
@@ -121,9 +121,6 @@
   .app__content-container {
     margin: 0 10px;
     align-items: flex-start;
-  }
-  .app__coming-soon {
-    margin-top: 150px;
   }
 
 

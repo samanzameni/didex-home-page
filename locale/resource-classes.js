@@ -70,7 +70,7 @@ const RESOURCE = {
 
     pay_coming_soon: "Coming soon ...",
     pay_title: "Pay",
-    pay_subtitle: "Pay and get paid in crypto, anywhere, for free",
+    pay_subtitle: "Payment gateway for all businesses",
     pay_cta: "Learn more",
 
     wallet_coming_soon: "",

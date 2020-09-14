@@ -47,7 +47,7 @@ function updateTextContent() {
       }
     });
     const facebook = document.querySelector(".ddx-localized-social-facebook");
-    const instagram = document.querySelector(".ddx-localized-social-insagram");
+    const instagram = document.querySelector(".ddx-localized-social-instagram");
     const twitter = document.querySelector(".ddx-localized-social-twitter");
     const telegram = document.querySelector(".ddx-localized-social-telegram");
     if(currentLocale == "fa")

@@ -46,6 +46,17 @@ function updateTextContent() {
         }
       }
     });
+    const facebook = document.querySelector(".ddx-localized-social-facebook");
+    const instagram = document.querySelector(".ddx-localized-social-instagram");
+    const twitter = document.querySelector(".ddx-localized-social-twitter");
+    const telegram = document.querySelector(".ddx-localized-social-telegram");
+    if(currentLocale == "fa")
+    {
+      twitter.href = "https://twitter.com/didex_crypto_fa"
+      facebook.href = "https://www.facebook.com/crypto.didex";
+      instagram.href = "https://www.instagram.com/didexcrypto_fa";
+      telegram.href = "https://t.me/Didexcrypto_fa"
+    }
 }
 
 function HandleFaLocale() {

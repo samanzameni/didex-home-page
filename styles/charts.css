@@ -64,6 +64,13 @@
 .charts__volume-value {
   font-size: 22px;
   color: #0e2d5f;
+  display: flex;
+}
+
+.charts__volume-value:before {
+  content: "+";
+  display: flex;
+  margin: 0 2px;
 }
 
 .charts__title {

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="۱۰ تتر، هدیه دیدکس برای شروع ترید.  ثبت‌نام کنید، احراز هویت کنید و هدیه خودتون رو دریافت کنید.">
     <meta name="keywords" content="دیدکس، قیمت بیتکوین، خرید بیت کوین، بیت کوین، ارزهای دیجیتال، بیتکوین، صرافی ارز دیجیتال، اتریوم">
+    <base href="/newhome/">
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172396678-1"></script>
@@ -56,6 +57,7 @@
 
     <link rel="stylesheet" href="styles/theme.css" />
     <link rel="stylesheet" href="styles/snackbar.css" />
+    <link rel="stylesheet" href="styles/overlay.css" />
 
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/charts.css" />
@@ -1327,7 +1329,7 @@
       </div>
     </footer>
 
-    <div class="kyc-needed hidden-by-kyc animate__animated animate__bounceInUp ddx-snackbar__container" id="snackbarContainer">
+    <!-- <div class="kyc-needed hidden-by-kyc animate__animated animate__bounceInUp ddx-snackbar__container" id="snackbarContainer">
       <span class="ddx-snackbar__highlighted-border"></span>
       <div class="ddx-snackbar__content">
         <p class="ddx-locale ddx-snackbar__paragraph" data-resource_code="snackbar_first_p">
@@ -1345,6 +1347,19 @@
           </a>
       </div>
       <span class="ddx-snackbar__close-button" id="snackbarCloseButton">&times;</span>
+    </div> -->
+
+    <div class="kyc-needed hidden-by-kyc ddx-overlay__container" id="campaignOverlay">
+      <div class="animate__animated animate__bounceInUp ddx-overlay__content">
+        <div class="ddx-overlay__inner-content">
+          <a class="ddx-overlay__banner-link" href="/auth/signup">
+            <img src="assets/images/banner.jpg" class="ddx-overlay__banner-image">
+          </a>
+        </div>
+        <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored mdl-button--accent ddx-overlay__close-button" onclick="closeCampaignOverlay()">
+          <i>&times;</i>
+        </button>
+      </div>
     </div>
 
     <script src="scripts/jwt-decode.min.js"></script>

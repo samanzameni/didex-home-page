@@ -128,6 +128,13 @@ function updateVolumeMetrics() {
   xhr.send();
 }
 
+function closeCampaignOverlay() {
+  const overlay = document.getElementById("campaignOverlay");
+  if (overlay) {
+    overlay.classList.add("hidden-by-command");
+  }
+}
+
 listenToKavianZ();
 loadAccessToken();
 loadTawkToScript();

@@ -1,0 +1,45 @@
+.ddx-overlay__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 230;
+  background: #0007;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ddx-overlay__content {
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 10px;
+  box-sizing: border-box;
+  min-width: 300px;
+  width: 60%;
+  max-width: 800px;
+  position: relative;
+}
+
+.ddx-overlay__close-button {
+  position: absolute;
+  top: -35px;
+  right: -10px;
+}
+
+.ddx-overlay__inner-content {
+  position: relative;
+}
+
+.ddx-overlay__banner-link {
+  padding: 0;
+  text-decoration: none;
+  display: flex;
+}
+
+.ddx-overlay__banner-image {
+  object-fit: contain;
+  width: 100%;
+}

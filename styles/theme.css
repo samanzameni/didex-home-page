@@ -78,11 +78,15 @@ body.fa {
 }
 
 .hidden-by-auth {
-  display: none;
+  display: none !important;
 }
 
 .hidden-by-kyc {
-  display: none;
+  display: none !important;
+}
+
+.hidden-by-command {
+  display: none !important;
 }
 
 /* width */

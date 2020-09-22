@@ -101,9 +101,11 @@ function listenToKavianZ() {
 function listenToSnackbarCloseEvent() {
   const closeButton = document.getElementById("snackbarCloseButton");
   const snackbar = document.getElementById("snackbarContainer");
-  closeButton.addEventListener("click", function ($event) {
-    snackbar.classList.add("animate__bounceOutDown");
-  });
+  if (closeButton) {
+    closeButton.addEventListener("click", function ($event) {
+      snackbar.classList.add("animate__bounceOutDown");
+    });
+  }
 }
 
 function updateVolumeMetrics() {

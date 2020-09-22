@@ -64,6 +64,8 @@ function updateKYCStatus() {
             el.classList.remove("hidden-by-kyc");
           });
         }
+      } else if (this.readyState == 4 && this.status == 401) {
+        onLogout();
       }
     };
     xhr.open("GET", url, true);

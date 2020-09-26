@@ -137,9 +137,21 @@ function closeCampaignOverlay() {
   }
 }
 
+function listenToClickOnCampaignOverlay() {
+  const overlay = document.getElementById("campaignOverlay");
+  if (overlay) {
+    overlay.addEventListener("click", function ($event) {
+      if ($event.target === overlay) {
+        closeCampaignOverlay();
+      }
+    });
+  }
+}
+
 listenToKavianZ();
 loadAccessToken();
 loadTawkToScript();
 updateAJAXLoaders();
 listenToSnackbarCloseEvent();
+listenToClickOnCampaignOverlay();
 updateVolumeMetrics();

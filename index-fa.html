@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="۱۰ تتر، هدیه دیدکس برای شروع ترید.  ثبت‌نام کنید، احراز هویت کنید و هدیه خودتون رو دریافت کنید.">
+    <meta name="keywords" content="دیدکس، قیمت بیتکوین، خرید بیت کوین، بیت کوین، ارزهای دیجیتال، بیتکوین، صرافی ارز دیجیتال، اتریوم">
+    <base href="/newhome/">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172396678-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-172396678-1');
+    </script>
+
+    <!-- Hotjar Tracking Code for https://didex.ir -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2015872,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
+    <title>دیدکس</title>
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
+
+    <!-- Reset css -->
+    <link rel="stylesheet" href="styles/reset.css" />
+
+    <!-- Material UI -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.indigo-orange.min.css"
+    />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <!-- Animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+
+    <!-- Chartist -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css"
+    />
+
+    <!-- Nunito Sans -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito Sans"
+      rel="stylesheet"
+    />
+
+    <!-- IRANSans -->
+    <link rel="stylesheet" href="styles/iransans.css" />
+
+    <link rel="stylesheet" href="styles/theme.css" />
+    <link rel="stylesheet" href="styles/snackbar.css" />
+    <link rel="stylesheet" href="styles/overlay.css" />
+
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/charts.css" />
+    <link rel="stylesheet" href="styles/invest.css" />
+    <link rel="stylesheet" href="styles/app.css" />
+    <link rel="stylesheet" href="styles/exchange.css" />
+    <link rel="stylesheet" href="styles/features.css" />
+    <link rel="stylesheet" href="styles/pay.css" />
+    <link rel="stylesheet" href="styles/wallet.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+
+    <link rel="stylesheet" href="styles/rtl.css" />
+  </head>
+  <body>
+    <div class="body-section header__container" id="trade-section">
+      <header
+        class="mdl-layout__header mdl-layout__main-header mdl-layout__header--transparent"
+      >
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title ddx-logo__container">
+            <img
+              src="assets/images/didex-logo.svg"
+              class="ddx-logo__symbol"
+              alt="didex logo"
+            />
+            <div class="ddx-logo__text">
+              <img
+                src="assets/images/didex-logo-text.svg"
+                alt="didex logo"
+              />
+              <span class="ddx-logo__text-slogan">Decide Different</span>
+            </div>
+            
+          </span>
+          <div class="mdl-layout-spacer"></div>
+          <nav class="mdl-navigation ddx-navigation">
+            <div class="ddx-navigation__locale-menu-container" id="localeMenu">
+              <button
+                id="locale-menu"
+                class="mdl-button mdl-js-button ddx-navigation__locale-button"
+              >
+                <span class="ajax-load ddx-navigation__locale-button-text" data-ajax="currentLocale"></span>
+                <img
+                  src="assets/images/arrow-icon.svg"
+                  width="12px"
+                  height="12px"
+                />
+              </button>
+
+              <ul
+                class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                for="locale-menu"
+              >
+                <li class="mdl-menu__item" onclick="changeLocale('en', true)">
+                  <span class="force-english-font">English</span>
+                </li>
+                <li class="mdl-menu__item" onclick="changeLocale('fa', true)" id="farsiLocale">
+                  <span class="force-farsi-font">فارسی</span>
+                </li>
+                <li class="mdl-menu__item" onclick="changeLocale('ru', true)">
+                  <span class="force-russian-font">русский</span>
+                </li>
+                <li class="mdl-menu__item" onclick="changeLocale('zh', true)">
+                  <span class="force-chinese-font">中文</span>
+                </li>
+              </ul>
+            </div>
+
+
+            <a
+              href="/auth/signin"
+              class="ddx-locale no-auth mdl-button mdl-js-button mdl-js-ripple-effect ddx-navigation__signin-button"
+              data-resource_code="navbar_signin"
+            >
+            </a>
+            <a
+              href="/auth/signup"
+              class="ddx-locale no-auth mdl-button mdl-js-button mdl-button--raised mdl-button--accent ddx-navigation__signup-button"
+              data-resource_code="navbar_signup"
+            >
+            </a>
+
+            <div class="auth-needed ddx-navigation__profile-menu-container">
+              <button
+                id="profile-menu"
+                class="mdl-button mdl-js-button ddx-navigation__profile-toggle-button"
+              >
+                <img
+                  src="assets/images/profile-icon.svg"
+                  width="22px"
+                  height="22px"
+                />
+                <b class="ddx-locale ddx-navigation__profile-menu-text" data-resource_code="navbar_profile">
+                  Profile
+                </b>
+                <img
+                  src="assets/images/arrow-icon.svg"
+                  width="12px"
+                  height="12px"
+                />
+              </button>
+
+              <ul
+                class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                for="profile-menu"
+              >
+                <p class="">
+                  <span
+                    class="ddx-locale"
+                    data-resource_code="navbar_profile_hello"
+                  ></span>
+                  <span 
+                    class="ajax-load"
+                    data-ajax="navbar_name">
+                  </span>
+                </p>
+                <p class="">
+                  <span 
+                    class="ajax-load ddx-navigation__profile-menu-blue-item"
+                    data-ajax="navbar_email">
+                  </span>
+                </p>
+                <hr class="ddx-navigation__profile-menu-divider"></hr>
+                <li class="mdl-menu__item">
+                  <a
+                    href="/trade/user/settings?tab=general"
+                    class="ddx-locale"
+                    data-resource_code="navbar_profile_general"
+                  ></a>
+                </li>
+                <li class="mdl-menu__item">
+                  <a
+                    href="/trade/user/settings?tab=security"
+                    class="ddx-locale"
+                    data-resource_code="navbar_profile_security"
+                  ></a>
+                </li>
+                <button
+                  class="ddx-locale mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
+                  data-resource_code="navbar_profile_signout"
+                  onclick="onLogout()"
+                >
+                  {{ 'navbar.sign_out' | ddxLocale }}
+                </button> 
+              </ul>
+            </div>
+
+            <div class="ddx-navigation__apps-menu-container">
+              <button
+                id="apps-menu"
+                class="mdl-button mdl-js-button mdl-button--icon ddx-navigation__apps-toggle-button"
+              >
+                <img
+                  src="assets/images/menu-icon.svg"
+                  width="22px"
+                  height="22px"
+                />
+              </button>
+
+              <ul
+                class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                for="apps-menu"
+              >
+                <li class="mdl-menu__item">
+                  <a class="ddx-navigation__apps-item" href="/">
+                    <img src="assets/images/home-icon.svg" />
+                    <span
+                      class="ddx-locale"
+                      data-resource_code="navbar_home"
+                    ></span>
+                  </a>
+                </li>
+                <li class="mdl-menu__item">
+                  <a class="ddx-navigation__apps-item" href="/trade">
+                    <img src="assets/images/trade-icon.svg" />
+                    <span
+                      class="ddx-locale"
+                      data-resource_code="navbar_trade"
+                    ></span>
+                  </a>
+                </li>
+                <li class="mdl-menu__item">
+                  <a class="ddx-navigation__apps-item" href="/invest">
+                    <img src="assets/images/invest-icon.svg" />
+                    <span
+                      class="ddx-locale"
+                      data-resource_code="navbar_invest"
+                    ></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <ul class="header__content-container">
+        <li class="header__content-item">
+          <h1
+            class="ddx-locale header__title"
+            data-resource_code="header_title"
+          >
+            پلتفرم معاملات ارز دیجیتال
+          </h1>
+          <h2
+            class="ddx-locale header__subtitle"
+            data-resource_code="header_subtitle"
+          >
+            تجربه‌ای امن از تجارت جهانی!
+          </h2>
+          <a
+            href="/trade"
+            class="animate__animated animate__fadeInUpBig header__cta-link"
+          >
+            <span
+              class="ddx-locale header__cta-link-text"
+              data-resource_code="header_cta"
+              >شروع کنید</span
+            >
+            <i class="header__cta-link-icon">
+              <img src="assets/images/right-arrow.svg" />
+            </i>
+          </a>
+        </li>
+        <li class="header__content-item">
+          <img
+            src="assets/images/trade-mockup.png"
+            class="dynamic-asset header__trade-mockup"
+            alt="didex trade"
+            data-src_fa="assets/images/trade-mockup-fa.svg"
+            data-src_en="assets/images/trade-mockup.png"
+          />
+        </li>
+      </ul>
+    </div>
+
+    <main>
+      <div class="main__sticky-navbar">
+        <header
+          class="mdl-layout__header mdl-layout__header--transparent mdl-layout__header--scroll"
+        >
+          <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title ddx-logo__container">
+              <img
+                src="assets/images/didex-logo.svg"
+                class="ddx-logo__symbol"
+                alt="didex logo"
+              />
+              <img
+                src="assets/images/didex-logo-text.svg"
+                class="ddx-logo__text alt"
+                alt="didex logo"
+              />
+            </span>
+            <div class="mdl-layout-spacer"></div>
+            <nav class="mdl-navigation ddx-navigation-secondary">
+              <a
+                class="ddx-locale mdl-navigation__link"
+                id="for-trade-section"
+                onclick="scrollToElementID('trade-section')"
+                data-resource_code="navbar_second_Trade"
+                >بازار حرفه‌ای</a
+              >
+              <a
+                class="ddx-locale mdl-navigation__link"
+                id="for-charts-section"
+                onclick="scrollToElementID('charts-section')"
+                data-resource_code="navbar_second_Chart"
+                >نمودار</a
+              >
+              <a
+                class="ddx-locale mdl-navigation__link"
+                id="for-invest-section"
+                onclick="scrollToElementID('invest-section')"
+                data-resource_code="navbar_second_Invest"
+                >سرمایه‌گذاری</a
+              >
+              <a
+                class="ddx-locale mdl-navigation__link"
+                id="for-app-section"
+                onclick="scrollToElementID('app-section')"
+                data-resource_code="navbar_second_App"
+                >اپلیکیشن</a
+              >
+              <a
+                class="ddx-locale mdl-navigation__link"
+                id="for-exchange-section"
+                onclick="scrollToElementID('exchange-section')"
+                data-resource_code="navbar_second_Exchange"
+                >خرید ‌و‌ فروش مستقیم</a
+              >
+              <a
+                class="ddx-locale mdl-navigation__link"
+                id="for-features-section"
+                onclick="scrollToElementID('features-section')"
+                data-resource_code="navbar_second_Features"
+                >ویژگی‌ها</a
+              >
+              <a
+                class="ddx-locale mdl-navigation__link"
+                id="for-pay-section"
+                onclick="scrollToElementID('pay-section')"
+                data-resource_code="navbar_second_Pay"
+                >درگاه پرداخت</a
+              >
+              <a
+                class="ddx-locale mdl-navigation__link"
+                id="for-wallet-section"
+                onclick="scrollToElementID('wallet-section')"
+                data-resource_code="navbar_second_Wallet"
+                >کیف پول</a
+              >
+            </nav>
+          </div>
+        </header>
+      </div>
+      <section class="body-section" id="charts-section">
+        <ul class="charts__volume-container">
+          <li class="charts__volume-item">
+            <img
+              src="assets/images/volume-7d-icon.svg"
+              id="volume-7d-icon"
+              class="charts__volume-icon"
+            />
+            <div class="charts__volume-details">
+              <span
+                class="ddx-locale charts__volume-title"
+                data-resource_code="charts_volume_7d"
+                >حجم معاملات 7روزه</span
+              ><span
+                class="charts__volume-value ajax-load"
+                data-ajax="7DaysVolume"
+                data-format="currency"
+                data-currency="$"
+              ></span>
+            </div>
+          </li>
+          <li class="charts__volume-item">
+            <img
+              src="assets/images/volume-24h-icon.svg"
+              class="charts__volume-icon"
+            />
+            <div class="charts__volume-details">
+              <span
+                class="ddx-locale charts__volume-title"
+                data-resource_code="charts_volume_24h"
+                >حجم معاملات 24ساعته</span
+              ><span
+                class="charts__volume-value ajax-load"
+                data-ajax="24HoursVolume"
+                data-format="currency"
+                data-currency="$"
+              ></span>
+            </div>
+          </li>
+          <li class="charts__volume-item">
+            <img
+              src="assets/images/volume-users-icon.svg"
+              class="charts__volume-icon"
+            />
+            <div class="charts__volume-details">
+              <span
+                class="ddx-locale charts__volume-title"
+                data-resource_code="charts_volume_users"
+                >کاربران</span
+              ><span
+                class="charts__volume-value ajax-load"
+                data-ajax="usersVolume"
+                data-format="number"
+              ></span>
+            </div>
+          </li>
+        </ul>
+        <div id="charts__world-price-container">
+          <h3
+            class="ddx-locale charts__title"
+            data-resource_code="charts_title_world"
+          >
+            قیمت جهانی
+          </h3>
+          <ul class="charts__chart-cards">
+            <li class="charts__chart-card positive-change">
+              <div class="charts__chart-symbol-container">
+                <img
+                  data-ajax="icon_BTCUSDT"
+                  data-format="src"
+                  class="ajax-load charts__chart-symbol-icon"
+                />
+                <h4
+                  class="ajax-load charts__chart-symbol-name"
+                  data-ajax="symbol_BTCUSDT"
+                >
+                  ETH/USDT
+                </h4>
+              </div>
+              <div class="charts__chart-prices-container">
+                <span
+                  class="ajax-load charts__chart-price"
+                  data-ajax="volume_BTCUSDT"
+                  data-format="currency"
+                  data-currency="$"
+                  >5678</span
+                >
+                <span
+                  class="ajax-load charts__chart-price-change"
+                  data-ajax="change_BTCUSDT"
+                  >+1.945%</span
+                >
+              </div>
+              <div class="ct-chart charts__chartist-world-price"></div>
+            </li>
+            <li class="charts__chart-card negative-change">
+              <div class="charts__chart-symbol-container">
+                <img
+                  data-ajax="icon_ETHUSDT"
+                  data-format="src"
+                  class="ajax-load charts__chart-symbol-icon"
+                />
+                <h4
+                  class="ajax-load charts__chart-symbol-name"
+                  data-ajax="symbol_ETHUSDT"
+                >
+                  ETH/USDT
+                </h4>
+              </div>
+              <div class="charts__chart-prices-container">
+                <span
+                  class="ajax-load charts__chart-price"
+                  data-ajax="volume_ETHUSDT"
+                  data-format="currency"
+                  data-currency="$"
+                  >5678</span
+                >
+                <span
+                  class="ajax-load charts__chart-price-change"
+                  data-ajax="change_ETHUSDT"
+                  >+1.945%</span
+                >
+              </div>
+              <div class="ct-chart charts__chartist-world-price"></div>
+            </li>
+            <li class="charts__chart-card negative-change">
+              <div class="charts__chart-symbol-container">
+                <img
+                  data-ajax="icon_DASHUSDT"
+                  data-format="src"
+                  class="ajax-load charts__chart-symbol-icon"
+                />
+                <h4
+                  class="ajax-load charts__chart-symbol-name"
+                  data-ajax="symbol_DASHUSDT"
+                >
+                  ETH/USDT
+                </h4>
+              </div>
+              <div class="charts__chart-prices-container">
+                <span
+                  class="ajax-load charts__chart-price"
+                  data-ajax="volume_DASHUSDT"
+                  data-format="currency"
+                  data-currency="$"
+                  >5678</span
+                >
+                <span
+                  class="ajax-load charts__chart-price-change"
+                  data-ajax="change_DASHUSDT"
+                  >+1.945%</span
+                >
+              </div>
+              <div class="ct-chart charts__chartist-world-price"></div>
+            </li>
+            <li class="charts__chart-card negative-change">
+              <div class="charts__chart-symbol-container">
+                <img
+                  data-ajax="icon_BCHUSDT"
+                  data-format="src"
+                  class="ajax-load charts__chart-symbol-icon"
+                />
+                <h4
+                  class="ajax-load charts__chart-symbol-name"
+                  data-ajax="symbol_BCHUSDT"
+                >
+                  ETH/USDT
+                </h4>
+              </div>
+              <div class="charts__chart-prices-container">
+                <span
+                  class="ajax-load charts__chart-price"
+                  data-ajax="volume_BCHUSDT"
+                  data-format="currency"
+                  data-currency="$"
+                  >5678</span
+                >
+                <span
+                  class="ajax-load charts__chart-price-change"
+                  data-ajax="change_BCHUSDT"
+                  >+1.945%</span
+                >
+              </div>
+              <div class="ct-chart charts__chartist-world-price"></div>
+            </li>
+          </ul>
+        </div>
+        <div id="charts__live-price-container">
+          <h3
+            class="ddx-locale charts__title"
+            data-resource_code="charts_title_live"
+          >
+            قیمت لحظه‌ای
+          </h3>
+          <ul class="prices__price-cards">
+            <li class="prices__price-card positive-change">
+              <img
+                data-ajax="icon_BTCUSDT"
+                data-format="src"
+                class="ajax-load prices__symbol-logo"
+              />
+              <div class="prices__symbol-details">
+                <h5 class="ajax-load prices__symbol-name" data-ajax="symbolLive_BTCUSDT">
+                  ETH/USDT
+                </h5>
+                <!-- <span class="ajax-load prices__symbol-value" data-ajax="7DaysVolume"
+                data-format="currency"
+                data-currency="$">87191</span> -->
+              </div>
+              <div class="prices__volume-details">
+                <span
+                  class="ddx-locale prices__subsection-title"
+                  data-resource_code="charts_live_Volume"
+                  >قیمت</span
+                >
+                <span
+                  class="ajax-load prices__subsection-value"
+                  data-ajax="volumeLive_BTCUSDT"
+                  data-format="number"
+                  >12345</span
+                >
+              </div>
+              <div class="prices__change-details">
+                <span
+                  class="ddx-locale prices__subsection-title"
+                  data-resource_code="charts_live_Change"
+                  >تغییرات</span
+                >
+                <span
+                  class="ajax-load prices__subsection-value change-value"
+                  data-ajax="changeLive_BTCUSDT"
+                  >1.2345%</span
+                >
+              </div>
+              <!-- <div class="prices__chart-details">
+                <span
+                  class="ddx-locale prices__subsection-title"
+                  data-resource_code="charts_live_Chart"
+                  >Chart</span
+                >
+                <div class="prices__chartist-live-price"></div>
+              </div> -->
+              <a
+                href="/trade"
+                class="ddx-locale prices__cta mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                data-resource_code="charts_live_buy"
+                >خرید</a
+              >
+            </li>
+            <li class="prices__price-card negative-change">
+              <img
+                data-ajax="icon_ETHUSDT"
+                data-format="src"
+                class="ajax-load prices__symbol-logo"
+              />
+              <div class="prices__symbol-details">
+                <h5 class="ajax-load prices__symbol-name" data-ajax="symbolLive_ETHUSDT">
+                  ETH/USDT
+                </h5>
+                <!-- <span class="prices__symbol-value">87191</span> -->
+              </div>
+              <div class="prices__volume-details">
+                <span
+                  class="ddx-locale prices__subsection-title"
+                  data-resource_code="charts_live_Volume"
+                  >قیمت</span
+                >
+                <span
+                  class="ajax-load prices__subsection-value"
+                  data-ajax="volumeLive_ETHUSDT"
+                  data-format="number"
+                  >12345</span
+                >
+              </div>
+              <div class="prices__change-details">
+                <span
+                  class="ddx-locale prices__subsection-title"
+                  data-resource_code="charts_live_Change"
+                  >تغییرات</span
+                >
+                <span
+                  class="ajax-load prices__subsection-value change-value"
+                  data-ajax="changeLive_ETHUSDT"
+                  >1.2345%</span
+                >
+              </div>
+              <!-- <div class="prices__chart-details">
+                <span
+                  class="ddx-locale prices__subsection-title"
+                  data-resource_code="charts_live_Chart"
+                  >Chart</span
+                >
+                <div class="prices__chartist-live-price"></div>
+              </div> -->
+              <a
+                href="/trade"
+                class="ddx-locale prices__cta mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                data-resource_code="charts_live_buy"
+                >خرید</a
+              >
+            </li>
+            <li class="prices__price-card positive-change">
+              <img
+                data-ajax="icon_DASHUSDT"
+                data-format="src"
+                class="ajax-load prices__symbol-logo"
+              />
+              <div class="prices__symbol-details">
+                <h5 class="ajax-load prices__symbol-name" data-ajax="symbolLive_DASHUSDT">
+                  ETH/USDT
+                </h5>
+                <!-- <span class="prices__symbol-value">87191</span> -->
+              </div>
+              <div class="prices__volume-details">
+                <span
+                  class="ddx-locale prices__subsection-title"
+                  data-resource_code="charts_live_Volume"
+                  >قیمت</span
+                >
+                <span
+                  class="ajax-load prices__subsection-value"
+                  data-ajax="volumeLive_DASHUSDT"
+                  data-format="number"
+                  >12345</span
+                >
+              </div>
+              <div class="prices__change-details">
+                <span
+                  class="ddx-locale prices__subsection-title"
+                  data-resource_code="charts_live_Change"
+                  >تغییرات</span
+                >
+                <span
+                  class="ajax-load prices__subsection-value change-value"
+                  data-ajax="changeLive_DASHUSDT"
+                  >1.2345%</span
+                >
+              </div>
+              <!-- <div class="prices__chart-details">
+                <span
+                  class="ddx-locale prices__subsection-title"
+                  data-resource_code="charts_live_Chart"
+                  >Chart</span
+                >
+                <div class="prices__chartist-live-price"></div>
+              </div> -->
+              <a
+                href="/trade"
+                class="ddx-locale prices__cta mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                data-resource_code="charts_live_buy"
+                >خرید</a
+              >
+            </li>
+            <li class="prices__price-card positive-change">
+              <img
+                data-ajax="icon_BCHUSDT"
+                data-format="src"
+                class="ajax-load prices__symbol-logo"
+              />
+              <div class="prices__symbol-details">
+                <h5 class="ajax-load prices__symbol-name" data-ajax="symbolLive_BCHUSDT">
+                  ETH/USDT
+                </h5>
+                <!-- <span class="prices__symbol-value">87191</span> -->
+              </div>
+              <div class="prices__volume-details">
+                <span
+                  class="ddx-locale prices__subsection-title"
+                  data-resource_code="charts_live_Volume"
+                  >قیمت</span
+                >
+                <span
+                  class="ajax-load prices__subsection-value"
+                  data-ajax="volumeLive_BCHUSDT"
+                  data-format="number"
+                  
+                  >12345</span
+                >
+              </div>
+              <div class="prices__change-details">
+                <span
+                  class="ddx-locale prices__subsection-title"
+                  data-resource_code="charts_live_Change"
+                  >تغییرات</span
+                >
+                <span
+                  class="ajax-load prices__subsection-value change-value"
+                  data-ajax="changeLive_BCHUSDT"
+                  >1.2345%</span
+                >
+              </div>
+              <!-- <div class="prices__chart-details">
+                <span
+                  class="ddx-locale prices__subsection-title"
+                  data-resource_code="charts_live_Chart"
+                  >Chart</span
+                >
+                <div class="prices__chartist-live-price"></div>
+              </div> -->
+              <a
+                href="/trade"
+                class="ddx-locale prices__cta mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                data-resource_code="charts_live_buy"
+                >خرید</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="body-section" id="invest-section">
+        <ul class="invest__content-container">
+          <li class="invest__content-item invest-mockup__container">
+            <img
+              data-src_fa="assets/images/invest-mockup-fa.svg"
+              data-src_en="assets/images/invest-mockup.svg"
+              class="dynamic-asset invest__invest-mockup"
+              alt="didex invest"
+            />
+          </li>
+          <li class="invest__content-item invest-content__container">
+            <h2
+              class="ddx-locale invest__title"
+              data-resource_code="invest_title"
+            >
+              سرمایه‌گذاری
+            </h2>
+            <h3
+              class="ddx-locale invest__subtitle"
+              data-resource_code="invest_subtitle"
+            >
+              مکان سرمایه‌گذاری را بشناسید تا سود مطلوبتان را به‌دست آورید!
+            </h3>
+            <a
+              href="/invest"
+              class="animate__animated animate__fadeInUp invest__cta-link"
+            >
+              <span
+                class="ddx-locale invest__cta-link-text"
+                data-resource_code="invest_cta"
+                >شروع کنید</span
+              >
+              <i class="invest__cta-link-icon">
+                <img src="assets/images/right-arrow.svg" />
+              </i>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="body-section" id="app-section">
+        <ul class="app__content-container">
+          <li class="app__content-item app-content__container">
+            <h4
+              class="ddx-locale app__coming-soon"
+              data-resource_code="app_coming_soon"
+            >
+              به‌زودی ...
+            </h4>
+            <h2 class="ddx-locale app__title" data-resource_code="app_title">
+              اپلیکیشن
+            </h2>
+            <h3
+              class="ddx-locale app__subtitle"
+              data-resource_code="app_subtitle"
+            >
+              بیش از 10 رمز‌ارز متنوع را با قیمت واقعی، بدون کارمزد و بهره از ما بخواهید
+            </h3>
+            <a
+              href="/application"
+              class="animate__animated animate__fadeInUp app__cta-link ddx-localized-url"
+            >
+              <span
+                class="ddx-locale app__cta-link-text"
+                data-resource_code="app_cta"
+                >اطلاعات بیشتر</span
+              >
+              <i class="app__cta-link-icon">
+                <img src="assets/images/right-arrow.svg" />
+              </i>
+            </a>
+          </li>
+          <li class="app__content-item app-mockup__container">
+            <img
+              data-src_en="assets/images/app-mockup.png"
+              data-src_fa="assets/images/app-mockup-fa.png"
+              class="dynamic-asset app__app-mockup"
+              alt="didex app"
+            />
+          </li>
+        </ul>
+      </section>
+      <section class="body-section" id="exchange-section">  
+        <ul class="exchange__content-container">
+          <li class="exchange__content-item exchange-mockup__container">
+            <img
+              data-src_en="assets/images/exchange-mockup.svg"
+              data-src_fa="assets/images/exchange-mockup-fa.svg"
+              class="dynamic-asset exchange__exchange-mockup"
+              alt="didex exchange"
+            />
+          </li>
+          <li class="exchange__content-item exchange-content__container">
+            <h4
+              class="ddx-locale exchange__coming-soon"
+              data-resource_code="exchange_coming_soon"
+            >
+              به‌زودی ...
+            </h4>
+            <h2
+              class="ddx-locale exchange__title"
+              data-resource_code="exchange_title"
+            >
+              خرید و فروش مستقیم
+            </h2>
+            <h3
+              class="ddx-locale exchange__subtitle"
+              data-resource_code="exchange_subtitle"
+            >
+              ارائه‌ای قدرتمند از دیدکس، با نقدینگی بالا، کارمزد پایین و بهترین‌قیمت رقابتی
+            </h3>
+            <a
+              href="/exchange"
+              class="animate__animated animate__fadeInUp exchange__cta-link ddx-localized-url"
+            >
+              <span
+                class="ddx-locale exchange__cta-link-text"
+                data-resource_code="exchange_cta"
+                >اطلاعات بیشتر</span
+              >
+              <i class="exchange__cta-link-icon">
+                <img src="assets/images/right-arrow.svg" />
+              </i>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="body-section" id="features-section">
+        <h2
+          class="ddx-locale features__title"
+          data-resource_code="features_title"
+        >
+          ویژگی‌ها
+        </h2>
+        <p
+          class="ddx-locale features__subtitle"
+          data-resource_code="features_subtitle"
+        >
+          امکانات پیشرفته و منحصربه‌فرد، خرید و فروش بیت‌کوین و سایر رمزارزها با تجربه‌ای متفاوت
+        </p>
+        <ul class="features__cards-list">
+          <li class="features__card-item">
+            <img
+              src="assets/images/features-icon-support.svg"
+              class="features__card-icon"
+            /><span
+              class="ddx-locale features__card-title"
+              data-resource_code="features_card_title_support"
+              >با هر قدم در کنارتان هستیم</span
+            >
+            <p
+              class="ddx-locale features__card-body"
+              data-resource_code="features_card_body_support"
+            >
+              با پشتیانی حرفه ای 24/7 همراه با آخرین اخبار و نکات دنیای ارزهای دیجیتال با دیدکس به روز باشید!
+            </p>
+          </li>
+          <li class="features__card-item">
+            <img
+              src="assets/images/features-icon-best.svg"
+              class="features__card-icon"
+            /><span
+              class="ddx-locale features__card-title"
+              data-resource_code="features_card_title_best"
+              >ما بهترین‌ها را فراهم کرده‌ایم</span
+            >
+            <p
+              class="ddx-locale features__card-body"
+              data-resource_code="features_card_body_best"
+            >
+              تیمی حرفه‌ای با دانش روز در حوزه بلاکچین، مالی، دارایی‌های دیجیتال و هوش مصنوعی
+            </p>
+          </li>
+          <li class="features__card-item">
+            <img
+              src="assets/images/features-icon-secure.svg"
+              class="features__card-icon"
+            /><span
+              class="ddx-locale features__card-title"
+              data-resource_code="features_card_title_secure"
+              >ثبات و امنیت</span
+            >
+            <p
+              class="ddx-locale features__card-body"
+              data-resource_code="features_card_body_secure"
+            >
+              سیستم تامین امنیت اختصاصی چندلایه و غیرقابل نفوذ دیدکس، آماده محافظت از رمزارزهای شماست!
+            </p>
+          </li>
+          <li class="features__card-item">
+            <img
+              src="assets/images/features-icon-ease.svg"
+              class="features__card-icon"
+              id="featureIconEase"
+            /><span
+              class="ddx-locale features__card-title"
+              data-resource_code="features_card_title_ease"
+              >تجربه خرید آسان رمزارز</span
+            >
+            <p
+              class="ddx-locale features__card-body"
+              data-resource_code="features_card_body_ease"
+            >
+              !رمزارز مورد نظر خود را با استفاده از کارت اعتباری خریداری کنید و از بهترین نرخ‌های موجود در بازار لذت ببرید
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="body-section" id="pay-section">
+        <ul class="pay__content-container">
+          <li class="pay__content-item pay-mockup__container">
+            <img
+              data-src_en="assets/images/pay-mockup.png"
+              data-src_fa="assets/images/pay-mockup-fa.png"
+              class="dynamic-asset pay__pay-mockup"
+              alt="didex pay"
+            />
+          </li>
+          <li class="pay__content-item pay-content__container">
+            <h4
+              class="ddx-locale pay__coming-soon"
+              data-resource_code="pay_coming_soon"
+            >
+              به‌زودی ...
+            </h4>
+            <h2 class="ddx-locale pay__title" data-resource_code="pay_title">
+              درگاه پرداخت
+            </h2>
+            <h3
+              class="ddx-locale pay__subtitle"
+              data-resource_code="pay_subtitle"
+            >
+              پرداخت و دریافت کریپتو برای کسب و کارها
+            </h3>
+            <a
+              href="/didpay"
+              class="animate__animated animate__fadeInUp pay__cta-link ddx-localized-url"
+            >
+              <span
+                class="ddx-locale pay__cta-link-text"
+                data-resource_code="pay_cta"
+                >اطلاعات بیشتر</span
+              >
+              <i class="pay__cta-link-icon">
+                <img src="assets/images/right-arrow.svg" />
+              </i>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="body-section" id="wallet-section">
+        <ul class="wallet__content-container">
+          <li class="wallet__content-item wallet-content__container">
+<!--            <h4-->
+<!--              class="ddx-locale wallet__coming-soon"-->
+<!--              data-resource_code="wallet_coming_soon"-->
+<!--            >-->
+<!--              Coming soon ...-->
+<!--            </h4>-->
+            <h2
+              class="ddx-locale wallet__title"
+              data-resource_code="wallet_title"
+            >
+              کیف پول امن
+            </h2>
+            <h3
+              class="ddx-locale wallet__subtitle"
+              data-resource_code="wallet_subtitle"
+            >
+              مطابق با پیشرفته‌ترین روش‌های تامین امنیت
+            </h3>
+            <a
+              href="/wallet"
+              class="animate__animated animate__fadeInUp wallet__cta-link"
+            >
+              <span
+                class="ddx-locale wallet__cta-link-text"
+                data-resource_code="wallet_cta"
+                >اطلاعات بیشتر</span
+              >
+              <i class="wallet__cta-link-icon">
+                <img src="assets/images/right-arrow.svg" />
+              </i>
+            </a>
+          </li>
+          <li class="wallet__content-item wallet-mockup__container">
+            <img
+              data-src_en="assets/images/wallet-mockup.png"
+              data-src_fa="assets/images/wallet-mockup-fa.png"
+              class="dynamic-asset wallet__wallet-mockup"
+              alt="didex wallet"
+            />
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="mdl-mega-footer">
+      <div class="mdl-mega-footer__subscription-section">
+        <p
+          class="ddx-locale footer__subscription-message"
+          data-resource_code="footer_subscription_body"
+        >
+          با عضویت در خبرنامه ما از آخرین اخبار روز دنیای ارزهای دیجیتال و پیشنهادات ویژه دیدکس مطلع باشید
+        </p>
+        <form class="footer__subscription-form" action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" id="email" />
+            <label class="mdl-textfield__label" for="email"></label>
+          </div>
+
+          <button
+            type="submit"
+            class="ddx-locale mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+            data-resource_code="footer_subscription_submit"
+          >
+            عضویت
+          </button>
+        </form>
+
+        <ul class="footer__link-list">
+          <li>
+            <a
+              class="ddx-localized-social-twitter" 
+              target="_blank" href="https://twitter.com/didex_crypto">
+              <img src="assets/images/footer-icon-tw.svg" />
+            </a>
+          </li>
+          <li>
+            <a 
+              class="ddx-localized-social-facebook" 
+              target="_blank" href="https://www.facebook.com/crypto.didex/">
+              <img src="assets/images/footer-icon-fa.svg" />
+            </a>
+          </li>
+          <li>
+            <a
+                class="ddx-localized-social-telegram" 
+                target="_blank" href="https://t.me/didexcrypto/">
+              <img src="assets/images/footer-icon-tg.svg" />
+            </a>
+          </li>
+          <li>
+            <a
+              class="ddx-localized-social-instagram" 
+              target="_blank" href="https://www.instagram.com/didexcrypto/">
+              <img src="assets/images/footer-icon-ig.svg" />
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/company/didexcrypto"
+            >
+              <img src="assets/images/footer-icon-in.svg" />
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mdl-mega-footer__middle-section">
+        <div class="mdl-mega-footer__links-section">
+          <span
+            class="ddx-locale mdl-mega-footer__heading"
+            data-resource_code="footer_links_company"
+            >شرکت</span
+          >
+          <ul class="mdl-mega-footer__links-list">
+            <li>
+              <a
+                class="ddx-locale ddx-localized-url"
+                href="/about-us"
+                data-resource_code="footer_links_about"
+                >درباره ما</a
+              >
+            </li>
+            <li>
+              <a
+                class="ddx-locale ddx-localized-url"
+                href="/careers"
+                data-resource_code="footer_links_careers"
+                >فرصتهای شغلی</a
+              >
+            </li>
+            <li>
+              <a
+                class="ddx-locale ddx-localized-url"
+                href="/terms-service"
+                data-resource_code="footer_links_terms"
+                >شرایط استفاده</a
+              >
+            </li>
+            <li>
+              <a
+                class="ddx-locale ddx-localized-url"
+                href="/privacy-policy"
+                data-resource_code="footer_links_privacy"
+                >حریم خصوصی</a
+              >
+            </li>
+            <li>
+              <a
+                class="ddx-locale ddx-localized-url"
+                href="/contact"
+                data-resource_code="footer_links_contact"
+                >ارتباط با ما</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="mdl-mega-footer__links-section">
+          <span
+            class="ddx-locale mdl-mega-footer__heading"
+            data-resource_code="footer_links_services"
+            >خدمات</span
+          >
+          <ul class="mdl-mega-footer__links-list">
+            <li>
+              <a
+                class="ddx-locale"
+                href="/api"
+                data-resource_code="footer_links_api"
+                >API</a
+              >
+            </li>
+            <li>
+              <a
+                class="ddx-locale ddx-localized-url"
+                href="/fees-limits"
+                data-resource_code="footer_links_fees"
+                >کارمزدها و محدودیت ها</a
+              >
+            </li>
+            <li>
+              <a
+                class="ddx-locale ddx-localized-url"
+                href="/application"
+                data-resource_code="footer_links_app"
+                >اپلیکیشن</a
+              >
+            </li>
+            <li>
+              <a
+                class="ddx-locale ddx-localized-url"
+                href="/trading-rules"
+                data-resource_code="footer_links_rules"
+                >مقررات معامله</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="mdl-mega-footer__links-section">
+          <span
+            class="ddx-locale mdl-mega-footer__heading"
+            data-resource_code="footer_links_product"
+            >محصولات</span
+          >
+          <ul class="mdl-mega-footer__links-list">
+            <li><a class="ddx-locale" data-resource_code="footer_links_trade" href="/trade">بازار حرفه‌ای</a></li>
+            <li><a class="ddx-locale" data-resource_code="footer_links_invest" href="/invest">سرمایه‌گذاری</a></li>
+            <li>
+              <a
+                class="ddx-locale ddx-localized-url"
+                href="/exchange"
+                data-resource_code="footer_links_exchange"
+                >خرید و فروش مستقیم</a
+              >
+            </li>
+            <li>
+              <a
+                class="ddx-locale ddx-localized-url"
+                href="/p2p-exchange"
+                data-resource_code="footer_links_p2p"
+                >خرید و فروش همتا به همتا</a
+              >
+            </li>
+            <li>
+              <a
+                class="ddx-locale ddx-localized-url"
+                href="/didpay"
+                data-resource_code="footer_links_pay"
+                >درگاه پرداخت</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="mdl-mega-footer__links-section">
+          <span
+            class="ddx-locale mdl-mega-footer__heading"
+            data-resource_code="footer_links_support"
+            >پشتیبانی</span
+          >
+          <ul class="mdl-mega-footer__links-list">
+            <li>
+              <a
+                class="ddx-locale ddx-localized-url ddx-localized-url2"
+                href="/help-center/faq"
+                data-resource_code="footer_links_faq"
+                >سوالات متداول</a
+              >
+            </li>
+            <li>
+              <a
+                class="ddx-locale ddx-localized-url"
+                href="/help-center"
+                data-resource_code="footer_links_help"
+                >راهنما</a
+              >
+            </li>
+            <li>
+              <a
+                class="ddx-locale ddx-localized-url"
+                href="/security-guidelines"
+                data-resource_code="footer_links_security"
+                >ملاحظات امنیتی</a
+              >
+            </li>
+            <li>
+              <a
+                class="ddx-locale"
+                href="https://api.didex.com/swagger"
+                data-resource_code="footer_links_apidoc"
+                >مستندات API</a
+              >
+            </li>
+            <li>
+              <a
+                class="ddx-locale"
+                href="/glossary"
+                data-resource_code="footer_links_glossary"
+                >واژه نامه</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <div class="kyc-needed hidden-by-kyc animate__animated animate__bounceInUp ddx-snackbar__container" id="snackbarContainer">
+      <span class="ddx-snackbar__highlighted-border"></span>
+      <div class="ddx-snackbar__content">
+        <p class="ddx-locale ddx-snackbar__paragraph" data-resource_code="snackbar_first_p">
+          You have not done ID verification yet,
+        </p>
+        <p class="ddx-locale ddx-snackbar__paragraph" data-resource_code="snackbar_second_p">
+          Please validate your identity
+        </p>
+        <a
+            href="/trade/user/settings?tab=kyc"
+            class="ddx-locale mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+            data-resource_code="snackbar_validate"
+          >
+            Validate
+          </a>
+      </div>
+      <span class="ddx-snackbar__close-button" id="snackbarCloseButton">&times;</span>
+    </div> -->
+
+    <!--<div class="ddx-overlay__container" id="campaignOverlay">
+      <div class="animate__animated animate__bounceInUp ddx-overlay__content">
+        <div class="ddx-overlay__inner-content">
+          <a class="ddx-overlay__banner-link" href="/auth/signup">
+            <img src="assets/images/banner.png" class="ddx-overlay__banner-image">
+          </a>
+        </div>
+        <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored mdl-button--accent ddx-overlay__close-button" onclick="closeCampaignOverlay()">
+          <i>&times;</i>
+        </button>
+      </div>
+    </div>-->
+
+    <script src="scripts/jwt-decode.min.js"></script>
+    <script src="locale/resource-classes.js"></script>
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/locale.js"></script>
+    <script src="scripts/auth.js"></script>
+    <script src="scripts/charts.js"></script>
+  </body>
+</html>

@@ -2,13 +2,15 @@
   "name": "didex-homepage",
   "version": "1.0.0",
   "description": "",
-  "main": "scripts/index.js",
   "scripts": {
     "parcel": "parcel index.html -p 4000",
     "build": "parcel build index.html",
-    "start": "browser-sync start --server --port 4000 --browser \"google chrome\" --files *.html styles/*.css scripts/*.js locale/*.js assets/*.* config/*.json",
+    "start": "browser-sync start --server --port 4000 --browser \"chrome\" --files '*.html, styles/*.css, scripts/*.js, locale/*.js, assets/*.*, config/*.json'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Azad Kavian",
-  "license": "ISC"
+  "author": "Saman Zameni",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.27.11"
+  }
 }
